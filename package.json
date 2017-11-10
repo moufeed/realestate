@@ -1,7 +1,7 @@
 {
-  "name": "projectname",
+  "name": "orfialrealestate",
   "version": "1.0.0",
-  "description": "project description",
+  "description": "orfali real Estate description",
   "private": true,
   "main": "index.js",
   "scripts": {
