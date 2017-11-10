@@ -1,0 +1,25 @@
+{
+  "name": "projectname",
+  "description": "project description",
+  "main": "index.js",
+  "authors": [
+    "moufeed jobakji <m.jobakji@hotmail.com> (moufeed.me)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "owl.carousel": "^2.2.1",
+    "animate.css": "^3.5.2",
+    "wow": "wowjs#^1.1.2",
+    "jquery.nicescroll": "nicescroll#^3.7.6"
+  }
+}

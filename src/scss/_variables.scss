@@ -1,0 +1,29 @@
+
+$img:"../img/";
+$font:"../fonts/";
+$black :#000000;
+$white :#ffffff;
+//logo colors
+$gold : #ccac2c;
+$darkgray:#303030;
+$mgray :#424949;
+$gray :#696969;
+ 
+// fontawesome 
+$fa-font-path:        "../fonts/fa" ; 
+
+ // bootstrap variables
+ 
+$pagination-color:                     lighten($darkgray ,15%);
+$pagination-bg:                        $white;
+$pagination-border:                    lighten($darkgray ,15%);
+
+$pagination-hover-color:               $white;
+$pagination-hover-bg:                  $gold ;
+$pagination-hover-border:               $gold ;
+
+$pagination-active-color:             $white;
+$pagination-active-bg:                lighten($darkgray ,15%);
+$pagination-active-border:            lighten($darkgray ,15%);
+
+ 
