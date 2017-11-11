@@ -53,25 +53,14 @@ var config = {
                     return str.toUpperCase();
                 },
                 reverse : function(arr){
-                    return arr.reverse();
+                         arr.reverse();
                 },
                 delay : function(num,del){
                     return  num / 2 * del;
                 }
             }
         }
-    },
-    slider:{
-        src: [
-            
-            './src/js/jquery.themepunch.tools.min.js',
-            './src/js/jquery.themepunch.revolution.min.js',
-            './src/js/slider.js'
-        ],
-        
-        dist: "./dist/assets/js",
-        file: "slider.js"
-    }
+    } 
 }
 // ----------------------------------------------------
 // -------------   handlebars/html  -------------------
@@ -139,29 +128,13 @@ gulp.task('script', function () {
         .pipe(gulp.dest(config.js.dist));
 })
 
-gulp.task('slider', function () {
-    return gulp.src(config.slider.src)
-        .pipe(concat(config.slider.file))
-        .pipe(uglify({
-            mangle: false
-        }))
-        .on('error', function (err) {
-            gutil.log(gutil.colors.red('[Error]'), err.toString());
-        })
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(header(config.header, {
-            pkg: pkg
-        }))
-        .pipe(gulp.dest(config.slider.dist));
-})
+ 
 
 // ----------------------------------------------------
 // -----------------   watch/files  -----------------
 // ----------------------------------------------------
 gulp.task('watch', function () {
-    gulp.watch(config.js.watch, ['script','slider']);
+    gulp.watch(config.js.watch, ['script']);
     gulp.watch(config.css.src, ['style']);
     gulp.watch(config.html.watch, ['hbs']);
 })
@@ -180,4 +153,15 @@ handlebars.Handlebars.registerHelper('isequal', function (v1, v2, options) {
     return options.inverse(this)
 })
 
- 
+handlebars.Handlebars.registerHelper('times', function(n, block) {
+    var accum = '';
+    for(var i = 0; i < n; ++i)
+        accum += block.fn(i);
+    return accum;
+});
+handlebars.Handlebars.registerHelper('for', function(from, to, incr, block) {
+    var accum = '';
+    for(var i = from; i < to; i += incr)
+        accum += block.fn(i);
+    return accum;
+});

@@ -6,4 +6,10 @@
 @import '../lib/owl.carousel/src/scss/owl.carousel';
 @import 'mixins/config';
 
- 
+ @import 
+        'lib/animate',
+        'lib/fonts',
+        'partials/default',
+        'partials/header',
+        'partials/navigation'
+ ; 

@@ -1,0 +1,73 @@
+$_50px:50px;
+ .main_header{
+     min-height: 100px;
+     background: $white;
+     box-shadow: 0 2px 1px -1px #eee;
+ }
+.main_logo{
+    max-width: 300px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width:676px){
+        margin: auto;
+    }
+}
+ .hotline,.social-list{
+    text-align: $right;
+ }
+ .hotline{
+     height: $_50px;
+     line-height: $_50px;
+     i{
+         color: $gold;
+         margin: 0 3px;
+     }
+    span,a{
+        direction: ltr;
+        display: inline-block;
+    }
+    span{
+        float: $left;
+        margin-#{$left}:10px; 
+    }
+    a{
+        float: $right;
+        color: $darkgray;
+        &:hover{
+            color: darken($gold,10%);
+        }
+    }
+ }
+ .social-list{
+     direction: if-ltr(rtl,ltr);
+     margin: 0;
+     @media (max-width:676px){
+        display: flex;
+        justify-content: center;
+     }
+     li{
+         padding: 0;
+     }
+     a{
+         @include size(30px,$_50px);
+         @media (max-width:676px){
+             width: $_50px;
+         }
+         display: block;
+         text-align: center;
+         line-height: $_50px;
+         color: $gold;
+         transition:  all .22s;
+         &:hover{
+             text-decoration: none;
+             color: $gray;
+             @each $i in $social-colors{
+                i[class*="#{nth($i,1) }"]{
+                   color: nth($i,2)  
+               }
+            }
+         }
+     }
+ }

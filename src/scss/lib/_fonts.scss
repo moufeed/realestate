@@ -1,0 +1,18 @@
+
+@mixin font($font-family, $font-file) {
+    @font-face {
+      font-family: $font-family;
+      src:  url($font-file) format('truetype');
+  }
+}
+  
+  @include font('droid', '#{$font}ar/droidKufi-regular.ttf');
+  @include font('roboto', '#{$font}en/robotocondensed-regular.ttf');
+  
+  @include if-ltr{
+    @include font('roboto-bold', '#{$font}en/robotocondensed-bold.ttf');
+    @include font('roboto-light', '#{$font}en/robotocondensed-light.ttf');
+  }
+  @include if-rtl{
+    @include font('droid-bold', '#{$font}ar/droidKufi-bold.ttf');
+  } 

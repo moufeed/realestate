@@ -1,0 +1,114 @@
+{
+    "dir" :"ltr",
+    "page_title": "pagetitle" ,
+    "sevices" :"sevices",
+    "sevices_sub" :"We usually offer", 
+    "news": "News and articles",
+    "news_sub": "What do you want to know",
+    "read_more":"Read More",
+    "more":"More",
+    "home":"Home",
+    "title":"title",
+    "contact_us":"Contact Us",
+    "news_letter":"News Letter",
+    "name" :"Name",
+    "email":"Email",
+    "full_name" :"Full Name",
+    "phone_number" :"Phone Number",
+    "message" :"Message",
+    "mobile_number":"Mobile Number",
+    "send":"Send",
+    "subscribe":"subscribe",
+    "search" :"Search",
+    "get_in_touch":"get in touch",
+    "copy_right" :"Hossam Orfali Consulting, All rights reserved © 2017",
+    "company":"Hussam Orfali Consulting Co, Orfali Group.",
+    "company_address":"Akşemsettin Mahallesi, Akşemsettin Cd. 55/3, 34080 Fatih/İstanbul",
+    "word":"word",
+    "categories" :"Categories",
+    "about_us" :"About Us",
+    "our_mission" :"Our Mission",
+    "our_vision" :"Our Vision",
+    "who_are_we" :"Who are we",
+    "why_us":"Why Hossam Orfali Consulting?",
+    "our_services" :"Our Services",
+    "What_we_offer":"What we offer!",
+    "related_posts":"Related Posts",
+    "our_achievements":"Our achievements",
+    "comment":"comment",
+    "reply":"Reply",
+    "comments":"comments",
+    "write_comment":"Write Comment",
+    
+    
+
+
+    "navigation": [{
+        "name": "Home",  
+        "link": "index.html",   
+        "active": true 
+    },
+    {
+        "name": "about us",
+        "link": "aboutus.html",
+        "active": false
+    },  
+    { 
+        "name": "real estate",
+        "link": "realestate.html",
+        "active": false
+    },
+    {
+        "name": "our services", 
+        "link": "services.html",
+        "active": false
+    }, 
+    {
+        "name": "Contact Us",
+        "link": "contactus.html",
+        "active": false
+    }
+],
+    "contatlist" :[
+        {
+            "icon" :"fa-building-o",
+            "text" :"Akşemsettin Mahallesi, Akşemsettin  Cd. <br> 55/3, 34080 Fatih/İstanbul"
+        },
+        {
+            "icon" :"fa-mobile",
+            "text" :"+905386280000 <br> +905389498776",
+            "tel":true
+        },
+        {
+            "icon" :"fa-phone",
+            "text" : "+902125313240‎",
+            "tel":true
+        },
+        {
+            "icon" :"fa-envelope-open-o",
+            "text" : "info@hussamorfali.com",
+            "email":"info@hussamorfali.com"
+        }
+    ],
+    "sociallist":[
+        {
+            "icon":"fa-facebook",
+            "link":"#"
+        },{
+            "icon":"fa-twitter",
+            "link":"#"
+        },{
+            "icon":"fa-instagram",
+            "link":"#"
+        },{
+            "icon":"fa-telegram",
+            "link":"#"
+        },{
+            "icon":"fa-youtube",
+            "link":"#"
+        }
+    ],
+     "alerts":{
+        "noresults" :"<i class=\"fa fa-exclamation-triangle\"></i><p>There are no results that match your search</p>"
+    }
+} 
