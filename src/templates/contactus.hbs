@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pagetitle}}</title>
+    <link rel="stylesheet" href="assets/css/style-{{dir}}.min.css">
+    
+</head>
+<body>
+    {{>header }}
+  <section class="page_header">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-5 ">
+                      <h1>{{contact_us}}</h1>
+                 </div>
+                 <div class="col-sm-7 ">
+                     <ol class="breadcrumb page-breadcrumb">
+                    {{#isequal dir 'ltr'}}
+                        <li><a href="index.html">{{home}}</a></li>
+                    {{else}}
+                        <li><a href="index-ltr.html">{{home}}</a></li>
+                    {{/isequal}}
+                    <li class="active">{{contact_us}}</li>
+                    </ol>
+                 </div>
+             </div> 
+         </div>
+     </section>
+
+<section class="page-contactus">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="contactus_paragraph">{{contact_us_paragraph}}</p>
+        </div>
+        <div class="col-md-5 col-md-offset-1 col-sm-6">
+            <h3 class="sub_title"><strong>{{contact_information}}</strong></h3>
+            <ul class="list-unstyled contact_information">
+                <li class="clearfix animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <i class="fa fa-map-marker"></i>
+                    <div>
+                        <strong>{{address}} :</strong>
+                    <span>Akşemsettin Mahallesi, Akşemsettin  Cd. <br> 55/3, 34080 Fatih/İstanbul</span>
+                    </div>
+                </li>
+                <li class="clearfix animate fadeIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                    <i class="fa fa-phone"></i>
+                    <div>
+                        <strong>{{phone_number}} : </strong>
+                         <span dir="ltr">+905386280000 <br> +905389498776</span>
+                    </div>
+                </li>
+                <li class="clearfix animate fadeIn" data-wow-duration="400ms" data-wow-delay="300ms">
+                    <i class="fa fa-envelope-o"></i>
+                    <div>
+                        <strong>{{email_address}} : </strong>
+                    <span>info@hussamorfali.com</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-6">
+             <h3 class="sub_title"><strong>{{send_us_message}}</strong></h3> 
+            <form action="" class="form-contact">
+                
+                <div class="form-group required animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <label for="name"><i class="fa fa-user"></i> {{name}} </label>
+                    <input type="text" name="name" id="name" placeholder="{{your_name}}" class="form-control" required>
+                </div>
+                <div class="form-group animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <label for="phonenumber"> <i class="fa fa-mobile-phone"></i>  {{phone_number}}</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="{{your_phone_number}}" class="form-control">
+                </div>
+                <div class="form-group animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <label for="email"><i class="fa fa-envelope-o"></i>{{email}}</label>
+                    <input type="email" name="email" id="email" placeholder="{{your_email}}" class="form-control">
+                </div>
+                <div class="form-group animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <label for="message"><i class="fa fa-commenting-o"></i> {{message}}</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="{{your_message}}" class="form-control" ></textarea>
+                </div>
+                <div class="form-group animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                     <button type="submit" class="btn btn-send">{{send}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+     {{>footer }} 
+    <script src="assets/js/script.min.js"></script>
+</body>
+</html>

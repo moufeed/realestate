@@ -1,5 +1,5 @@
 body{
-    background: #f2f2f2;
+    background: #fff;
     font-family:if-rtl(#{'droid,roboto'}, #{'roboto,droid'}),
     -apple-system,
     BlinkMacSystemFont,
@@ -34,3 +34,88 @@ body{
     display: none;
     z-index: 15000;
 }
+
+.page_header{
+    position: relative;
+    padding-top: 20px ;
+    min-height: 170px;
+    background: $gold url('#{$img}header-bg.jpg') 0 0 /cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:after{
+        @include absolute(top left , 0 0);
+        content: '';
+        background: rgba($gold,.5);
+        z-index: 0;
+        @include square(100%);
+    }
+    .container{
+        position: relative;
+        z-index:1;
+    }
+    h1{
+        font-family: if-ltr(roboto-bold,droid-bold);
+        color: $white;
+        margin: 0;
+        text-shadow: 0 1px 1px rgba($black, 0.2);
+    }
+}
+.page-breadcrumb{
+    float: $right;
+    border-radius: 0;
+    box-shadow: 0 1px 2px -1px rgba($black,.5);
+    li a{
+            color: $gold;
+        }
+    >li+li:before{
+        font-family:FontAwesome; 
+        content :if-ltr('\f105','\f104');
+    }
+}
+
+.sub_title{
+    position: relative;
+    margin-bottom: 25px;
+    &:before{
+        @include absolute(bottom $left , 0 0);
+        @include size(100%,1px);
+        content: '';
+        background: darken($white,5%);
+    }
+    strong{
+        display: inline-block;
+        position: relative;
+        padding: 20px 10px;
+        &:after{
+            @include absolute(bottom $left , 0 0);
+            @include size(100%,2px);
+            content: '';
+            background: $gold;
+        }
+    }
+}
+/*
+
+ <section class="">
+         <div class="container"> 
+             <div class="row">
+                 <div class="col-sm-5 ">
+                      <h1>{{title}}</h1>
+                 </div>
+                 <div class="col-sm-7 ">
+                     <ol class="breadcrumb ">
+                    {{#isequal dir 'ltr'}}
+                        <li><a href="index.html">{{home}}</a></li>
+                    {{else}}
+                        <li><a href="index-ltr.html">{{home}}</a></li>
+                    {{/isequal}}
+                    <li class="active">{{title}}</li>
+                    </ol>
+                 </div>
+             </div> 
+         </div>
+     </section>
+
+*/

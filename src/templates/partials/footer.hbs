@@ -1,0 +1,55 @@
+ <footer class="main-footer">
+     <div class="container footer-content">
+         <div class="row">
+             <div class="col-md-4 col-sm-4 col-xs-12">
+                 <picture class="animate fadeIn" data-wow-duration="900ms" data-wow-delay="00ms">
+                    <img srcset="assets/img/footer-logo.png" alt="{{pagetitle}}" class="img-responsive">
+                </picture>
+             </div>
+             <div class="col-md-4 col-sm-4 col-xs-12">
+                 <h3>{{contactus}}</h3>
+                 <ul class="list-unstyled list-contact animate fadeIn" data-wow-duration="900ms" data-wow-delay="100ms">
+                     {{#each contatlist}}
+                     <li >
+                         <i class="fa {{icon}}"></i>
+
+
+                         {{#if email}}
+                            <a href="mailto:{{email}}" target="_top">{{{text}}}</a>
+                            {{else}}
+                            <span {{#if tel}} dir="ltr" {{/if}}>{{{text}}}</span>
+                         {{/if}}
+
+                     </li>
+                     {{/each}}
+                 </ul>
+             </div>
+             <div class="col-md-4 col-sm-4 col-xs-12">
+                 <h3>{{newsletter}}</h3>
+                 <form  class="form-inline from-newsletter animate fadeIn" data-wow-duration="900ms" data-wow-delay="150ms" action="" method="post">
+                          
+                        <div class="form-group">
+                             <input type="email" class="form-control" id="" placeholder="{{email}}">
+                        </div>
+                        <button type="submit" class="btn btn-subscribe">{{subscribe}}</button>
+                 </form>
+                 <ul class="list-unstyled list-inline footer-social-list">
+                        {{reverse sociallist}}
+                        {{#each sociallist}}
+                            <li>
+                                <a href="{{link}}">
+                                    <i class="fa {{icon}}"></i>  
+                                </a>
+                            </li>
+                        {{/each}}
+                 </ul>
+             </div>
+         </div>
+     </div>
+     <div class="bottom-footer">
+         <div class="copyright-line text-center animate fadeIn" data-wow-duration="900ms" data-wow-delay="200ms">
+             {{copyright}}
+         </div>
+     </div>
+ </footer>
+ <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i></a> 

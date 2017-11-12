@@ -1,0 +1,132 @@
+.page-contactus{
+    padding: 50px 0;
+    background : url('#{$img}background_repeat.png') 0 0 repeat;
+}
+.contactus_paragraph{
+    margin:3% auto;
+    text-align: center;
+    color: $gray;
+    position: relative;
+    @media (min-width:768px){
+        width: 60%;
+        font-size: if-ltr(18px, 16px);
+        line-height: 27px;
+    }
+    &:after,&:before{
+        position: absolute;
+        bottom : -15px;
+        left:50%;
+        @include size(50px,2px);
+        content: "";
+        transform: translateX(-25px);
+    }
+    &:before{
+        background: $gold;
+    }
+    &:after{
+        background: $darkgray;
+        width: 25px;
+    }
+
+}
+
+
+.form-contact{
+    .form-group{
+        label{
+            color:#b3b1a7;
+            margin-bottom: 10px;
+            font-weight: normal;
+            i{
+                
+                margin: 0 5px;
+            }
+        }
+        .form-control:not(textarea){
+            height: 40px;
+        }
+        .form-control{
+            border-radius: 3px;
+            box-shadow:none;
+            
+            transition: all .3s;
+            border-color:#e5e5e5;
+            @include placeholder{
+                color: lighten($darkgray ,7%);
+            }
+            &:focus{
+                border-color:$gold;
+                box-shadow:none;
+            }
+        }
+        &.required{
+            label{
+                &:after{
+                    font-family:Fontawesome;
+                    content: '\f005';
+                    color: #ce5753;
+                    top: -5px;
+                    position: relative;
+                    font-size:7px;
+                }
+            }
+        }
+    }
+    .btn-send{
+        background: #dec666;
+        min-width: 50%;
+        outline: none !important;
+        color: $white;
+        font-family: if-ltr(roboto-bold,droid-bold)
+    }
+}
+
+
+.contact_information{
+    li{
+        margin-bottom: 45px;
+        i{
+            @include square(75px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: lighten($gold ,15%);
+            color: $white;
+            float: $left;
+            border-radius: 50%;
+            font-size: 24px;
+            transition: all .3s;
+        }
+        div{
+            float: $left;
+            width: calc(100% - 100px);
+            margin-#{$left}: 15px; 
+            strong,span{
+                display: block;
+            }
+            strong{
+                margin-bottom: 10px;
+            }
+            span{
+                color: $gray;
+                line-height: 22px;
+            }
+        }
+        &:hover{
+            i{
+                box-shadow: 0 0 0 5px rgba(lighten($gold ,15%),.6);
+            }
+        }
+    }
+}
+/*
+    width: 75px;
+    height: 75px;
+   
+   
+    font-size: 25px;
+    color: #ccac2c;
+    float: right;
+    margin-top: 15px;
+   
+    */

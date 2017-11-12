@@ -39,10 +39,17 @@
     "reply":"Reply",
     "comments":"comments",
     "write_comment":"Write Comment",
-    
-    
-
-
+    "address":"Address",
+    "phone":"Phone",
+    "phone_number ":"Phone Number",
+    "email_address":"Email Address",
+    "contact_information":"Contact Information",
+    "send_us_message":"Send Us a Message",
+    "your_name":"Enter your name ...",
+    "your_phone_number":"Enter your phone number ...",
+    "your_email":"Enter your email ...",
+    "your_message":"Enter your message ...",
+    "contact_us_paragraph":  "Hossam Orfali Consulting is ready to answer any proposal, interpretation or request for support. You can contact us via the website or one of the available means of communication, and you can leave a message to us through the form below:",
     "navigation": [{
         "name": "Home",  
         "link": "index.html",   
