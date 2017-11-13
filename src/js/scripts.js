@@ -18,5 +18,9 @@ $(document).ready(function () {
             cursorborderradius: 0,
             zindex: 999999
         });
-
-    });
+        $('select').selectpicker({
+            mobile: false,
+            size:5
+          });
+          
+});

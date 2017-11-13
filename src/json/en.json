@@ -117,5 +117,20 @@
     ],
      "alerts":{
         "noresults" :"<i class=\"fa fa-exclamation-triangle\"></i><p>There are no results that match your search</p>"
-    }
+    },
+    "cities":[
+        "Ankara",
+        "İstanbul",
+        "Mersin",
+        "İzmir",
+        "Bursa"
+    ],
+    "real_estate_type":[
+        "ready projects",
+        "under construction",
+        "villas",
+        "flats",
+        "lands",
+        "hotels"
+    ]
 } 

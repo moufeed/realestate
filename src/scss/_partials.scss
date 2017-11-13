@@ -4,6 +4,7 @@
 
 @import '../lib/font-awesome/scss/font-awesome';
 @import '../lib/owl.carousel/src/scss/owl.carousel';
+@import '../lib/bootstrap-select/sass/bootstrap-select';
 @import 'mixins/config';
 
  @import 
@@ -13,5 +14,6 @@
         'partials/header',
         'partials/footer',
         'partials/navigation',
+        'partials/search_section',
         'partials/contactus'
  ; 

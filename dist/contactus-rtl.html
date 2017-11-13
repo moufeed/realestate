@@ -34,17 +34,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-telegram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
@@ -54,7 +44,17 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube"></i>
                                 </a>
                             </li>
                            
@@ -155,101 +155,230 @@
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="أدخل نص رسالتك ..." class="form-control" ></textarea>
                 </div>
                 <div class="form-group animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
-                     <button type="submit" class="btn btn-send">إرسال</button>
+                     <button type="submit" class="btn btn-send"><span>إرسال</span></button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 </section>
+<section class="map-section">
+    <div class="map" id="map"></div>
+</section>
+ 
+     <footer class="main-footer">
+         <div class="container footer-content">
+             <div class="row">
+                 <div class="col-md-4 col-sm-4 col-xs-12">
+                     <picture class="animate fadeIn" data-wow-duration="900ms" data-wow-delay="00ms">
+                        <img srcset="assets/img/footer-logo.png" alt="" class="img-responsive">
+                    </picture>
+                 </div>
+                 <div class="col-md-4 col-sm-4 col-xs-12">
+                     <h3></h3>
+                     <ul class="list-unstyled list-contact animate fadeIn" data-wow-duration="900ms" data-wow-delay="100ms">
+                         <li >
+                             <i class="fa fa-building-o"></i>
+    
+    
+                                <span >Akşemsettin Mahallesi, Akşemsettin  Cd. <br> 55/3, 34080 Fatih/İstanbul</span>
+    
+                         </li>
+                         <li >
+                             <i class="fa fa-mobile"></i>
+    
+    
+                                <span  dir="ltr" >+905386280000 <br> +905389498776</span>
+    
+                         </li>
+                         <li >
+                             <i class="fa fa-phone"></i>
+    
+    
+                                <span  dir="ltr" >+902125313240‎</span>
+    
+                         </li>
+                         <li >
+                             <i class="fa fa-envelope-open-o"></i>
+    
+    
+                                <a href="mailto:info@hussamorfali.com" target="_top">info@hussamorfali.com</a>
+    
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="col-md-4 col-sm-4 col-xs-12">
+                     <h3></h3>
+                     <form  class="form-inline from-newsletter animate fadeIn" data-wow-duration="900ms" data-wow-delay="150ms" action="" method="post">
+                              
+                            <div class="form-group">
+                                 <input type="email" class="form-control" id="" placeholder="البريد الالكتروني">
+                            </div>
+                            <button type="submit" class="btn btn-subscribe">إشتراك</button>
+                     </form>
+                     <ul class="list-unstyled list-inline footer-social-list">
+                            
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-youtube"></i>  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-telegram"></i>  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>  
+                                    </a>
+                                </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+         <div class="bottom-footer">
+             <div class="copyright-line text-center animate fadeIn" data-wow-duration="900ms" data-wow-delay="200ms">
+                 
+             </div>
+         </div>
+     </footer>
+     <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i></a>     <script src="assets/js/script.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+ 
 
-      <footer class="main-footer">
-          <div class="container footer-content">
-              <div class="row">
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                      <picture class="animate fadeIn" data-wow-duration="900ms" data-wow-delay="00ms">
-                         <img srcset="assets/img/footer-logo.png" alt="" class="img-responsive">
-                     </picture>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                      <h3></h3>
-                      <ul class="list-unstyled list-contact animate fadeIn" data-wow-duration="900ms" data-wow-delay="100ms">
-                          <li >
-                              <i class="fa fa-building-o"></i>
-     
-     
-                                 <span >Akşemsettin Mahallesi, Akşemsettin  Cd. <br> 55/3, 34080 Fatih/İstanbul</span>
-     
-                          </li>
-                          <li >
-                              <i class="fa fa-mobile"></i>
-     
-     
-                                 <span  dir="ltr" >+905386280000 <br> +905389498776</span>
-     
-                          </li>
-                          <li >
-                              <i class="fa fa-phone"></i>
-     
-     
-                                 <span  dir="ltr" >+902125313240‎</span>
-     
-                          </li>
-                          <li >
-                              <i class="fa fa-envelope-open-o"></i>
-     
-     
-                                 <a href="mailto:info@hussamorfali.com" target="_top">info@hussamorfali.com</a>
-     
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                      <h3></h3>
-                      <form  class="form-inline from-newsletter animate fadeIn" data-wow-duration="900ms" data-wow-delay="150ms" action="" method="post">
-                               
-                             <div class="form-group">
-                                  <input type="email" class="form-control" id="" placeholder="البريد الالكتروني">
-                             </div>
-                             <button type="submit" class="btn btn-subscribe">إشتراك</button>
-                      </form>
-                      <ul class="list-unstyled list-inline footer-social-list">
-                             
-                                 <li>
-                                     <a href="#">
-                                         <i class="fa fa-facebook"></i>  
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="#">
-                                         <i class="fa fa-twitter"></i>  
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="#">
-                                         <i class="fa fa-instagram"></i>  
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="#">
-                                         <i class="fa fa-telegram"></i>  
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="#">
-                                         <i class="fa fa-youtube"></i>  
-                                     </a>
-                                 </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="bottom-footer">
-              <div class="copyright-line text-center animate fadeIn" data-wow-duration="900ms" data-wow-delay="200ms">
-                  
-              </div>
-          </div>
-      </footer>
-      <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i></a>     <script src="assets/js/script.min.js"></script>
+ var styles = [
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#46bcec"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+    ];
+	function initialize() {
+			var myLatlng = new google.maps.LatLng(53.3333,-3.08333);
+			var imagePath = './assets/img/pin.png'
+			var mapOptions = {
+				zoom: 11,
+				center: myLatlng,
+                styles: styles,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+
+		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		 
+		var contentString = '';
+		 
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 500
+		});
+
+	 
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			icon: imagePath,
+			title: ''
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
+		//Resize Function
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+ 
+    </script>
 </body>
 </html>

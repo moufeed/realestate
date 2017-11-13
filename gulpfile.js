@@ -33,6 +33,7 @@ var config = {
             './src/lib/wow/dist/wow.min.js',
             './src/lib/owl.carousel/dist/owl.carousel.min.js',
             './src/lib/jquery.nicescroll/dist/jquery.nicescroll.min.js',
+            './src/lib/bootstrap-select/dist/js/bootstrap-select.min.js',
             './src/js/scripts.js'
         ], 
         watch: './src/js/*.js',
