@@ -9,7 +9,7 @@ var wow = new WOW({
 wow.init();
 
 $(document).ready(function () {
-    
+     
         $("body").niceScroll({
             cursorcolor: '#ccac2c',
             cursorwidth: "12px", 

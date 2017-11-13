@@ -1,5 +1,5 @@
 .section-about{
-    background: url('#{$img}h.png') if-ltr( -10%,110%) 10px no-repeat;
+     background: url('#{$img}h.png') if-ltr( -10%,110%) 10px no-repeat;
     padding: 50px 0;
     position: relative;
 }
@@ -20,20 +20,4 @@
     
 }
 
-
-/*
-<section class="">
-    <div class="container">
-      
-        <div class="row">
-            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-1">
-                <p>{{about_section_heading}}</p>
-            </div>
-            <div class="col-md-5 col-sm-6">
-                <p>{{about_section_body}}</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-*/
+ 
