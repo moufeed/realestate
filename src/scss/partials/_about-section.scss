@@ -1,0 +1,39 @@
+.section-about{
+    background: url('#{$img}h.png') if-ltr( -10%,110%) 10px no-repeat;
+    padding: 50px 0;
+    position: relative;
+}
+.about_heading{
+    color:$black;
+    font-size: 20px;
+    font-family: if-ltr(roboto-bold,droid-bold);
+    margin: 0;
+    text-align: $right;
+}
+
+.about_body{
+    color:darken($gray,10%);
+    margin: 0;
+    line-height: 26px;
+    position: relative;
+    padding-#{$left}:20px; 
+    
+}
+
+
+/*
+<section class="">
+    <div class="container">
+      
+        <div class="row">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-1">
+                <p>{{about_section_heading}}</p>
+            </div>
+            <div class="col-md-5 col-sm-6">
+                <p>{{about_section_body}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+*/

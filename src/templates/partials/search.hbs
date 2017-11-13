@@ -4,11 +4,11 @@
             <form action="" class="row form-search col-md-10 col-md-offset-1 col-sm-12">
                     <div class="clearfix">
                         <div class="form-group col-sm-4">
-                            <label for=""></label>
-                            <input type="text" id="" name="" class="form-control" placeholder="">
+                            <label for="">{{search_label}}</label>
+                            <input type="text" id="" name="" class="form-control" placeholder="{{search_placholder}}">
                         </div>
                         <div class="form-group col-md-4">
-                            <label for=""></label>
+                            <label for="">{{city}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#each cities}}
                                     <option value="">{{this}}</option>
@@ -16,7 +16,7 @@
                             </select>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for=""></label>
+                            <label for="">{{type_label}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#each real_estate_type}}
                                     <option value="">{{this}}</option>
@@ -25,7 +25,7 @@
                         </div> 
                          
                          <div class="form-group col-md-3">
-                            <label for=""></label>
+                            <label for="">{{rooms_count}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#for 1 11 1}}
                                     <option value="">{{this}}</option>
@@ -33,28 +33,20 @@
                             </select>
                         </div> 
                         <div class="form-group col-md-3">
-                            <label for=""></label>
+                            <label for="">{{bathrooms_count}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#for 1 11 1}}
                                     <option value="">{{this}}</option>
                                 {{/for}}
                             </select>
                         </div> 
-                        <div class="form-group col-md-2">
-                            <label for=""></label>
-                            <select name="" id="" class="form-control select"  placeholder="">
-                                {{#for 1 11 1}}
-                                    <option value="">{{this}}</option>
-                                {{/for}}
-                            </select>
+                        <div class="form-group col-md-2">  
+                            <label for="">{{price_label}}</label>
+                            <input type="number" name="" id="" class="form-control"  placeholder="{{price_placeholder}}">
                         </div> 
                          <div class="form-group col-md-2">
-                            <label for=""></label>
-                            <select name="" id="" class="form-control select"  placeholder="">
-                                {{#for 1 11 1}}
-                                    <option value="">{{this}}</option>
-                                {{/for}}
-                            </select>
+                            <label for="">{{area_label}}</label>
+                            <input type="number" name="" id="" class="form-control"  placeholder="{{area_placeholder}}">
                         </div> 
                          <div class="form-group col-md-2">
                              <button type="submit" class="btn btn-block  btn-search">{{search}}</button>

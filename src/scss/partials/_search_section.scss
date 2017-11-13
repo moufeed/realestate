@@ -1,13 +1,14 @@
 
 .section-search{
     padding: 50px 0;
-    background: #000;
+    background:url('#{$img}search-bg.jpg') center  /cover no-repeat;
+    background-attachment: fixed;
     position: relative;
     &:after{
         @include absolute(top $left ,0 0);
         content: '';
         @include square(100%);
-        background: rgba($gold,.5)
+        background: rgba($gold,.7)
     }
     .container{
         position: relative;
@@ -16,31 +17,55 @@
 }
  .form-search{
      background: $white;
+     padding-top: 25px;
+     padding-bottom: 25px;
+     box-shadow: 0 2px 2px -1px rgba($black,.3);
      .form-control,.btn {
          border-radius: 0;
+         &:focus{
+             border-color: $gold;
+             box-shadow: none;
+         }
+     } 
+     .btn-search{
+        margin-top: 24px;
+        background: $gold;
+        outline: none !important;
+        &:after{
+            background: darken($gold,10%);
+        }
      }
  }
 .select {
-    .btn {
-        
+    .btn { 
         -webkit-box-shadow: none;
         box-shadow: none;
         outline: 0;
         &:hover { background: white; }
     }
-    a{
+    a,.dropdown-toggle{
         outline: none !important;
     }
 
 
     .btn:focus,&.btn-group.open .dropdown-toggle{
         background: $white;
-        outline: 0;
+        outline: none !important;
     } 
     .btn.select.btn-group.open .dropdown-toggle {
         color: $white;
         -webkit-box-shadow: none;
         box-shadow: none;
     }  
+   
+    &.open{
+        .dropdown-toggle{
+            border-color: $gold;
+            box-shadow: none;
+        }
+    }
+    .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+        background: $gold;
+    }
 }
  

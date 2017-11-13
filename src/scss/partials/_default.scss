@@ -96,26 +96,26 @@ body{
         }
     }
 }
-/*
-
- <section class="">
-         <div class="container"> 
-             <div class="row">
-                 <div class="col-sm-5 ">
-                      <h1>{{title}}</h1>
-                 </div>
-                 <div class="col-sm-7 ">
-                     <ol class="breadcrumb ">
-                    {{#isequal dir 'ltr'}}
-                        <li><a href="index.html">{{home}}</a></li>
-                    {{else}}
-                        <li><a href="index-ltr.html">{{home}}</a></li>
-                    {{/isequal}}
-                    <li class="active">{{title}}</li>
-                    </ol>
-                 </div>
-             </div> 
-         </div>
-     </section>
-
-*/
+.general-header{
+    text-align: center;
+    margin: 25px 0 50px 0;
+    p{
+        color:darken($gray,10%);
+        margin-bottom: 20px;
+    }
+    h1{
+        color:$black;
+        font-size: 20px;
+        font-family: if-ltr(roboto-bold,droid-bold);
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        &:after{
+            @include absolute(bottom $left , -25px 20%);
+            content: '';
+            @include size(60%,2px);
+            background: $gold;
+        }
+    }
+}
+ 
