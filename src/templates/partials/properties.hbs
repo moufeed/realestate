@@ -1,0 +1,47 @@
+<section class="properties-section">
+<div class="container">
+     <header class="general-header">
+                <p>{{properties_section_subtitle}}</p>
+                <h1>{{properties_section_title}}</h1> 
+        </header>
+    <div class="row properties-list">
+        {{#each properties}}
+            <div class="col-md-4 col-sm-4 animate fadeIn" data-wow-duration="500ms" data-wow-delay="{{delay @index 30}}ms">
+                <article class="property-item">
+                    <div class="property-image">
+                        <div class="offers">
+                            {{#if special}}
+                            <span class="special" ><i class="fa fa-star"></i> {{special}}</span>
+                            {{/if}}
+
+                            {{#if type}}
+                                <span>{{type}}</span>
+                            {{/if}}
+                        </div>
+                       <a href="{{link}}"> <img src="assets/img/properties/{{img}}" alt="{{name}}"></a>
+                    </div>
+                    <div class="property-info">
+                        <h3> <a href="{{link}}">{{name}}</a></h3>
+                        <strong class="price" dir="ltr">{{price}}</strong>
+                        <ul class="list-unstyled property-meta clearfix">
+                             {{#each meta}}
+                                <li>
+                                    <img src="assets/img/icons/{{img}}" alt="">
+                                    <strong>{{name}}</strong>
+                                    <span>{{count}}</span>
+                                </li>
+                             {{/each}}
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        {{/each}}
+    </div>
+</div>
+</section>
+
+
+
+
+ 
+ 

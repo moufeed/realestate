@@ -1,13 +1,14 @@
-<section class="section-search">
+<section class="section-search" 
+data-parallax="scroll"   data-speed="0.3" data-image-src="assets/img/search-bg.jpg">
     <div class="container">
         <div class="row">
-            <form action="" class="row form-search col-md-10 col-md-offset-1 col-sm-12">
+            <form action="" class=" form-search col-md-10 col-md-offset-1 col-sm-12 ">
                     <div class="clearfix">
                         <div class="form-group col-sm-4">
                             <label for="">{{search_label}}</label>
                             <input type="text" id="" name="" class="form-control" placeholder="{{search_placholder}}">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-sm-4">
                             <label for="">{{city}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#each cities}}
@@ -15,7 +16,7 @@
                                 {{/each}}
                             </select>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-sm-4">
                             <label for="">{{type_label}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#each real_estate_type}}
@@ -24,7 +25,7 @@
                             </select>
                         </div> 
                          
-                         <div class="form-group col-md-3">
+                         <div class="form-group col-sm-3">
                             <label for="">{{rooms_count}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#for 1 11 1}}
@@ -32,7 +33,7 @@
                                 {{/for}}
                             </select>
                         </div> 
-                        <div class="form-group col-md-3">
+                        <div class="form-group col-sm-3">
                             <label for="">{{bathrooms_count}}</label>
                             <select name="" id="" class="form-control select"  placeholder="">
                                 {{#for 1 11 1}}
@@ -40,15 +41,15 @@
                                 {{/for}}
                             </select>
                         </div> 
-                        <div class="form-group col-md-2">  
+                        <div class="form-group col-md-2 col-sm-3">  
                             <label for="">{{price_label}}</label>
                             <input type="number" name="" id="" class="form-control"  placeholder="{{price_placeholder}}">
                         </div> 
-                         <div class="form-group col-md-2">
+                         <div class="form-group col-md-2 col-sm-3">
                             <label for="">{{area_label}}</label>
                             <input type="number" name="" id="" class="form-control"  placeholder="{{area_placeholder}}">
                         </div> 
-                         <div class="form-group col-md-2">
+                         <div class="form-group col-md-2 col-sm-12">
                              <button type="submit" class="btn btn-block  btn-search">{{search}}</button>
                         </div> 
                     </div>

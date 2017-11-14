@@ -34,6 +34,7 @@ var config = {
             './src/lib/owl.carousel/dist/owl.carousel.min.js',
             './src/lib/jquery.nicescroll/dist/jquery.nicescroll.min.js',
             './src/lib/bootstrap-select/dist/js/bootstrap-select.min.js',
+            './src/lib/parallax.js/parallax.min.js',
             './src/js/scripts.js'
         ], 
         watch: './src/js/*.js',

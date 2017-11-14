@@ -41,6 +41,10 @@
     "company_address":"Akşemsettin Mahallesi, Akşemsettin Cd. 55/3, 34080 Fatih/İstanbul",
     "about_section_subtitle":"فقط لمحة",
     "about_section_title":"حول الشركة",
+    "properties_section_subtitle":"يسعدنا ان نقدم",
+    "properties_section_title":"أخر العقارات المتاحة",
+    "services_section_subtitle":"ما نفخر بمساعدتك به",
+    "services_section_title":"خدماتنا",
     "word":"كلمة",
     "categories" :"الأقسام",
     "about_us" :"حول الشركة",
@@ -152,6 +156,196 @@
         "شقق",
         "أراضي",
         "فندق"
+    ],
+    
+"properties":[
+    {
+        "name":"عقار اسطنبول المركزي",
+        "img":"1.jpg",
+        "link":"property-page-rtl.html",
+        "price":"$ 740.000",
+        "type":false,
+        "special":false,
+        "meta":[
+            {
+                "name":"كراج",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"حمامات",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"غرف نوم",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"المساحة",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name":"شقة واسعة مطلة على البحر ",
+        "img":"2.jpg",
+        "link":"property-page-rtl.html",
+        "price":"$ 530.000",
+        "type":false,
+        "special":"عرض خاص",
+        "meta":[
+            {
+                "name":"كراج",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"حمامات",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"غرف نوم",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"المساحة",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name":"مشروع مرجان",
+        "img":"3.jpg",
+        "link":"property-page-rtl.html",
+        "price":"$ 740.000",
+        "type":"للبيع",
+        "special":"حسم 5%",
+        "meta":[
+            {
+                "name":"كراج",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"حمامات",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"غرف نوم",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"المساحة",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name":"مكاتب ضمن مجمع الملكي",
+        "img":"4.jpg",
+        "link":"property-page-rtl.html",
+        "price":"$ 350.000",
+        "type":false,
+        "special":false,
+        "meta":[
+            {
+                "name":"كراج",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"حمامات",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"غرف نوم",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"المساحة",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name":"شقق فسيحة في باشاك شهير  ",
+        "img":"5.jpg",
+        "link":"property-page-rtl.html",
+        "price":"$ 740.000",
+        "type":"للبيع",
+        "special":false,
+        "meta":[
+            {
+                "name":"كراج",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"حمامات",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"غرف نوم",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"المساحة",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name":"عقارات فاخرة للبيع في أيوب ",
+        "img":"6.jpg",
+        "link":"property-page-rtl.html",
+        "price":"$ 686.000",
+        "type":"للبيع",
+        "special":false,
+        "meta":[
+            {
+                "name":"كراج",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"حمامات",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"غرف نوم",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"المساحة",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    }
+],
+
+"services_section_list":[
+    {
+        "name":"الإستشارات العقارية",
+        "img":"consulting.png",
+        "description":"خدمة الاستشارات العقارية بتركيا، عبر نخبة من أمهر المختصين في مجال التسويق والتطوير والاستثمار العقاري"
+    },
+    {
+        "name":"خدمة مابعد البيع",
+        "img":"aftersell.png",
+        "description":"تسعى الشركه من خلال خدمات مابعد البيع لبناء علاقه طويله الاجل مع الزبون"
+    },
+    {
+        "name":"خدمات التطوير العقاري",
+        "img":"development.png",
+        "description":"إن فريق تطوير المشاريع في الشركة لديه خبرة طويلة في مجال الإدارة، حيث يتعاون بشكل وثيق مع القطاعات ذات الصلة والشركات الاستشارية "
+    }
     ]
 }
 

@@ -41,6 +41,10 @@
     "company_address":"Akşemsettin Mahallesi, Akşemsettin Cd. 55/3, 34080 Fatih/İstanbul",
     "about_section_subtitle":"just a little",
     "about_section_title":"about Company",
+    "properties_section_subtitle":"We offer",
+    "properties_section_title":"latest Properties",
+    "services_section_subtitle":"we're proud to help you",
+    "services_section_title":"Our Services",
     "word":"word",
     "categories" :"Categories",
     "about_us" :"About Us",
@@ -152,5 +156,195 @@
         "flats",
         "lands",
         "hotels"
+    ],
+    
+"properties":[
+    {
+        "name": "Istanbul Central Property",
+        "img":"1.jpg",
+        "link":"property-page.html",
+        "price":"$ 740.000",
+        "type":false,
+        "special":false,
+        "meta":[
+            {
+                "name":"Garage",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"bathrooms",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"bedrooms",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"area",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },
+    {
+        "name": "Spacious apartment overlooking the sea",
+        "img":"2.jpg",
+        "link":"property-page.html",
+        "price":"$ 740.000",
+        "type":false,
+        "special":false,
+        "meta":[
+            {
+                "name":"Garage",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"bathrooms",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"bedrooms",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"area",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name": "Morjan Project",
+        "img":"3.jpg",
+        "link":"property-page.html",
+        "price":"$ 740.000",
+        "type":"for sell",
+        "special":false,
+        "meta":[
+            {
+                "name":"Garage",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"bathrooms",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"bedrooms",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"area",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name": "Offices within the Royal Complex",
+        "img":"4.jpg",
+        "link":"property-page.html",
+        "price":"$ 740.000",
+        "type":"for rent",
+        "special":"Special offer",
+        "meta":[
+            {
+                "name":"Garage",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"bathrooms",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"bedrooms",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"area",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name": "Spacious apartments in a Başakşehir",
+        "img":"5.jpg",
+        "link":"property-page.html",
+        "price":"$ 740.000",
+        "type":"for sell",
+        "special":false,
+        "meta":[
+            {
+                "name":"Garage",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"bathrooms",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"bedrooms",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"area",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    },{
+        "name": "Luxury real estate for sale in Ayoub",
+        "img":"6.jpg",
+        "link":"property-page.html",
+        "price":"$ 740.000",
+        "type":false,
+        "special":"Discount 5%",
+        "meta":[
+            {
+                "name":"Garage",
+                "img":"garage.png",
+                "count":"1"
+            },
+            {
+                "name":"bathrooms",
+                "img":"bath.png",
+                "count":"2"
+            },
+            {
+                "name":"bedrooms",
+                "img":"bed.png",
+                "count":"1"
+            },{
+                "name":"area",
+                "img":"area.png",
+                "count":"3"
+            }
+        ]
+    }
+],
+"services_section_list":[
+    {
+        "name":"Real estate consultancy",
+        "img":"consulting.png",
+        "description":"The real estate consultancy service in Turkey, through a group of highly skilled specialists in the field of marketing, development and real estate investment"
+    },
+    {
+        "name":"After sales service",
+        "img":"aftersell.png",
+        "description":"The company seeks through the after sales services to build long-term relationship with the customer"
+    },
+    {
+        "name":"Real estate development services",
+        "img":"development.png",
+        "description":"The company's project development team has long management experience, working closely with related sectors and consulting firms"
+    }
     ]
 } 

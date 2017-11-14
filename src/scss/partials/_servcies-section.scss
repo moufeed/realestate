@@ -1,0 +1,61 @@
+.services-section{
+    padding: 50px 0;
+    position: relative;
+    background: url('#{$img}services-section-bg')  128% 21%   no-repeat ;
+    background-attachment: fixed;
+    @media (max-width:767px){
+        background-position: center ;
+    }
+    &:after{
+        @include absolute(top left , 0 50%);
+        content: '';
+        border-top: 50px solid  darken($white,4%);
+        border-left:50px  solid transparent;
+        border-right:50px  solid transparent;
+        transform: translateX(-50px);
+    }
+}
+.ss_list{
+    margin-top: 75px;
+    text-align: center;
+    .service-item{
+        img{
+            width: 125px;
+            height: auto;
+            
+        }
+        h4{
+            color: $black;
+            margin: 35px 0;
+            font-family: if-ltr(roboto-bold,droid-bold);
+        }
+        p{
+            color: $gray;
+        }
+    }
+}
+
+/*
+<section class="">
+    <div class="container">
+        <header class="general-header">
+                <p>{{services_section_subtitle}}</p>
+                <h1>{{services_section_title}}</h1> 
+        </header>
+        <div class="row ">
+            {{#each services_section_list}}
+                <div class="col-md-4 col-sm-4 animate fadeIn" data-wow-duration="500ms" data-wow-delay="{{delay @index 30}}ms">
+                    <article class="">
+                        <img src="assets/img/services/{{img}}" alt="{{name}}">
+                        <h4>{{name}}</h4>
+                        <>{{description}}</p>
+                    </article>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+
+
+*/

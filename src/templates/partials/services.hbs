@@ -1,0 +1,21 @@
+<section class="services-section">
+    <div class="container">
+        <header class="general-header">
+                <p>{{services_section_subtitle}}</p>
+                <h1>{{services_section_title}}</h1> 
+        </header>
+        <div class="row ss_list">
+            {{#each services_section_list}}
+                <div class="col-md-4 col-sm-4 animate fadeIn" data-wow-duration="500ms" data-wow-delay="{{delay @index 30}}ms">
+                    <article class="service-item">
+                        <img src="assets/img/services/{{img}}" alt="{{name}}">
+                        <h4>{{name}}</h4>
+                        <p>{{description}}</p>
+                    </article>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+

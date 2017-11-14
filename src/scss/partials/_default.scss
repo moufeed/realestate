@@ -39,7 +39,7 @@ body{
     position: relative;
     padding-top: 20px ;
     min-height: 170px;
-    background: $gold url('#{$img}header-bg.jpg') 0 0 /cover no-repeat;
+    // background: $gold url('#{$img}header-bg.jpg') 0 0 /cover no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
