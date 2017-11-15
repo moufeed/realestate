@@ -119,3 +119,43 @@ body{
     }
 }
  
+
+@include if-rtl{
+    .bootstrap-select.btn-group .dropdown-toggle .filter-option{
+        text-align: right;
+        float: right !important;
+    }
+    .bootstrap-select.btn-group .dropdown-toggle .caret{
+        right: auto;
+        left: 12px;
+    }
+}
+
+.ui-widget.ui-widget-content{
+    border: 0;
+    background: darken($white,8%);
+}
+.ui-widget-header{
+    background: $gold;
+}
+ 
+.ui-slider .ui-slider-handle{
+    @include square(20px);
+        top: -4px;
+        transition: transform .22s;
+        &.ui-state-hover{
+            background: lighten($darkgray,10%);
+        }
+        &.ui-state-focus{
+            outline: none !important;
+        }
+        &.ui-state-active{
+            transform: scale(1.3);
+        }
+    }
+.ui-state-default, .ui-widget-content .ui-state-default{
+    border-radius: 50%;
+    border: 0;
+    background:$gold;
+    transition: background .22s;
+}

@@ -7,7 +7,12 @@
 @import '../lib/bootstrap-select/sass/bootstrap-select';
 @import 'mixins/config';
 
- @import 
+
+@import 'lib/jquery-ui-1.12.1.custom',
+        'lib/animate',
+        'lib/fonts';
+
+@import 
         'lib/animate',
         'lib/fonts',
         'partials/default',
@@ -19,5 +24,7 @@
         'partials/properties-section',
         'partials/servcies-section',
         'partials/contactus',
-        'partials/aboutus-page'
+        'partials/aboutus-page',
+        'partials/properties-page',
+        'partials/sidebar'
  ; 

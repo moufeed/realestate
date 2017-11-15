@@ -29,6 +29,7 @@ var config = {
     js: {
         src: [
             './node_modules/jquery/dist/jquery.min.js',
+            './src/lib/jquery-ui-1.12.1.custom/jquery-ui.js',
             './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
             './src/lib/wow/dist/wow.min.js',
             './src/lib/owl.carousel/dist/owl.carousel.min.js',
@@ -166,4 +167,14 @@ handlebars.Handlebars.registerHelper('for', function(from, to, incr, block) {
     for(var i = from; i < to; i += incr)
         accum += block.fn(i);
     return accum;
+});
+
+handlebars.Handlebars.registerHelper('each_upto', function(ary, max, options) {
+    if(!ary || ary.length == 0)
+        return options.inverse(this);
+
+    var result = [ ];
+    for(var i = 0; i < max && i < ary.length; ++i)
+        result.push(options.fn(ary[i]));
+    return result.join('');
 });

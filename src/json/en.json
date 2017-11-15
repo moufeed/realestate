@@ -6,6 +6,9 @@
     "news": "News and articles",
     "news_sub": "What do you want to know",
     "read_more":"Read More",
+    "from":"from",
+    "to":"to",
+    "keyword":"keyword",
     "more":"More",
     "home":"Home",
     "title":"title",
@@ -18,10 +21,12 @@
     "message" :"Message",
     "mobile_number":"Mobile Number",
     "send":"Send",
+    "reset":"Reset",
     "subscribe":"subscribe",
     "search" :"Search",
     "search_label":"searching for",
     "search_placholder":"search word ",
+    "advanced_search":"Advanced Search",
     "city":"city",
     "property":"Property",
     "type_label":"Property Type",
@@ -29,6 +34,8 @@
     "rooms_count":"Number of rooms",
     "bathrooms":" Bathrooms",
     "bathrooms_count":"Number of Bathrooms",
+    "salons":"Salons",
+    "salons_count":"Number of Salons",
     "price":"Price",
     "price_label":"Price",
     "price_placeholder":"Price",
@@ -39,6 +46,7 @@
     "copy_right" :"Hossam Orfali Consulting, All rights reserved © 2017",
     "company":"Hussam Orfali Consulting Co, Orfali Group.",
     "company_address":"Akşemsettin Mahallesi, Akşemsettin Cd. 55/3, 34080 Fatih/İstanbul",
+    "featured_properties" :"Featured Properties",
     "about_section_subtitle":"just a little",
     "about_section_title":"about Company",
     "properties_section_subtitle":"We offer",
@@ -86,10 +94,10 @@
     },  
     { 
         "name": "real estate",
-        "link": "realestate.html",
+        "link": "properties.html",
         "active": false
     },
-    {
+    { 
         "name": "our services", 
         "link": "services.html",
         "active": false

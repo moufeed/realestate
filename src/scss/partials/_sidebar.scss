@@ -1,0 +1,164 @@
+.sidebar{
+    padding: 50px 0;
+}
+.sidebar-search{
+    
+    .form-control ,.bootstrap-select .dropdown-toggle{
+        border-radius: 3px;
+        box-shadow:none;
+        height: 40px;
+        transition: all .3s;
+        border-color:#e5e5e5;
+        @include placeholder{
+            color: #999;;
+        }
+        &:focus{
+            border-color:$gold;
+            box-shadow:none;
+        }
+    }
+    .bootstrap-select.open .dropdown-toggle{
+        border-color:$gold;
+    }
+    .btn-reset{
+        min-width:40%;
+        background: transparent;
+        text-transform: capitalize;
+        outline: none !important;
+        &:hover,&:active{
+            color:$gold;
+            box-shadow: none;
+        }
+    }
+}
+.numbers-area{
+    margin-bottom: 15px;
+    color: lighten($gray,10%);
+    strong{
+        color: $black;
+    }
+    span{
+        display: inline-block;
+        margin: 0 3px;
+    }
+}
+ 
+.btn-search{
+    background:lighten($darkgray,5%);
+    border-radius: 3px;
+    outline: none !important;
+    margin: 25px 0;
+    transition:  all .3s;
+    padding: 12px;
+    color: $white !important;
+    min-width: 50%;
+    &:hover{
+        background: lighten($darkgray,15%);
+    }
+}
+.side-title{
+    margin:25px 0;
+    font-family: if-ltr(roboto-bold,droid-bold); 
+    font-size: 17px;
+} 
+
+.featured_properties{
+     figure {
+        position: relative;
+        float: $left;
+        overflow: hidden;
+        margin: 10px 1%;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        background: $darkgray;
+        text-align: center;
+        cursor: pointer;
+        img{
+            position: relative;
+            display: block;
+            min-height: 100%;
+            opacity: 0.8;
+            height: 250px;
+            transition: opacity 1s, transform 1s;
+            backface-visibility: hidden;
+        }
+        figcaption , figcaption >a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        figcaption > a{
+            z-index: 1000;
+            text-indent: 200%;
+            white-space: nowrap;
+            font-size: 0;
+            opacity: 0;
+        }
+        figcaption {
+            padding: 2em;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.25em;
+            backface-visibility: hidden
+        }
+        h4{
+            opacity: 0;
+            position: relative;
+            margin: 0;
+            transition: opacity 0.35s, transform 0.35s;
+            transform: translate3d(-360px,0,0);
+        }
+        P{
+            display: inline-block;
+             margin: 0;
+            background:$white;
+            color: darken($gold,10%);
+            text-transform: none;
+            font-weight: 500;
+            @include absolute(bottom left ,7% 75px);
+            height: 30px;
+            font-size: 14px;
+            padding: 0 15px;
+            line-height: 30px;
+        }
+        &:hover{
+            img{
+                opacity: 0.4;
+                transform: scale3d(1.1,1.1,1);
+            }
+            h4{
+                opacity: 1;
+                transform: translate3d(0,0,0)
+            }
+        }
+    }
+    .owl-nav{
+        @include absolute(bottom left , 10% 15px);
+        background: $white;
+        @include clearfix();
+        .owl-prev,.owl-next{
+            font-family: Fontawesome;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+            transition: all .2s;
+            background: lighten($gold,10%);
+            color: $white;
+            &:hover{
+                background: $gold;
+                 
+            }
+        }
+        .owl-prev{
+            background: lighten($gold,18%);
+        }
+        .owl-next{}
+    }
+    
+}
