@@ -1,0 +1,65 @@
+.properties-page{
+  padding: 50px 0;
+}
+.properties_list{
+
+}
+.pro_item{
+    .imgbox{
+        position: relative;
+        a{
+            position: relative;
+            z-index: 0;
+            height: 200px;
+            overflow:hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                min-height: 100%;
+                transition: all .3s;
+            }
+        }
+    }
+    .prop_info{
+      h4{
+        font-size: 14px;
+        font-style: bold;
+        color: $black;
+
+      }
+    }
+}
+
+
+/*
+<div class="col-md-4 col-sm-6 colxs-12">
+    <article class="">
+        <div class="">
+          <div class="offers">
+              {{#if special}}
+              <span class="special" ><i class="fa fa-star"></i> {{special}}</span>
+              {{/if}}
+
+              {{#if type}}
+                  <span>{{type}}</span>
+              {{/if}}
+          </div>
+         <a href="{{link}}"> <img src="assets/img/properties/{{img}}" alt="{{name}}"></a>
+        </div>
+        <div class="">
+            <h4>{{name}}</h4>
+            <address >{{address}}</address>
+
+              <div class="prop_mate">
+                {{#each meta}}
+                <span>{{name}}  {{count}} </span>
+                  {{/each }}
+              </div>
+
+            <div class="prop_footer">
+                <strong>{{price}}</strong>
+                <a href="{{link}}" class="btn btn-more">{{../more}}</a>
+            </div>
+        </div>
+*/
