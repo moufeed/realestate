@@ -1,6 +1,4 @@
-.sidebar{
-    padding: 50px 0;
-}
+ 
 .sidebar-search{
     
     .form-control ,.bootstrap-select .dropdown-toggle{
@@ -10,7 +8,7 @@
         transition: all .3s;
         border-color:#e5e5e5;
         @include placeholder{
-            color: #999;;
+            color: #999;
         }
         &:focus{
             border-color:$gold;
@@ -57,9 +55,22 @@
     }
 }
 .side-title{
-    margin:25px 0;
+    margin:10px 0;
     font-family: if-ltr(roboto-bold,droid-bold); 
     font-size: 17px;
+    position: relative;
+    border-bottom: 1px dotted $gray;
+    strong{
+        display: inline-block;
+        position: relative;
+        padding: 15px 0;
+        &:after{
+            content: '';
+            @include absolute(bottom $left , -1px 0);
+            @include size(100% , 1px);
+            background: $gold;
+        }
+    }
 } 
 
 .featured_properties{

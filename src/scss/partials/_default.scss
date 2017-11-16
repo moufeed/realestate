@@ -66,6 +66,9 @@ body{
     float: $right;
     border-radius: 0;
     box-shadow: 0 1px 2px -1px rgba($black,.5);
+    @media (max-width:767px){
+        margin-top: 15px;
+    }
     li a{
             color: $gold;
         }

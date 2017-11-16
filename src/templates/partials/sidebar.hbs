@@ -1,7 +1,7 @@
 <aside class="sidebar">
     
     <form action="" class="sidebar-search">
-        <h4 class="side-title">{{advanced_search}}</h4> 
+        <h4 class="side-title"><strong>{{advanced_search}}</strong></h4> 
         <div class="form-group">
             <input type="text" name="" class="form-control" placeholder="{{keyword}}">
         </div>
@@ -69,16 +69,16 @@
            </div>
     </form>
     <div class="featured_properties">
-         <h4 class="side-title">{{featured_properties}}</h4> 
+         <h4 class="side-title"><strong>{{featured_properties}}</strong></h4> 
     <div class="owl-carousel featured-slider" dir="ltr">
-        {{#each_upto properties 4}}
+        {{#each_upto properties_list 4}}
         <div class="item">
             <figure>
                     <img src="assets/img/properties/{{img}}" alt="{{name}}" class="img-resposive">
                 <figcaption>
                     <h4>{{name}}</h4>
                     <div>
-                        <p>{{price}}</p>
+                        <p>{{price}} $</p>
                     </div>
                     <a href="{{link}}"> {{../more}}</a>
                 </figcaption>			

@@ -29,6 +29,7 @@
     "advanced_search":"Advanced Search",
     "city":"city",
     "property":"Property",
+    "properties":"properties",
     "type_label":"Property Type",
     "rooms":"Rooms",
     "rooms_count":"Number of rooms",
@@ -78,7 +79,9 @@
     "your_phone_number":"Enter your phone number ...",
     "your_email":"Enter your email ...",
     "your_message":"Enter your message ...",
-    
+    "sort_by":"Sort By",
+    "high_to_low":"High to Low",
+    "low_to_high":"Low to High",
     "contact_us_paragraph":  "Hossam Orfali Consulting is ready to answer any proposal, interpretation or request for support. You can contact us via the website or one of the available means of communication, and you can leave a message to us through the form below:",
     "about_section_heading":"Why Hossam Orfali ?",
     "about_section_body":"Is a commercial service company with a legal personality with full financial and administrative independence in carrying out its activities and functions and registered under the law of the Turkish State and specialized in providing consultancy services. The company was established in early 2014 and was based in Istanbul,",
@@ -166,12 +169,12 @@
         "hotels"
     ],
     
-"properties":[
+"properties_list":[
     {
         "name": "Istanbul Central Property",
         "img":"1.jpg",
         "link":"property-page.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":false,
         "special":false,
         "meta":[
@@ -191,8 +194,9 @@
                 "count":"1"
             },{
                 "name":"area",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"90"
             }
         ]
     },
@@ -200,7 +204,7 @@
         "name": "Spacious apartment overlooking the sea",
         "img":"2.jpg",
         "link":"property-page.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":false,
         "special":false,
         "meta":[
@@ -220,15 +224,16 @@
                 "count":"1"
             },{
                 "name":"area",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"150"
             }
         ]
     },{
         "name": "Morjan Project",
         "img":"3.jpg",
         "link":"property-page.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":"for sell",
         "special":false,
         "meta":[
@@ -248,15 +253,16 @@
                 "count":"1"
             },{
                 "name":"area",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"256"
             }
         ]
     },{
         "name": "Offices within the Royal Complex",
         "img":"4.jpg",
         "link":"property-page.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":"for rent",
         "special":"Special offer",
         "meta":[
@@ -276,15 +282,16 @@
                 "count":"1"
             },{
                 "name":"area",
+                "filter":"area", 
                 "img":"area.png",
-                "count":"3"
+                "count":"300"
             }
         ]
     },{
         "name": "Spacious apartments in a Başakşehir",
         "img":"5.jpg",
         "link":"property-page.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":"for sell",
         "special":false,
         "meta":[
@@ -304,15 +311,16 @@
                 "count":"1"
             },{
                 "name":"area",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"170"
             }
         ]
     },{
         "name": "Luxury real estate for sale in Ayoub",
         "img":"6.jpg",
         "link":"property-page.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":false,
         "special":"Discount 5%",
         "meta":[
@@ -332,8 +340,9 @@
                 "count":"1"
             },{
                 "name":"area",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"65"
             }
         ]
     }

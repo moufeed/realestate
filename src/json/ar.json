@@ -29,6 +29,7 @@
     "advanced_search":"بحث متقدم ",
     "city":"المدينة",
     "property":"العقار",
+    "properties":"العقارات",
     "type_label":"نوع العقار",
     "rooms":"الغرف",
     "rooms_count":"عدد الغرف",
@@ -78,6 +79,9 @@
     "your_phone_number":"ادخل رقم هاتفك ...", 
     "your_email":"أدخل عنوان بريدك الالكتروني ...",
     "your_message":"أدخل نص رسالتك ...",
+    "sort_by":"ترتيب حسب",
+    "high_to_low":"الاعلى",
+    "low_to_high":"الاقل",
     "contact_us_paragraph" :"ان شركة حسام أورفلي للاستشارات مستعدة للإجابة على أي اقتراح , تفسير أو طلب دعم . للتواصل يمكنك الاتصال بنا عبر الموقع الالكتروني أو أحد وسائل التواصل المتاحة, كما يمكنك ترك رسالة لنا من خلال الفورم الموجود أدناه:",
     "about_section_heading":"لماذا حسام أورفلي!؟",
     "about_section_body":"هي شركة خدمية تجارية تتمتع بشخصية اعتبارية ذات استقلال مالي وإداري تام في ممارسة أنشطتها ومهامها ومسجلة بموجب قانون الدولة التركية ومتخصصة في تقديم الخدمات الاستشارية, تأسست الشركة في بداية عام 2014 واتخذت من مدينة اسطنبول / تركيا مقراً ",
@@ -166,12 +170,12 @@
         "فندق"
     ],
     
-"properties":[
+"properties_list":[
     {
-        "name":"عقار اسطنبول المركزي",
+        "name":"عقار اسطنبول المركزي", 
         "img":"1.jpg",
         "link":"property-page-rtl.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":false,
         "special":false,
         "meta":[
@@ -191,15 +195,16 @@
                 "count":"1"
             },{
                 "name":"المساحة",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"162"
             }
         ]
     },{
         "name":"شقة واسعة مطلة على البحر ",
         "img":"2.jpg",
         "link":"property-page-rtl.html",
-        "price":"$ 530.000",
+        "price":"530.000",
         "type":false,
         "special":"عرض خاص",
         "meta":[
@@ -219,15 +224,16 @@
                 "count":"1"
             },{
                 "name":"المساحة",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"165"
             }
         ]
     },{
         "name":"مشروع مرجان",
         "img":"3.jpg",
         "link":"property-page-rtl.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":"للبيع",
         "special":"حسم 5%",
         "meta":[
@@ -247,15 +253,16 @@
                 "count":"1"
             },{
                 "name":"المساحة",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"654"
             }
         ]
     },{
         "name":"مكاتب ضمن مجمع الملكي",
         "img":"4.jpg",
         "link":"property-page-rtl.html",
-        "price":"$ 350.000",
+        "price":"350.000",
         "type":false,
         "special":false,
         "meta":[
@@ -275,15 +282,16 @@
                 "count":"1"
             },{
                 "name":"المساحة",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"231"
             }
         ]
     },{
         "name":"شقق فسيحة في باشاك شهير  ",
         "img":"5.jpg",
         "link":"property-page-rtl.html",
-        "price":"$ 740.000",
+        "price":"740.000",
         "type":"للبيع",
         "special":false,
         "meta":[
@@ -303,15 +311,16 @@
                 "count":"1"
             },{
                 "name":"المساحة",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"132"
             }
         ]
     },{
         "name":"عقارات فاخرة للبيع في أيوب ",
         "img":"6.jpg",
         "link":"property-page-rtl.html",
-        "price":"$ 686.000",
+        "price":"686.000",
         "type":"للبيع",
         "special":false,
         "meta":[
@@ -331,8 +340,9 @@
                 "count":"1"
             },{
                 "name":"المساحة",
+                "filter":"area",
                 "img":"area.png",
-                "count":"3"
+                "count":"165"
             }
         ]
     }

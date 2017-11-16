@@ -4,8 +4,8 @@
                 <p>{{properties_section_subtitle}}</p>
                 <h1>{{properties_section_title}}</h1> 
         </header>
-    <div class="row properties-list">
-        {{#each properties}}
+    <div class="row properties-list"> 
+        {{#each properties_list}}
             <div class="col-md-4 col-sm-4 animate fadeIn" data-wow-duration="500ms" data-wow-delay="{{delay @index 30}}ms">
                 <article class="property-item">
                     <div class="property-image">
@@ -22,7 +22,7 @@
                     </div>
                     <div class="property-info">
                         <h3> <a href="{{link}}">{{name}}</a></h3>
-                        <strong class="price" dir="ltr">{{price}}</strong>
+                        <strong class="price" dir="ltr">{{price}} $</strong>
                         <ul class="list-unstyled property-meta clearfix">
                              {{#each meta}}
                                 <li>

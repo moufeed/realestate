@@ -9,8 +9,8 @@
 
 </head>
 <body>
-    <!-- {{>header }} -->
-   <!-- <section class="page_header" data-parallax="scroll"   data-speed="0.3" data-image-src="assets/img/properties-bg.jpg">
+      {{>header }}  
+     <section class="page_header" data-parallax="scroll"   data-speed="0.3" data-image-src="assets/img/properties-bg.jpg">
          <div class="container">
              <div class="row">
                  <div class="col-sm-5 ">
@@ -28,21 +28,58 @@
                  </div>
              </div>
          </div>
-     </section> -->
+     </section>  
 
 <section class="properties-page">
 <div class="container">
     <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-                <!-- {{>sidebar}} -->
-        </div>
+        
         <div class="col-md-9 col-sm-8 col-xs-12">
-          <div class="cleafix properties_list">
-            {{#each properties }}
-                  <div class="col-md-4 col-sm-6 colxs-12">
+            
+            <header class="prop_header">
+                <h3>{{properties}}</h3>
+                <div class="dropdown">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{sort_by}}">
+                        <i class="fa fa-sort" aria-hidden="true"></i> 
+                       <span class="hidden-xs"> {{sort_by}}</span>
+                    </button>
+                    <ul class="dropdown-menu sorting-list" aria-labelledby="dLabel">
+                         <li>
+                             <button data-isotope-option='{"sortBy": "name", "sortAscending": true}'>
+                                 <i class="fa  fa-sort-alpha-asc"></i> {{name}} 
+                            </button>
+                        </li>
+                        <li>
+                            <button data-isotope-option='{"sortBy": "price" , "sortAscending": false}'>
+                            <i class="fa fa-sort-numeric-desc"></i>{{price}} - {{high_to_low}}
+                            </button>
+                        </li>
+                        <li>
+                             <button data-isotope-option='{"sortBy": "price", "sortAscending": true}'>
+                                 <i class="fa fa-sort-numeric-asc"></i>{{price}} - {{low_to_high}}
+                            </button>
+                        </li>
+                        
+
+                        <li>
+                            <button data-isotope-option='{"sortBy": "area" , "sortAscending": false}'>
+                            <i class="fa fa-sort-numeric-desc"></i>{{area}} - {{high_to_low}}
+                            </button>
+                        </li>
+                        <li>
+                             <button data-isotope-option='{"sortBy": "area", "sortAscending": true}'>
+                                 <i class="fa fa-sort-numeric-asc"></i>{{area}} - {{low_to_high}}
+                            </button>
+                        </li>
+                    </ul>
+                    </div>
+            </header>
+          <div class="row properties_list">
+            {{#each properties_list }} 
+                  <div class="col-md-6 col-sm-6 col-xs-12 grid-item">
                       <article class="pro_item">
                           <div class="imgbox">
-                            <!-- <div class="offers">
+                             {{!-- <div class="offers">
                                 {{#if special}}
                                 <span class="special" ><i class="fa fa-star"></i> {{special}}</span>
                                 {{/if}}
@@ -50,34 +87,54 @@
                                 {{#if type}}
                                     <span>{{type}}</span>
                                 {{/if}}
-                            </div> -->
+                            </div>   --}}
                            <a href="{{link}}"> <img src="assets/img/properties/{{img}}" alt="{{name}}"></a>
                           </div>
                           <div class="prop_info">
-                              <h4>{{name}}</h4>
-                              <address >{{address}}</address>
-
+                              <h4 class="name">{{name}}</h4>
                                 <div class="prop_mate">
                                   {{#each meta}}
-                                  <span>{{name}}  {{count}} </span>
+                                  <span>{{name}} <b {{#if filter }} class="{{filter}}"{{/if}}>  {{count}} </b></span>
                                     {{/each }}
                                 </div>
 
-                              <div class="prop_footer">
-                                  <strong>{{price}}</strong>
+                              <div class="prop_footer clearfix">
+                                  <strong dir="ltr" ><b class="price">{{price}}</b> $</strong>
                                   <a href="{{link}}" class="btn btn-more">{{../more}}</a>
                               </div>
-                          </div>
+                          </div> 
                       </article>
                   </div>
             {{/each }}
           </div>
 
         </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+                {{>sidebar}}  
+        </div>
     </div>
 </div>
 </section>
-     <!-- {{>footer }}  -->
+     {{>footer }}  
     <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.properties_list').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+            name: '.name',
+            price: '.price parseInt',
+            area: '.area parseInt',
+            }
+        });
+            $('[data-isotope-option]').click( function( event ) {
+                event.preventDefault();
+                var option = JSON.parse( $(this).attr('data-isotope-option') );
+                $('.properties_list').isotope( option );
+            });
+        })
+    </script>
 </body>
 </html>
