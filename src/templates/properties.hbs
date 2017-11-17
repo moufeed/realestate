@@ -76,10 +76,10 @@
             </header>
           <div class="row properties_list">
             {{#each properties_list }} 
-                  <div class="col-md-6 col-sm-6 col-xs-12 grid-item">
+                  <div class="col-md-6 col-sm-6 col-xs-12 grid-item animate fadeInUp" data-wow-duration="600ms" data-wow-delay="{{delay @index 30}}ms">
                       <article class="pro_item">
                           <div class="imgbox">
-                             {{!-- <div class="offers">
+                             <div class="offers">
                                 {{#if special}}
                                 <span class="special" ><i class="fa fa-star"></i> {{special}}</span>
                                 {{/if}}
@@ -87,7 +87,7 @@
                                 {{#if type}}
                                     <span>{{type}}</span>
                                 {{/if}}
-                            </div>   --}}
+                            </div>    
                            <a href="{{link}}"> <img src="assets/img/properties/{{img}}" alt="{{name}}"></a>
                           </div>
                           <div class="prop_info">
@@ -107,7 +107,25 @@
                   </div>
             {{/each }}
           </div>
-
+            <nav aria-label="Page navigation animate fadeIn"  data-wow-duration="600ms" data-wow-delay="150ms">
+                    <ul class="pagination pagination-list">
+                        <li>
+                        <a href="#" aria-label="Previous">
+                           <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                        <a href="#" aria-label="Next">
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
+                        </li> 
+                    </ul>
+                    </nav>
         </div>
         <div class="col-md-3 col-sm-4 col-xs-12">
                 {{>sidebar}}  

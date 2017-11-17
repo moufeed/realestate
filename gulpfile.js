@@ -178,3 +178,13 @@ handlebars.Handlebars.registerHelper('each_upto', function(ary, max, options) {
         result.push(options.fn(ary[i]));
     return result.join('');
 });
+
+handlebars.Handlebars.registerHelper('each_fromto', function(ary,from, max, options) {
+    if(!ary || ary.length == 0)
+        return options.inverse(this);
+
+    var result = [ ];
+    for(var i = from; i < max + from && i < ary.length; ++i)
+        result.push(options.fn(ary[i]));
+    return result.join('');
+});

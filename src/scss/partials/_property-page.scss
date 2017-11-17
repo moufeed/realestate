@@ -1,0 +1,170 @@
+.page-property{
+    padding: 50px 0;
+    background:  url('#{$img}h.png')  if-ltr(112%,-12%) -10%  no-repeat;
+}
+
+.property-title{
+    color: $gray;
+    margin: 0;
+   padding: 0;
+    border-bottom: 1px solid darken($white , 10%); 
+    strong{
+        display: inline-block;
+        position: relative;
+        padding: 15px 0;
+        &:after{
+            content: '';
+            @include absolute(bottom $left , -1px 0);
+            @include size(100% , 1px);
+            background: $gold;
+        }
+       
+    }
+}
+.property-mate{
+    margin-top: 25px ;
+    margin-bottom: 25px ;
+    p{
+        margin-bottom: 0;
+        border: 1px solid #eee;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: #fff;
+        span,strong{
+            display: inline-block;
+            margin: 0 5%;
+        }
+        spsn{
+           
+            text-transform: capitalize;
+            color: $gray;
+        }
+        strong{
+            font-weight: bolder;
+            color: $black;
+        }
+    }
+}
+ 
+.slider-container{
+   
+    .main-slider{
+        padding: 15px 15px 5px;
+        border: 1px solid darken($white , 10%); 
+        border-bottom: 0;
+        .owl-nav{
+            @include absolute(bottom $left , 10% -10px);
+            @include clearfix();
+            .owl-prev,.owl-next{
+                font-family: Fontawesome;
+                font-size: 20px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                float: $left;
+                transition: all .2s;
+                background: lighten($gold,10%);
+                color: $white;
+                &:hover{
+                    background: $gold;
+                     
+                }
+                @include if-rtl{
+                    transform: rotate(180deg);
+                }
+                &.disabled{
+                    pointer-events: none;
+                    filter: grayscale(1);
+                    opacity: .7;
+                }
+            }
+            .owl-prev{
+                background: lighten($gold,18%);
+                
+            }
+           
+        }
+    } 
+}
+.thumbnail-slider {
+    padding:0px 15px 15px;
+    border: 1px solid darken($white , 10%); 
+    border-top: 0;
+    .item {
+        img{
+            filter: grayscale(.8);
+            transition: all .3s;
+        }
+        &.activated{
+            background: $gold;
+            img{
+                filter: grayscale(0)  contrast(1.5);
+                opacity: .8;
+            }
+        }
+    }
+}
+ 
+ 
+ 
+
+.property-tabs{
+    margin-top: 25px;
+   
+}
+.tabslist{
+    border-bottom: 1px solid darken($white , 10%); 
+    
+    li{
+        padding: 0;
+        float: $left;
+        a{
+            margin-bottom: -1px;
+            padding:12px 24px;
+            display: block;
+            border: 1px solid darken($white , 10%); 
+            border-#{$left}: 1px solid transparent; 
+            color: $black;
+            text-decoration: none !important;
+            text-transform: capitalize;
+            position: relative;
+            &:before{
+                content: "";
+                @include absolute(bottom left , 0 0);
+                @include size(100%,0);
+                background: lighten($gray,45%);
+                opacity: 0;
+                transition: height .22s , opacity .27s ;
+                z-index: -1;
+            }
+            &:hover{
+                border-color:lighten($gray,45%);
+                &:before{
+                    height: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+        &.active{
+            a{
+                background: lighten($gold ,20%);
+                color: $white;
+                border-color: lighten($gold ,20%) !important;
+            }
+        }
+        &:first-child a{
+            border-#{$left}: 1px solid darken($white , 10%); 
+            &:hover{
+                border-color:lighten($gray,45%);
+            }
+        }
+    }
+}
+/*
+
+ <ul class="list-unstyled list-inline " role="tablist">
+    <li role="presentation" class="active">
+        <a href="#desc" aria-controls="desc" role="tab" data-toggle="tab">{{description}}</a>
+    </li>*/

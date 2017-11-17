@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pagetitle}}</title>
+    <link rel="stylesheet" href="assets/css/style-{{dir}}.min.css">
+
+</head>
+
+<body>
+    {{>header }}
+    <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/property-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 ">
+                    <h1>{{property_detail.name}}</h1>
+                </div>
+                <div class="col-sm-7 ">
+                    <ol class="breadcrumb page-breadcrumb">
+                        {{#isequal dir 'ltr'}}
+                        <li>
+                            <a href="index.html">{{home}}</a>
+                        </li>
+                        {{else}}
+                        <li>
+                            <a href="index-ltr.html">{{home}}</a>
+                        </li>
+                        {{/isequal}}
+                        <li class="active">{{property_detail.name}}</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-property">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-8 col-xs-12">
+                    <h3 class="property-title">
+                        <strong>{{property_detail.name}}</strong>
+                    </h3>
+                    <div class="row property-mate">
+                        <div class="col-sm-3 col-xs-12">
+                            <p>
+                                <span>{{price}}</span>
+                                <strong>{{property_detail.price}} $</strong>
+                            </p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <p>
+                                <span>{{size}}</span>
+                                <strong>{{property_detail.size}} M2</strong>
+                            </p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <p>
+                                <span>{{rooms}}</span>
+                                <strong>{{property_detail.rooms}}</strong>
+                            </p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <p>
+                                <span>{{bathrooms}}</span>
+                                <strong>{{property_detail.baths}}</strong>
+                            </p>
+                        </div>
+                    </div>
+                   {{>property_slider }}
+
+                   {{>property_tabs}}
+                   
+                </div>
+
+
+                <div class="col-md-3 col-sm-4 col-xs-12">{{>sidebar}}</div>
+            </div>
+
+
+        </div>
+    </section>
+    {{>footer }}
+    <script src="assets/js/script.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var $slider = $('#propertySlider'),
+                $thumbnail = $('#thumbnailSlider'),
+                $duration = 500;
+            $slider.owlCarousel({
+                loop: false,
+                nav: true,
+                items: 1,
+                rtl: {{#isequal dir 'rtl'}} true {{ else}} false {{/ isequal}},
+            navText: ['&#xf104;', '&#xf105;']
+                }).on('changed.owl.carousel', function (e) {
+                $thumbnail.trigger('to.owl.carousel', [e.item.index, $duration, true]);
+                $thumbnail.find('.item').removeClass('activated');
+                $thumbnail.find('[data-idx="' + e.item.index + '"]').addClass('activated');
+            })
+
+        $thumbnail.owlCarousel({ 
+            loop: false,
+            center: false,
+            nav: false,
+            rtl: {{#isequal dir 'rtl'}} true {{ else}} false {{/ isequal}},
+            responsive: {
+                0: { items: 3 },
+                600: { items: 4 },
+                1000: { items: 6 }
+            }
+                }).on('click', '.owl-item', function () {
+                $slider.trigger('to.owl.carousel', [$(this).index(), $duration, true]);
+            }).on('changed.owl.carousel', function (e) {
+                $slider.trigger('to.owl.carousel', [e.item.index, $duration, true]);
+            });
+
+                 
+
+            });
+    </script>
+</body>
+
+</html>

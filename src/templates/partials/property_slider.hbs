@@ -1,0 +1,29 @@
+ <div class="row property-slider">
+                        <div class="slider-container col-md-12">
+                            <div id="propertySlider" class="main-slider owl-carousel">
+                                <div class="item">
+                                    <img src="assets/img/property/1.jpg" class="img-responsive">
+                                </div>
+                                {{#for 1 19 1}}
+                                <div class="item">
+                                    <img src="assets/img/property/{{this}}.jpg" alt="">
+                                </div>
+                                {{/for}}
+                            </div>
+                        </div>
+                        <div class="thumbnail-slider-container col-md-12">
+
+
+                            <div id="thumbnailSlider" class="thumbnail-slider owl-carousel">
+                                <div class="item activated" data-idx="0">
+                                    <img src="assets/img/property/1.jpg" class="img-responsive">
+                                </div>
+                                {{#for 1 19 1}}
+                                <div class="item" data-idx="{{this}}">
+                                    <img src="assets/img/property/{{this}}.jpg" alt="">
+                                </div>
+                                {{/for}}
+                            </div>
+
+                        </div>
+                    </div>

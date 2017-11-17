@@ -1,0 +1,33 @@
+<div class="row property-tabs">
+    <div class="col-md-12">
+     
+        
+  <ul class="list-unstyled clearfix tabslist" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#desc" aria-controls="desc" role="tab" data-toggle="tab">{{description}}</a>
+    </li>
+    
+    <li role="presentation">
+        <a href="#details" aria-controls="details" role="tab" data-toggle="tab">{{details}}</a>
+    </li>
+    <li role="presentation">
+        <a href="#map" aria-controls="map" role="tab" data-toggle="tab">{{map}}</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="desc">
+       <div>
+             {{property_detail.description}}
+       </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="details">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="map">...</div>
+  </div>
+
+ 
+
+ 
+    </div>
+</div>

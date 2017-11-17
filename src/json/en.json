@@ -42,12 +42,14 @@
     "price_placeholder":"Price",
     "area_label":"Area",
     "area":"Area ",
+    "size":"size",
     "area_placeholder":"Area m2",
     "get_in_touch":"get in touch",
     "copy_right" :"Hossam Orfali Consulting, All rights reserved © 2017",
     "company":"Hussam Orfali Consulting Co, Orfali Group.",
     "company_address":"Akşemsettin Mahallesi, Akşemsettin Cd. 55/3, 34080 Fatih/İstanbul",
     "featured_properties" :"Featured Properties",
+    "latest_properties" :"Latest Properties",
     "about_section_subtitle":"just a little",
     "about_section_title":"about Company",
     "properties_section_subtitle":"We offer",
@@ -69,6 +71,8 @@
     "reply":"Reply",
     "comments":"comments",
     "write_comment":"Write Comment",
+    "details":"Details",
+    "description" : "About Property",
     "address":"Address",
     "phone":"Phone",
     "phone_number ":"Phone Number",
@@ -82,6 +86,13 @@
     "sort_by":"Sort By",
     "high_to_low":"High to Low",
     "low_to_high":"Low to High",
+    "payment" :"Payment",
+    "payment_method" :"Payment Method",
+    "installment" :"installment",
+    "cash_money":"Cash money",
+    "parking": "parking",
+    "built":"built",
+    "map" :"map",
     "contact_us_paragraph":  "Hossam Orfali Consulting is ready to answer any proposal, interpretation or request for support. You can contact us via the website or one of the available means of communication, and you can leave a message to us through the form below:",
     "about_section_heading":"Why Hossam Orfali ?",
     "about_section_body":"Is a commercial service company with a legal personality with full financial and administrative independence in carrying out its activities and functions and registered under the law of the Turkish State and specialized in providing consultancy services. The company was established in early 2014 and was based in Istanbul,",
@@ -91,12 +102,12 @@
         "active": true 
     },
     {
-        "name": "about us",
+        "name": "About us",
         "link": "aboutus.html",
         "active": false
     },  
     { 
-        "name": "real estate",
+        "name": "Properties",
         "link": "properties.html",
         "active": false
     },
@@ -173,7 +184,7 @@
     {
         "name": "Istanbul Central Property",
         "img":"1.jpg",
-        "link":"property-page.html",
+        "link":"property.html",
         "price":"740.000",
         "type":false,
         "special":false,
@@ -203,7 +214,7 @@
     {
         "name": "Spacious apartment overlooking the sea",
         "img":"2.jpg",
-        "link":"property-page.html",
+        "link":"property.html",
         "price":"740.000",
         "type":false,
         "special":false,
@@ -232,7 +243,7 @@
     },{
         "name": "Morjan Project",
         "img":"3.jpg",
-        "link":"property-page.html",
+        "link":"property.html",
         "price":"740.000",
         "type":"for sell",
         "special":false,
@@ -261,7 +272,7 @@
     },{
         "name": "Offices within the Royal Complex",
         "img":"4.jpg",
-        "link":"property-page.html",
+        "link":"property.html",
         "price":"740.000",
         "type":"for rent",
         "special":"Special offer",
@@ -290,7 +301,7 @@
     },{
         "name": "Spacious apartments in a Başakşehir",
         "img":"5.jpg",
-        "link":"property-page.html",
+        "link":"property.html",
         "price":"740.000",
         "type":"for sell",
         "special":false,
@@ -319,7 +330,7 @@
     },{
         "name": "Luxury real estate for sale in Ayoub",
         "img":"6.jpg",
-        "link":"property-page.html",
+        "link":"property.html",
         "price":"740.000",
         "type":false,
         "special":"Discount 5%",
@@ -363,5 +374,21 @@
         "img":"development.png",
         "description":"The company's project development team has long management experience, working closely with related sectors and consulting firms"
     }
-    ]
+    ],   
+"property_detail":{
+    "name":"Spacious apartment in a Başakşehir",
+    "img" :"1.jpg",
+    "price" :280000,
+    "size" :150,
+    "rooms" :5,
+    "beds" :3,
+    "baths" :2,
+    "location":"Başakşehir , istanbul",
+    "parking": 1,
+    "payment":"cash money",
+    "built":1995,
+    "map" :"41.074071,28.740626",
+    "video":false,
+    "description" :"Istanbul Apartments is centrally located in the city's most lively and has become an important attraction because of its strategic location. It is well known as the business center of Istanbul and has good connection with the city center and two lines of advanced transport lines including the subway. Buying an apartment in Istanbul is one of the biggest investment opportunities."
+}
 } 

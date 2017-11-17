@@ -41,6 +41,7 @@
     "price_label":"السعر",
     "price_placeholder":"السعر",
     "area":"المساحة ",
+    "size":"المساحة ",
     "area_label":"المساحة ",
     "area_placeholder":"المساحة بالمتر المربع",
     "get_in_touch":"تواصل معنا ",
@@ -48,6 +49,7 @@
     "company":"حسام أورفلي للاستشارات",
     "company_address":"Akşemsettin Mahallesi, Akşemsettin Cd. 55/3, 34080 Fatih/İstanbul",
     "featured_properties" :"عقارات متميزة",
+    "latest_properties" :"أخر العقارات ",
     "about_section_subtitle":"فقط لمحة",
     "about_section_title":"حول الشركة",
     "properties_section_subtitle":"يسعدنا ان نقدم",
@@ -69,9 +71,11 @@
     "reply":"رد",
     "comments":"تعليقات",
     "write_comment":"إكتب تعليق",
+    "details":"التفاصيل",
+    "description" : "حول العقار",
     "address":"العنوان",
     "phone":"الهاتف",
-    "phone_number ":"رقم الهاتف",
+    "phone_number ":"رقم الهاتف", 
     "email_address":"البريد الالكتروني",
     "contact_information":"معلومات التواصل ",
     "send_us_message":"ارسل لنا رسالة",
@@ -82,6 +86,13 @@
     "sort_by":"ترتيب حسب",
     "high_to_low":"الاعلى",
     "low_to_high":"الاقل",
+    "payment" :"الدفع",
+    "payment_method" :"طريقة الدفع",
+    "installment" :"تقسيط",
+    "cash_money":"نقداً",
+    "parking": "موقف سيارات",
+    "built":"مبني",
+    "map" :"خريطة",
     "contact_us_paragraph" :"ان شركة حسام أورفلي للاستشارات مستعدة للإجابة على أي اقتراح , تفسير أو طلب دعم . للتواصل يمكنك الاتصال بنا عبر الموقع الالكتروني أو أحد وسائل التواصل المتاحة, كما يمكنك ترك رسالة لنا من خلال الفورم الموجود أدناه:",
     "about_section_heading":"لماذا حسام أورفلي!؟",
     "about_section_body":"هي شركة خدمية تجارية تتمتع بشخصية اعتبارية ذات استقلال مالي وإداري تام في ممارسة أنشطتها ومهامها ومسجلة بموجب قانون الدولة التركية ومتخصصة في تقديم الخدمات الاستشارية, تأسست الشركة في بداية عام 2014 واتخذت من مدينة اسطنبول / تركيا مقراً ",
@@ -174,7 +185,7 @@
     {
         "name":"عقار اسطنبول المركزي", 
         "img":"1.jpg",
-        "link":"property-page-rtl.html",
+        "link":"property-rtl.html",
         "price":"740.000",
         "type":false,
         "special":false,
@@ -203,7 +214,7 @@
     },{
         "name":"شقة واسعة مطلة على البحر ",
         "img":"2.jpg",
-        "link":"property-page-rtl.html",
+        "link":"property-rtl.html",
         "price":"530.000",
         "type":false,
         "special":"عرض خاص",
@@ -232,7 +243,7 @@
     },{
         "name":"مشروع مرجان",
         "img":"3.jpg",
-        "link":"property-page-rtl.html",
+        "link":"property-rtl.html",
         "price":"740.000",
         "type":"للبيع",
         "special":"حسم 5%",
@@ -261,7 +272,7 @@
     },{
         "name":"مكاتب ضمن مجمع الملكي",
         "img":"4.jpg",
-        "link":"property-page-rtl.html",
+        "link":"property-rtl.html",
         "price":"350.000",
         "type":false,
         "special":false,
@@ -290,7 +301,7 @@
     },{
         "name":"شقق فسيحة في باشاك شهير  ",
         "img":"5.jpg",
-        "link":"property-page-rtl.html",
+        "link":"property-rtl.html",
         "price":"740.000",
         "type":"للبيع",
         "special":false,
@@ -319,7 +330,7 @@
     },{
         "name":"عقارات فاخرة للبيع في أيوب ",
         "img":"6.jpg",
-        "link":"property-page-rtl.html",
+        "link":"property-rtl.html",
         "price":"686.000",
         "type":"للبيع",
         "special":false,
@@ -364,7 +375,23 @@
         "img":"development.png",
         "description":"إن فريق تطوير المشاريع في الشركة لديه خبرة طويلة في مجال الإدارة، حيث يتعاون بشكل وثيق مع القطاعات ذات الصلة والشركات الاستشارية "
     }
-    ]
+    ],
+    "property_detail":{
+        "name":"شقة في باشاك شهير  ",
+        "img" :"1.jpg",
+        "price" :280000,
+        "size" :150,
+        "rooms" :5,
+        "beds" :3,
+        "baths" :2,
+        "location":" باشاك شهير , اسطنبول",
+        "parking": 1,
+        "payment":"نقدا",
+        "built":1995,
+        "map" :"41.074071,28.740626",
+        "video":false,
+        "description" :"شقق اسطنبول بموقع مركزي الأكثر حيوية في مدينة  و قد أصبحت  مركز جذب مهم بسبب موقعها الاستراتيجي. ومن المعروف أنها مركز الأعمال في اسطنبول وعلى اتصال جيد مع وسط المدينة وعلي خطين من خطوط النقل المتقدمة بما في ذلك مترو الانفاق. و يعتبر شراء شقة في اسطنبول واحدة من أكبر الفرص الاستثمارية."
+    }
 }
 
 

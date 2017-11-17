@@ -87,6 +87,25 @@
         {{/each_upto}}
     </div>
 </div>
+
+<div class="latest-properties">
+      <h4 class="side-title"><strong>{{latest_properties}}</strong></h4> 
+      <ul class="list-unstyled latest-list">
+          {{#each_fromto properties_list 2 3}}
+          <li class="clearfix">
+             <span class="img">
+                 <a href="{{link}}"><img src="assets/img/properties/{{img}}" alt="{{name}}"></a>
+             </span>
+             <span class="info">
+                 <h4><a href="{{link}}">{{name}}</a></h4>
+                 <p>
+                     <b>{{price}} </b> $
+                 </p>
+             </span>
+          </li>
+          {{/each_fromto}}
+      </ul>
+</div>
 </aside>
 
   
