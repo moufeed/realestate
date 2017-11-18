@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    {{>header }}
-    <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/property-bg.jpg">
+    {{!-- {{>header }} --}}
+    {{!-- <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/property-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 ">
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="page-property">
         <div class="container">
@@ -43,7 +43,7 @@
                     <h3 class="property-title">
                         <strong>{{property_detail.name}}</strong>
                     </h3>
-                    <div class="row property-mate">
+                    {{!-- <div class="row property-mate">
                         <div class="col-sm-3 col-xs-12">
                             <p>
                                 <span>{{price}}</span>
@@ -68,24 +68,26 @@
                                 <strong>{{property_detail.baths}}</strong>
                             </p>
                         </div>
-                    </div>
-                   {{>property_slider }}
+                    </div> --}}
+                   {{!-- {{>property_slider }} --}}
 
                    {{>property_tabs}}
                    
                 </div>
 
 
-                <div class="col-md-3 col-sm-4 col-xs-12">{{>sidebar}}</div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    {{!-- {{>sidebar}} --}}
+                </div>
             </div>
 
 
         </div>
     </section>
-    {{>footer }}
+    {{!-- {{>footer }} --}}
     <script src="assets/js/script.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function () { 
             var $slider = $('#propertySlider'),
                 $thumbnail = $('#thumbnailSlider'),
                 $duration = 500;

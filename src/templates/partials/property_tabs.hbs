@@ -16,14 +16,81 @@
   </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="desc">
-       <div>
+  <div class="tab-content property-tabs-content">
+    <div role="tabpanel" class="tab-pane fade in active desc" id="desc">
              {{property_detail.description}}
-       </div>
     </div>
-    <div role="tabpanel" class="tab-pane fade" id="details">...</div>
-    <div role="tabpanel" class="tab-pane fade" id="map">...</div>
+    <div role="tabpanel" class="tab-pane fade details" id="details">
+         <ul class="list-unstyled">
+             <li>
+                <img src="assets/img/icons/price.png" alt="">
+                <span>
+                    {{price}}
+                    <strong>{{property_detail.price}}</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/size.png" alt="">
+                <span>
+                    <small>{{size}}</small>
+                    <strong>{{property_detail.size}} M2</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/rooms.png" alt="">
+                <span>
+                    <small> {{rooms}}</small>
+                    <strong>{{property_detail.rooms}}</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/bedrooms.png" alt="">
+                <span>
+                    <small>{{bedrooms}}</small>
+                    <strong>{{property_detail.beds}}</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/bathrooms.png" alt="">
+                <span>
+                    <small>{{bathrooms}}</small> 
+                    <strong>{{property_detail.baths}}</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/parking.png" alt="">
+                <span>
+                    <small>{{parking}}</small>
+                    <strong>{{property_detail.parking}}</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/build.png" alt="">
+                <span>
+                   <small> {{built}}</small>
+                    <strong>{{property_detail.built}}</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/payment.png" alt="">
+                <span>
+                   <small>{{payment}}</small>
+                    <strong>{{property_detail.payment}}</strong>
+                </span>
+             </li>
+             <li>
+                <img src="assets/img/icons/location.png" alt="">
+                <span>
+                    <small>{{location}}</small>
+                    <strong>{{property_detail.location}}</strong>
+                </span>
+             </li>
+         </ul>
+        
+    </div>
+    <div role="tabpanel" class="tab-pane fade map" id="map">
+       
+    </div>
   </div>
 
  

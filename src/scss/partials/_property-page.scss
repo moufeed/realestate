@@ -162,9 +162,14 @@
         }
     }
 }
-/*
-
- <ul class="list-unstyled list-inline " role="tablist">
-    <li role="presentation" class="active">
-        <a href="#desc" aria-controls="desc" role="tab" data-toggle="tab">{{description}}</a>
-    </li>*/
+.property-tabs-content{
+    .tab-pane{
+        padding: 15px 0;
+        &.desc{
+            line-height: 24px;
+            @include if-ltr{
+                letter-spacing: 1px ;
+            }            
+        }
+    }
+}
