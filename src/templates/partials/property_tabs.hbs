@@ -1,100 +1,117 @@
 <div class="row property-tabs">
     <div class="col-md-12">
-     
-        
-  <ul class="list-unstyled clearfix tabslist" role="tablist">
-    <li role="presentation" class="active">
-        <a href="#desc" aria-controls="desc" role="tab" data-toggle="tab">{{description}}</a>
-    </li>
-    
-    <li role="presentation">
-        <a href="#details" aria-controls="details" role="tab" data-toggle="tab">{{details}}</a>
-    </li>
-    <li role="presentation">
-        <a href="#map" aria-controls="map" role="tab" data-toggle="tab">{{map}}</a>
-    </li>
-  </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content property-tabs-content">
-    <div role="tabpanel" class="tab-pane fade in active desc" id="desc">
-             {{property_detail.description}}
-    </div>
-    <div role="tabpanel" class="tab-pane fade details" id="details">
-         <ul class="list-unstyled">
-             <li>
-                <img src="assets/img/icons/price.png" alt="">
-                <span>
-                    {{price}}
-                    <strong>{{property_detail.price}}</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/size.png" alt="">
-                <span>
-                    <small>{{size}}</small>
-                    <strong>{{property_detail.size}} M2</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/rooms.png" alt="">
-                <span>
-                    <small> {{rooms}}</small>
-                    <strong>{{property_detail.rooms}}</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/bedrooms.png" alt="">
-                <span>
-                    <small>{{bedrooms}}</small>
-                    <strong>{{property_detail.beds}}</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/bathrooms.png" alt="">
-                <span>
-                    <small>{{bathrooms}}</small> 
-                    <strong>{{property_detail.baths}}</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/parking.png" alt="">
-                <span>
-                    <small>{{parking}}</small>
-                    <strong>{{property_detail.parking}}</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/build.png" alt="">
-                <span>
-                   <small> {{built}}</small>
-                    <strong>{{property_detail.built}}</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/payment.png" alt="">
-                <span>
-                   <small>{{payment}}</small>
-                    <strong>{{property_detail.payment}}</strong>
-                </span>
-             </li>
-             <li>
-                <img src="assets/img/icons/location.png" alt="">
-                <span>
-                    <small>{{location}}</small>
-                    <strong>{{property_detail.location}}</strong>
-                </span>
-             </li>
-         </ul>
-        
-    </div>
-    <div role="tabpanel" class="tab-pane fade map" id="map">
-       
-    </div>
-  </div>
 
- 
+        <ul class="list-unstyled clearfix tabslist" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#desc" aria-controls="desc" role="tab" data-toggle="tab">{{description}}</a>
+            </li>
 
- 
+            <li role="presentation">
+                <a href="#details" aria-controls="details" role="tab" data-toggle="tab">{{details}}</a>
+            </li>
+            <li role="presentation">
+                <a href="#map" aria-controls="map" role="tab" data-toggle="tab">{{map}}</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content property-tabs-content">
+            <div role="tabpanel" class="tab-pane fade in active desc" id="desc">
+                <p>{{property_detail.description}}</p>
+                <p>{{property_detail.description}}</p>
+                <p>{{property_detail.description}}</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade details" id="details">
+                <ul class="list-unstyled details-list row">
+                    <li class="col-sm-6">
+                        <span>
+                            <img src="assets/img/icons/price.png" alt="">
+                            <p>
+                                <small dir="ltr">{{price}} </small>
+                                <strong>{{property_detail.price}} $</strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-6">
+                        <span>
+                            <img src="assets/img/icons/size.png" alt="">
+                            <p>
+                                <small>{{size}}</small>
+                                <strong>{{property_detail.size}} M<sup>2</sup>
+                                </strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-6"> 
+                        <span>
+                            <img src="assets/img/icons/rooms.png" alt="">
+                            <p>
+                                <small> {{rooms}}</small>
+                                <strong>{{property_detail.rooms}}</strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-6">
+                        <span>
+                            <img src="assets/img/icons/bedrooms.png" alt="">
+                            <p>
+                                <small>{{bedrooms}}</small>
+                                <strong>{{property_detail.beds}}</strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-6">
+                        <span>
+                            <img src="assets/img/icons/bathrooms.png" alt="">
+                            <p>
+                                <small>{{bathrooms}}</small>
+                                <strong>{{property_detail.baths}}</strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-6">
+                        <span>
+                            <img src="assets/img/icons/parking.png" alt="">
+                            <p>
+                                <small>{{parking}}</small>
+                                <strong>{{property_detail.parking}}</strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-6">
+                        <span>
+                            <img src="assets/img/icons/build.png" alt="">
+                            <p>
+                                <small> {{built}}</small>
+                                <strong>{{property_detail.built}}</strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-6">
+                        <span>
+                            <img src="assets/img/icons/payment.png" alt="">
+                            <p>
+                                <small>{{payment}}</small>
+                                <strong>{{property_detail.payment}}</strong>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="col-sm-12">
+                        <span>
+                            <img src="assets/img/icons/location.png" alt="">
+                            <p>
+                                <small>{{location}}</small>
+                                <strong>{{property_detail.location}}</strong>
+                            </p>
+                        </span>
+                    </li>
+                </ul>
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade map" id="map">
+                <div class="property-map" id="mapbox"></div> 
+            </div>
+        </div>
     </div>
 </div>

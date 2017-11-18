@@ -1,0 +1,18 @@
+<div class="search-view">
+    <div class="global-search ">
+        <div class="d-close">
+            <button class="btn-close" type="button" id="g-closebtn">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+        <h3>{{global_search}}</h3>
+        <form class="form-inline globalsearch-form"    action="{{#isequal dir 'rtl'}}results-rtl.html{{else}}results.html{{/isequal}}"> 
+            <input type="search" class="form-control" id="globalSearch" placeholder="{{search_placholder}}">
+             <button type="submit" class="btn search">
+                        {{search}}
+            </button>
+        </form>
+    </div>
+</div>
+ 

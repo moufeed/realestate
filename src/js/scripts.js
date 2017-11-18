@@ -9,7 +9,17 @@ var wow = new WOW({
 wow.init();
 
 $(document).ready(function () {
-
+    //--- open search
+    $('#g-searchbtn').click(function (e) {
+        e.preventDefault();
+        $('.search-view').fadeIn(500).addClass('opend');
+    })
+    $('#g-closebtn').click(function () {
+        $('.search-view').fadeOut(500,function(){
+                $(this).removeClass('opend').removeAttr('style')
+        })
+    })
+//-----------------------------------------------------
     $("body").niceScroll({
         cursorcolor: '#ccac2c',
         cursorwidth: "12px",
@@ -18,16 +28,17 @@ $(document).ready(function () {
         cursorborderradius: 0,
         zindex: 999999
     });
+    //-----------------------------------------------------
     $('select').selectpicker({
         mobile: false,
         size: 5
     });
-    window.resetpicker = function(){
+    window.resetpicker = function () {
         $(".select").val('default');
         $(".select").selectpicker("refresh");
     }
-    
-    window.resetslider = function(){
+
+    window.resetslider = function () {
         var prAry = toArray(price_slider) || [0, 1000];
         var areAry = toArray(area_slider) || [0, 1000];
         $('#min-price').text(prAry[0]);
@@ -38,12 +49,12 @@ $(document).ready(function () {
         area_slider.slider("option", "values", areAry);
     }
 
-    window.toArray = function(item){
+    window.toArray = function (item) {
         if (typeof item.data('values') === "undefined") return false;
         return JSON.parse("[" + item.data('values') + "]");
     }
     var price_slider = $('#price_slider'),
-        area_slider = $('#area_slider'); 
+        area_slider = $('#area_slider');
 
     if (price_slider.length > 0) {
 
@@ -53,7 +64,7 @@ $(document).ready(function () {
             max: parseInt(price_slider.data('max')) || 1000,
             values: toArray(price_slider) || [0, 1000],
             step: parseInt(price_slider.data('step')) || 1,
-            slide: function (event, ui) { 
+            slide: function (event, ui) {
                 $('#min-price').text(ui.values[0]);
                 $('#max-price').text(ui.values[1]);
             }
@@ -73,14 +84,14 @@ $(document).ready(function () {
         })
     }
 
-    
+
     if ($('.featured-slider').length > 0) {
         $('.featured-slider').owlCarousel({
-            loop:true,
-            margin:10,
-            navText:['&#xf104;','&#xf105;'],
-            nav:true,
-            items:1
+            loop: true,
+            margin: 10,
+            navText: ['&#xf104;', '&#xf105;'],
+            nav: true,
+            items: 1
         })
     }
 });

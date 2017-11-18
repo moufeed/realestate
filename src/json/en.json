@@ -25,7 +25,8 @@
     "subscribe":"subscribe",
     "search" :"Search",
     "search_label":"searching for",
-    "search_placholder":"search word ",
+    "search_placholder":"search word ", 
+    "global_search" :"global Search", 
     "advanced_search":"Advanced Search",
     "city":"city",
     "property":"Property",
@@ -95,9 +96,11 @@
     "built":"built",
     "map" :"map",
     "location":"location",
+    "back_to_home" :"Back to Home",
     "contact_us_paragraph":  "Hossam Orfali Consulting is ready to answer any proposal, interpretation or request for support. You can contact us via the website or one of the available means of communication, and you can leave a message to us through the form below:",
     "about_section_heading":"Why Hossam Orfali ?",
     "about_section_body":"Is a commercial service company with a legal personality with full financial and administrative independence in carrying out its activities and functions and registered under the law of the Turkish State and specialized in providing consultancy services. The company was established in early 2014 and was based in Istanbul,",
+    "copyright" :"Hossam Orfali Consulting, All rights reserved © 2017",
     "navigation": [{
         "name": "Home",  
         "link": "index.html",   
@@ -164,7 +167,8 @@
         }
     ],
      "alerts":{
-        "noresults" :"<i class=\"fa fa-exclamation-triangle\"></i><p>There are no results that match your search</p>"
+        "noresults" :"<i class=\"fa fa-exclamation-triangle\"></i><p>There are no results that match your search</p>",
+        "page_not_found" :"We're sorry but it looks like that page doesn't exist anymore."
     },
     "cities":[
         "Ankara",

@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    {{!-- {{>header }} --}}
-    {{!-- <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/property-bg.jpg">
+      {{>header }}  
+    <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/property-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 ">
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>  
 
     <section class="page-property">
         <div class="container">
@@ -43,33 +43,33 @@
                     <h3 class="property-title">
                         <strong>{{property_detail.name}}</strong>
                     </h3>
-                    {{!-- <div class="row property-mate">
-                        <div class="col-sm-3 col-xs-12">
+                    <div class="row property-mate hidden-xs">
+                        <div class="col-sm-3">
                             <p>
                                 <span>{{price}}</span>
                                 <strong>{{property_detail.price}} $</strong>
                             </p>
                         </div>
-                        <div class="col-sm-3 col-xs-12">
+                        <div class="col-sm-3">
                             <p>
                                 <span>{{size}}</span>
                                 <strong>{{property_detail.size}} M2</strong>
                             </p>
                         </div>
-                        <div class="col-sm-3 col-xs-12">
+                        <div class="col-sm-3">
                             <p>
                                 <span>{{rooms}}</span>
                                 <strong>{{property_detail.rooms}}</strong>
                             </p>
                         </div>
-                        <div class="col-sm-3 col-xs-12">
+                        <div class="col-sm-3">
                             <p>
                                 <span>{{bathrooms}}</span>
                                 <strong>{{property_detail.baths}}</strong>
                             </p>
                         </div>
-                    </div> --}}
-                   {{!-- {{>property_slider }} --}}
+                    </div> 
+                  {{>property_slider }}  
 
                    {{>property_tabs}}
                    
@@ -77,52 +77,86 @@
 
 
                 <div class="col-md-3 col-sm-4 col-xs-12">
-                    {{!-- {{>sidebar}} --}}
+                     {{>sidebar}}  
                 </div>
             </div>
 
 
         </div>
     </section>
-    {{!-- {{>footer }} --}}
+     {{>footer }} 
     <script src="assets/js/script.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
-        $(document).ready(function () { 
-            var $slider = $('#propertySlider'),
-                $thumbnail = $('#thumbnailSlider'),
-                $duration = 500;
-            $slider.owlCarousel({
-                loop: false,
-                nav: true,
-                items: 1,
-                rtl: {{#isequal dir 'rtl'}} true {{ else}} false {{/ isequal}},
-            navText: ['&#xf104;', '&#xf105;']
+        $(document).ready(function () {
+                var $slider = $('#propertySlider'),
+                    $thumbnail = $('#thumbnailSlider'),
+                    $duration = 500;
+                $slider.owlCarousel({
+                    loop: false,
+                    nav: true,
+                    items: 1,
+                    rtl: {{#isequal dir 'rtl' }} true {{ else}} false {{/isequal}} ,
+                navText: ['&#xf104;', '&#xf105;']
                 }).on('changed.owl.carousel', function (e) {
-                $thumbnail.trigger('to.owl.carousel', [e.item.index, $duration, true]);
-                $thumbnail.find('.item').removeClass('activated');
-                $thumbnail.find('[data-idx="' + e.item.index + '"]').addClass('activated');
-            })
+                    $thumbnail.trigger('to.owl.carousel', [e.item.index, $duration, true]);
+                    $thumbnail.find('.item').removeClass('activated');
+                    $thumbnail.find('[data-idx="' + e.item.index + '"]').addClass('activated');
+                })
 
-        $thumbnail.owlCarousel({ 
-            loop: false,
-            center: false,
-            nav: false,
-            rtl: {{#isequal dir 'rtl'}} true {{ else}} false {{/ isequal}},
-            responsive: {
-                0: { items: 3 },
-                600: { items: 4 },
-                1000: { items: 6 }
-            }
+            $thumbnail.owlCarousel({
+                loop: false,
+                center: false,
+                nav: false,
+                rtl: {{#isequal dir 'rtl'}} true {{ else}} false {{/isequal}},
+                responsive: {
+                    0: { items: 3 },
+                    600: { items: 4 },
+                    1000: { items: 6 }
+                }
                 }).on('click', '.owl-item', function () {
-                $slider.trigger('to.owl.carousel', [$(this).index(), $duration, true]);
-            }).on('changed.owl.carousel', function (e) {
-                $slider.trigger('to.owl.carousel', [e.item.index, $duration, true]);
+                    $slider.trigger('to.owl.carousel', [$(this).index(), $duration, true]);
+                }).on('changed.owl.carousel', function (e) {
+                    $slider.trigger('to.owl.carousel', [e.item.index, $duration, true]);
+                });
             });
 
-                 
 
-            });
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(53.3333, -3.08333);
+                var imagePath = './assets/img/pin.png'
+                var mapOptions = {
+                    zoom: 11,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById('mapbox'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    icon: imagePath,
+                    title: '{{img_title}}'
+                });
+                google.maps.event.addDomListener(window, "resize", function () {
+                    var center = map.getCenter();
+                    google.maps.event.trigger(map, "resize");
+                    map.setCenter(center);
+                });
+                $('.tabslist a[data-toggle="tab"]').on('shown.bs.tab', function (e) { 
+                    var tar = $(e.target).attr('href').replace('#', '');
+                    if (tar == 'map') {
+                        var center = map.getCenter();
+                        google.maps.event.trigger(map, "resize");
+                        map.setCenter(center);
+                    }
+                })
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+        
     </script>
+
 </body>
 
 </html>
