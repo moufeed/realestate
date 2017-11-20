@@ -14,8 +14,22 @@ body{
 }
 .p-0{
     padding: 0 !important;
+    @media   (max-width:767px){
+        padding: 0  15px !important;
+    }
 }  
- 
+.p-lr-0{
+    padding-#{$left} : 0 !important;
+    @media   (max-width:767px){
+        padding-#{$left} : 15px !important;
+    }
+} 
+.p-rl-0{
+    padding-#{$right} : 0 !important;
+    @media   (max-width:767px){
+        padding-#{$right} : 15px !important;
+    }
+} 
 
 @include selection {
     color: $white;

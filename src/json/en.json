@@ -25,10 +25,11 @@
     "subscribe":"subscribe",
     "search" :"Search",
     "search_label":"searching for",
-    "search_placholder":"search word ", 
+    "search_placeholder":"search word ", 
     "global_search" :"global Search", 
     "advanced_search":"Advanced Search",
     "result_found":"Results Found",
+    "search_results":"search results",
     "city":"city",
     "property":"Property",
     "properties":"properties",
@@ -96,6 +97,7 @@
     "parking": "parking",
     "built":"built",
     "map" :"map",
+    "type":"type", 
     "location":"location",
     "back_to_home" :"Back to Home",
     "contact_us_paragraph":  "Hossam Orfali Consulting is ready to answer any proposal, interpretation or request for support. You can contact us via the website or one of the available means of communication, and you can leave a message to us through the form below:",
@@ -105,7 +107,7 @@
     "navigation": [{
         "name": "Home",  
         "link": "index.html",   
-        "active": true 
+        "active": true  
     },
     {
         "name": "About us",
@@ -397,5 +399,56 @@
     "map" :"41.074071,28.740626",
     "video":false,
     "description" :"Istanbul Apartments is centrally located in the city's most lively and has become an important attraction because of its strategic location. It is well known as the business center of Istanbul and has good connection with the city center and two lines of advanced transport lines including the subway. Buying an apartment in Istanbul is one of the biggest investment opportunities."
-}
+},
+"search_results_list":[
+    {
+        "name":"Turkish construction companies ranked second in the world",
+        "link":"#",
+        "img":"1.jpg",
+        "description":"Turkish Construction Companies For the 9th time in a row, Turkey ranked second in the world in terms of the number of contracting and construction companies operating outside Turkish territory.",
+        "type" :"news",
+        "date":"Jan 21, 2017",
+        "footer":false
+    }, {
+        "name":"Apartments For Sale in Alanya Avslar area" ,
+        "link":"property-rtl.html",
+        "img":"2.jpg",
+        "description":"We offer you the latest projects of our company Apartments for sale in Turkey in the city of Alanya Afslar area and close to the center of Avslar city 900 meters from the famous sandy beach Incekum",
+        "type" :"property",
+        "date":"May 11, 2016",
+        "footer":"<span class='price'> <small>price</small> <b dir='ltr'> 20000  </b></span><span class='size'><small>size</small> 150 M<sup>2</sup></span><span class='rooms'><small>rooms</small> 6</span>"
+    }, {
+        "name":"Taksim Square",
+        "link":"#",
+        "img":"3.jpg",
+        "description":"It is very difficult to be in Istanbul and not pass through the division even once, but this is impossible. This is not only the main Istanbul metro station but also the center of its daily, cultural and ethnic life, which reaches the outskirts of the city",
+        "type" :"tourism",
+        "date":"Jan 21, 2017",
+        "footer":false
+    }, {
+        "name":"New Disneyland in Turkey",
+        "link":"#",
+        "img":"4.jpg",
+        "description":"Like the Land Land, which opened in 2013 in Istanbul, a Turkish version of the Disneyland entertainment city, Turkey plans to open another city in the form of a theme park known as the Land of Mythology in the Turkish city of Antalya, overlooking the Mediterranean in July.",
+        "type" :"news",
+        "date":"Jan 21, 2017",
+        "footer":false
+    }, {
+        "name":"Apartments for sale in Turkey Alanya city",
+        "link":"property-rtl.html",
+        "img":"5.jpg",
+        "description":"Through the experience of our company in the field of construction and construction for 40 years you can now benefit and buy high quality apartment and close to the sea at reasonable prices and suitable for cash and installment for 24 months and without interest.",
+        "type" :"property",
+        "date":"June 28, 2015",
+        "footer":"<span class='price'> <small>price</small> <b dir='ltr'> 20000  </b></span><span class='size'><small>size</small> 150 M<sup>2</sup></span><span class='rooms'><small>rooms</small> 6</span>"
+    }, {
+        "name":"Egyptian Market",
+        "link":"#",
+        "img":"6.jpg",
+        "description":"The Egyptian market is an important part of the ancient Ottoman civilization and attracts the attention of Arab and foreign tourists. Getting around this market is a real pleasure for the visitor as the many attractive goods and the voices of the sellers are calling from every direction",
+        "type" :"tourism",
+        "date":"Dec 21, 2013",
+        "footer":false
+    }
+]
 } 

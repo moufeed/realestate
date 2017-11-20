@@ -9,63 +9,317 @@
     
 </head>
 <body>
-   <section class="page_header">
+     <div class="search-view">
+         <div class="global-search ">
+             <div class="d-close">
+                 <button class="btn-close" type="button" id="g-closebtn">
+                     <i class="fa fa-times" aria-hidden="true"></i>
+                 </button>
+             </div>
+             
+             <h3>global Search</h3>
+             <form class="form-inline globalsearch-form"    action="results.html"> 
+                 <input type="search" class="form-control" id="globalSearch" placeholder="search word ">
+                  <button type="submit" class="btn search">
+                             Search
+                 </button>
+             </form>
+         </div>
+     </div>
+      
+    <header class="main_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <a href="index.html" class="main_logo animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <img src="assets/img/logo-ltr.png"  class="img-responsive" alt="logo">
+                    </a>
+                </div>
+                <div class="col-md-8 col-md-offset-1 col-sm-8">
+                    <div class="clearfix topbar">
+                        <div class="hotline  col-md-7 col-sm-6  p-0 hidden-xs">
+                            <span class="hidden-sm animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                                <i class="fa fa-phone"></i> 05389498776 / 05386280000</span>
+                            <a href="mailto:info@hussamorfali.com" class="animate fadeIn" data-wow-duration="400ms" data-wow-delay="100ms">
+                                <i class="fa fa-envelope-o"></i> info@hussamorfali.com</a>
+                        </div>
+                        <ul class="list-unstyled list-inline social-list  col-md-5 col-sm-6 col-xs-12 p-0 animate fadeIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                            
+                             <li>
+                                <a href="#" id="g-searchbtn">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </div> 
+                <nav class="navbar main-navbar">
+                  <div class="container-fluid">
+                    
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="false">
+                          <i class="fa fa-bars"></i>
+                      </button>
+                    </div>
+                 
+                   
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                      <ul class="nav navbar-nav">  
+                                 <li class="active "><a href="index.html">Home</a></li>
+                                   <li ><a href="aboutus.html">About us</a></li>
+                                   <li ><a href="properties.html">Properties</a></li>
+                                   <li ><a href="services.html">our services</a></li>
+                                   <li ><a href="contactus.html">Contact Us</a></li>
+                      </ul>
+                     
+                    </div> 
+                  </div> 
+                </nav>
+    
+                </div>
+            </div>
+        </div>
+    </header>   <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/results-bg.jpg">
          <div class="container"> 
              <div class="row">
                  <div class="col-sm-5 ">
-                      <h1>title</h1>
+                      <h1>search results</h1>
                  </div>
                  <div class="col-sm-7 ">
                      <ol class="breadcrumb page-breadcrumb">
                         <li><a href="index.html">Home</a></li>
-                    <li class="active">title</li>
+                    <li class="active">search results</li>
                     </ol>
                  </div>
              </div> 
          </div>
-     </section>
+     </section> 
+ 
 <section class="results-page">
 <div class="container">
     <div class="row">
-        <div class="col-md-9 col-sm-8 col-xs-12 search-results">
-                
-           
-                
-                    <article class="clearfix  result-article">
-                        <div class="col-md-4 col-sm-4 col-xs-12  ">
+        <div class="col-md-9 col-sm-8 col-xs-12 ">
+                <div class="sort-btns clearfix"> 
+                   <span class="hidden-xs">
+                    <strong>Sort By</strong>   
+                    <a href=""  data-sort="name"><i class="fa fa-sort" aria-hidden="true"></i> Name</a>
+                    <a href=""  data-sort="type"><i class="fa fa-sort" aria-hidden="true"></i> type</a>
+                   </span>
+                   <span class="visible-xs-block">
+                       <i class="fa fa-search"></i> <b>25502</b>
+                         <span>Results Found</span>
+                   </span>
+                    <form action="" class="form-inline formsearch">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="search word ">
+                         <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class=" search-results animate fadeInUp"  data-wow-duration="600ms" >
+
+               
+                    
+                <article class="clearfix  result-article "
+                         data-type ="news"  >
+                        <div class="col-md-4 col-sm-4 col-xs-12  p-lr-0">
                           <div class="res-image">
-                               <a href="" ><img src="assets/img/properties/1.jpg" alt=""></a> 
+                               <a href="#" ><img src="assets/img/search/1.jpg" alt=""></a> 
                           </div>
                         </div> 
                         <div class="col-md-8 col-sm-8 col-xs-12 p-0">
-                            <div class="result-meta">
+                            <div class="result-meta"> 
                             <span class="date">
                                 <i class="fa fa-calendar-o"></i>Jan 21, 2017 
                             </span>
+                            <span class="type" >news</span>
                             </div>
-                            <h3 class="s-t"><a href="">Marina Bakirkoy Residence</a></h3>
-                             <p class="des">Wake up to the great view of the Princess Islands and the Historical Peninsula to make the sea a part of your daily life. Take advantage of giving yourself a great social opportunity </p>  
-                              
-                                <div class="result-footer">
-                                    <span class="price"> <small>Price</small> <b dir="ltr"> 20000  </b></span> 
-                                    <span class="size"><small>size</small> 150 M<sup>2</sup></span> 
-                                    <span class="rooms"><small>Rooms</small> 6</span>
-                                </div>
-                              
-                                <a href="" class="morelink">
-                                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" >
-                                        <rect id="shape"/>
-                                    </svg>
-                                    <span>more</span>
+                            <h3 class="s-t"><a href="#">Turkish construction companies ranked second in the world</a></h3>
+                             <p class="des">Turkish Construction Companies For the 9th time in a row, Turkey ranked second in the world in terms of the number of contracting and construction companies operating outside Turkish territory.</p>  
+                                <a href="#" class="morelink">
+                                    <span>More</span>
                                 </a>
                         </div> 
                     </article>
-                 
-             
 
-        </div>
+                    
+                <article class="clearfix  result-article "
+                         data-type ="property"  >
+                        <div class="col-md-4 col-sm-4 col-xs-12  p-lr-0">
+                          <div class="res-image">
+                               <a href="property-rtl.html" ><img src="assets/img/search/2.jpg" alt=""></a> 
+                          </div>
+                        </div> 
+                        <div class="col-md-8 col-sm-8 col-xs-12 p-0">
+                            <div class="result-meta"> 
+                            <span class="date">
+                                <i class="fa fa-calendar-o"></i>May 11, 2016 
+                            </span>
+                            <span class="type" >property</span>
+                            </div>
+                            <h3 class="s-t"><a href="property-rtl.html">Apartments For Sale in Alanya Avslar area</a></h3>
+                             <p class="des">We offer you the latest projects of our company Apartments for sale in Turkey in the city of Alanya Afslar area and close to the center of Avslar city 900 meters from the famous sandy beach Incekum</p>  
+                                <div class="result-footer">
+                                    <span class='price'> <small>price</small> <b dir='ltr'> 20000  </b></span><span class='size'><small>size</small> 150 M<sup>2</sup></span><span class='rooms'><small>rooms</small> 6</span>
+                                </div>
+                                <a href="property-rtl.html" class="morelink">
+                                    <span>More</span>
+                                </a>
+                        </div> 
+                    </article>
+
+                    
+                <article class="clearfix  result-article "
+                         data-type ="tourism"  >
+                        <div class="col-md-4 col-sm-4 col-xs-12  p-lr-0">
+                          <div class="res-image">
+                               <a href="#" ><img src="assets/img/search/3.jpg" alt=""></a> 
+                          </div>
+                        </div> 
+                        <div class="col-md-8 col-sm-8 col-xs-12 p-0">
+                            <div class="result-meta"> 
+                            <span class="date">
+                                <i class="fa fa-calendar-o"></i>Jan 21, 2017 
+                            </span>
+                            <span class="type" >tourism</span>
+                            </div>
+                            <h3 class="s-t"><a href="#">Taksim Square</a></h3>
+                             <p class="des">It is very difficult to be in Istanbul and not pass through the division even once, but this is impossible. This is not only the main Istanbul metro station but also the center of its daily, cultural and ethnic life, which reaches the outskirts of the city</p>  
+                                <a href="#" class="morelink">
+                                    <span>More</span>
+                                </a>
+                        </div> 
+                    </article>
+
+                    
+                <article class="clearfix  result-article "
+                         data-type ="news"  >
+                        <div class="col-md-4 col-sm-4 col-xs-12  p-lr-0">
+                          <div class="res-image">
+                               <a href="#" ><img src="assets/img/search/4.jpg" alt=""></a> 
+                          </div>
+                        </div> 
+                        <div class="col-md-8 col-sm-8 col-xs-12 p-0">
+                            <div class="result-meta"> 
+                            <span class="date">
+                                <i class="fa fa-calendar-o"></i>Jan 21, 2017 
+                            </span>
+                            <span class="type" >news</span>
+                            </div>
+                            <h3 class="s-t"><a href="#">New Disneyland in Turkey</a></h3>
+                             <p class="des">Like the Land Land, which opened in 2013 in Istanbul, a Turkish version of the Disneyland entertainment city, Turkey plans to open another city in the form of a theme park known as the Land of Mythology in the Turkish city of Antalya, overlooking the Mediterranean in July.</p>  
+                                <a href="#" class="morelink">
+                                    <span>More</span>
+                                </a>
+                        </div> 
+                    </article>
+
+                    
+                <article class="clearfix  result-article "
+                         data-type ="property"  >
+                        <div class="col-md-4 col-sm-4 col-xs-12  p-lr-0">
+                          <div class="res-image">
+                               <a href="property-rtl.html" ><img src="assets/img/search/5.jpg" alt=""></a> 
+                          </div>
+                        </div> 
+                        <div class="col-md-8 col-sm-8 col-xs-12 p-0">
+                            <div class="result-meta"> 
+                            <span class="date">
+                                <i class="fa fa-calendar-o"></i>June 28, 2015 
+                            </span>
+                            <span class="type" >property</span>
+                            </div>
+                            <h3 class="s-t"><a href="property-rtl.html">Apartments for sale in Turkey Alanya city</a></h3>
+                             <p class="des">Through the experience of our company in the field of construction and construction for 40 years you can now benefit and buy high quality apartment and close to the sea at reasonable prices and suitable for cash and installment for 24 months and without interest.</p>  
+                                <div class="result-footer">
+                                    <span class='price'> <small>price</small> <b dir='ltr'> 20000  </b></span><span class='size'><small>size</small> 150 M<sup>2</sup></span><span class='rooms'><small>rooms</small> 6</span>
+                                </div>
+                                <a href="property-rtl.html" class="morelink">
+                                    <span>More</span>
+                                </a>
+                        </div> 
+                    </article>
+
+                    
+                <article class="clearfix  result-article "
+                         data-type ="tourism"  >
+                        <div class="col-md-4 col-sm-4 col-xs-12  p-lr-0">
+                          <div class="res-image">
+                               <a href="#" ><img src="assets/img/search/6.jpg" alt=""></a> 
+                          </div>
+                        </div> 
+                        <div class="col-md-8 col-sm-8 col-xs-12 p-0">
+                            <div class="result-meta"> 
+                            <span class="date">
+                                <i class="fa fa-calendar-o"></i>Dec 21, 2013 
+                            </span>
+                            <span class="type" >tourism</span>
+                            </div>
+                            <h3 class="s-t"><a href="#">Egyptian Market</a></h3>
+                             <p class="des">The Egyptian market is an important part of the ancient Ottoman civilization and attracts the attention of Arab and foreign tourists. Getting around this market is a real pleasure for the visitor as the many attractive goods and the voices of the sellers are calling from every direction</p>  
+                                <a href="#" class="morelink">
+                                    <span>More</span>
+                                </a>
+                        </div> 
+                    </article>
+
+             </div>
+             <nav aria-label="Page navigation animate fadeIn" data-wow-duration="600ms" data-wow-delay="150ms">
+                 <ul class="pagination pagination-list">
+                     <li>
+                         <a href="#" aria-label="Previous">
+                             <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">1</a>
+                     </li>
+                     <li>
+                         <a href="#">2</a>
+                     </li>
+                     <li>
+                         <a href="#">3</a>
+                     </li>
+                     <li>
+                         <a href="#">4</a>
+                     </li>
+                     <li>
+                         <a href="#">5</a>
+                     </li>
+                     <li>
+                         <a href="#" aria-label="Next">
+                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                         </a>
+                     </li>
+                 </ul>
+             </nav>        </div>
         <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="srch-results-lbl">
+            <div class="srch-results-lbl hidden-xs">
                 <i class="fa fa-search"></i> <b>25502</b>
                 <span>Results Found</span>
             </div>
@@ -256,6 +510,115 @@
     </div>
 </div>
 </section>
-    <script src="assets/js/script.min.js"></script>
+      <footer class="main-footer">
+          <div class="container footer-content">
+              <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                      <picture class="animate fadeIn" data-wow-duration="900ms" data-wow-delay="00ms">
+                         <img srcset="assets/img/footer-logo.png" alt="" class="img-responsive">
+                     </picture>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                      <h3></h3>
+                      <ul class="list-unstyled list-contact animate fadeIn" data-wow-duration="900ms" data-wow-delay="100ms">
+                          <li >
+                              <i class="fa fa-building-o"></i>
+     
+     
+                                 <span >Akşemsettin Mahallesi, Akşemsettin  Cd. <br> 55/3, 34080 Fatih/İstanbul</span>
+     
+                          </li>
+                          <li >
+                              <i class="fa fa-mobile"></i>
+     
+     
+                                 <span  dir="ltr" >+905386280000 <br> +905389498776</span>
+     
+                          </li>
+                          <li >
+                              <i class="fa fa-phone"></i>
+     
+     
+                                 <span  dir="ltr" >+902125313240‎</span>
+     
+                          </li>
+                          <li >
+                              <i class="fa fa-envelope-open-o"></i>
+     
+     
+                                 <a href="mailto:info@hussamorfali.com" target="_top">info@hussamorfali.com</a>
+     
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                      <h3></h3>
+                      <form  class="form-inline from-newsletter animate fadeIn" data-wow-duration="900ms" data-wow-delay="150ms" action="" method="post">
+                               
+                             <div class="form-group">
+                                  <input type="email" class="form-control" id="" placeholder="Email">
+                             </div>
+                             <button type="submit" class="btn btn-subscribe">subscribe</button>
+                      </form>
+                      <ul class="list-unstyled list-inline footer-social-list">
+                             
+                                 <li>
+                                     <a href="#">
+                                         <i class="fa fa-facebook"></i>  
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <i class="fa fa-twitter"></i>  
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <i class="fa fa-instagram"></i>  
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <i class="fa fa-telegram"></i>  
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <i class="fa fa-youtube"></i>  
+                                     </a>
+                                 </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="bottom-footer">
+              <div class="copyright-line text-center animate fadeIn" data-wow-duration="900ms" data-wow-delay="200ms">
+                  Hossam Orfali Consulting, All rights reserved © 2017
+              </div>
+          </div>
+      </footer>
+      <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i></a>     <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            if($(window).width() >= 760){
+                $('.search-results').isotope({
+                itemSelector: '.result-article',
+                layoutMode: 'fitRows',
+                getSortData: {
+                name: '.s-t',
+                type: '[data-type]'
+                }
+            });
+                $('[data-sort]').click( function( event ) {
+                    event.preventDefault();
+                    var option =  $(this).data('sort');
+                    $('.search-results').isotope( {sortBy : option} );
+                });
+            }
+            })
+         
+    </script>
 </body>
 </html>
+ 
