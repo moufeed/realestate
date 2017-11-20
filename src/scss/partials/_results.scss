@@ -1,0 +1,160 @@
+
+.results-page{
+    padding: 50px 0;
+    position: relative;
+}
+.srch-results-lbl{
+    border: 1px solid #eee;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    i,b,span{
+        display: inline-block;
+        margin: 0 4px;
+    }
+    i{
+        text-transform: capitalize;
+        color: $gold;
+        
+    }
+    b{
+        font-weight: bolder;
+        color: $black;
+        
+    }
+    span{
+        text-transform: capitalize;
+        color: $gray;
+    }
+}
+.search-results{}
+.result-article{
+    .res-image{
+        padding: 5px;
+        // border: 1px solid darken($white ,25%);
+       a{
+        display: block;
+        @include size(100%,175px);
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+       }
+        img{
+            height: 100%;
+            min-width: 100%;
+        }
+    }
+    .result-meta{
+        color: lighten($gray,35%);
+        margin-bottom: 5px;
+        i{
+            margin-#{$right}:5px;
+        }
+    }
+    .s-t{
+        margin: 0 0 10px 0;
+        font-size:20px;
+        a{
+            color: $black;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .des{
+        @include ellipsis(14px,1.5,3);
+        @media (min-width:768px){
+            width: 80%;
+        }    
+    }
+        .result-footer{
+            display: inline-block;
+            margin-top: 2%;
+            span{
+                color: $gray;
+                display: inline-block;
+                margin: 0 5px;
+                small{
+                    display: inline-block;
+                    margin: 0 3px;
+                    color: lighten($gray,20%);
+                }
+            }
+        }
+
+        .morelink{
+                float: $right;
+                position: relative;
+                display: inline-block;
+                text-transform: capitalize; 
+                padding: 6px 12px;
+                margin: 0 5px;
+                min-width: 70px;
+                text-align: center;
+                line-height: 28px;
+                color: $darkgray;
+                transition: .5s all ease;
+            svg{
+                @include size(100%,40px);
+                position: absolute;
+                top: 0;
+                left: 0;
+                #shape {
+                    @include size(100%,40px);
+                    stroke-width: 3px;
+                    fill: transparent;
+                    stroke: $darkgray;
+                    stroke-dasharray: 53 303;
+                    stroke-dashoffset: -474;
+                    transition: 1s all ease;
+                  }
+            }
+            &:hover{
+                text-decoration: none;
+                color: $gold;
+                #shape {
+                    stroke-width: 2px;
+                    stroke-dashoffset: 0;
+                    stroke-dasharray: -500;
+                    stroke: $gold;
+                  }
+            }
+        }
+}
+/*
+">des
+ <a href="{{link}}" class="morelink">
+                                    <svg xmlns="http://www.w3.org/2000/svg">
+                                        <rect id="shape"/>
+                                    </svg>
+                                    <span>more</span>
+                                </a>
+           
+                
+                    <article class="clearfix  result-article">
+                        <div class="col-md-5 col-sm-4 col-xs-12 p-0">
+                           <a href="{{link}}"><img src="assets/img/properties/1.jpg" alt=""></a> 
+                        </div> 
+                        <div class="col-md-7 col-sm-8 col-xs-12 p-0">
+                            <div class="">
+                            <span class="date">
+                                <i class="fa fa-calendar-o"></i>Jan 21, 2017 
+                            </span>
+                            </div>
+                            <h3><a href="{{link}}">Marina Bakirkoy Residence</a></h3>
+                             <p>Wake up to the great view of the Princess Islands and the Historical Peninsula to make the sea a part of your daily life. Take advantage of giving yourself a great social opportunity </p>  
+                              {{#if footer}}
+                                <div class="">
+                                    < dir="ltr"> 20000 </span> 
+                                    <span class="size">150 M<sup>2</sup></span> 
+                                    <span class="rooms">6</span>
+                                </div>
+                                {{/if}} 
+                             <a href="{{link}}">more</a>
+                        </div> 
+                    </article>
+*/

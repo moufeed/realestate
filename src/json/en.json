@@ -28,6 +28,7 @@
     "search_placholder":"search word ", 
     "global_search" :"global Search", 
     "advanced_search":"Advanced Search",
+    "result_found":"Results Found",
     "city":"city",
     "property":"Property",
     "properties":"properties",
