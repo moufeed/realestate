@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pagetitle}}</title>
+    <link rel="stylesheet" href="assets/css/style-{{dir}}.min.css">
+    
+</head>
+<body>
+    {{!-- {{>header }} --}}
+   <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/news-bg.jpg">
+         <div class="container"> 
+             <div class="row">
+                 <div class="col-sm-5 ">
+                      <h1>{{title}}</h1>
+                 </div>
+                 <div class="col-sm-7 ">
+                     <ol class="breadcrumb page-breadcrumb">
+                    {{#isequal dir 'ltr'}}
+                        <li><a href="index.html">{{home}}</a></li>
+                    {{else}}
+                        <li><a href="index-ltr.html">{{home}}</a></li>
+                    {{/isequal}}
+                    <li class="active">{{title}}</li>
+                    </ol>
+                 </div>
+             </div> 
+         </div>
+     </section>
+
+<section class="news-page">
+<div class="container">
+    <div class="row">
+          <div class="col-md-9 col-sm-8 col-xs-12 ">
+             <div class="news-list">   
+
+                 <div class="news-item row">
+                        <div class="col-sm-6  col-xs-12 news-image">
+                            <a href="{{link}}">
+                                <img src="assets/img/news/1.jpg" alt="">
+                            </a>
+                        </div> 
+                         <div class="col-sm-6  col-xs-12 news-info">
+                             <div class="news-meta">
+                                 <span class="date"><i class="fa fa-calendar-o"></i> JULY-24-2017</span>
+                                 <span class="user"><i class="fa fa-user-o"></i> Admin </span>
+                                 <span class="type"><i class="fa fa-tag"></i> news </span>
+                             </div>
+                            <h4 class="ns-t"><a href="{{link}}">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h4>
+                            <p class="ns-d">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quod. Quo recusandae illo sint praesentium quod? Sequi tempore amet veritatis soluta repellat laborum distinctio qui est, dicta quidem aliquam similique?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perferendis minus cupiditate illum quod aliquid sit saepe excepturi optio. Consectetur cum, blanditiis odio voluptatibus, neque distinctio eos, veritatis odit quod doloremque ab.
+                            </p>
+                            <hr class="gray-line">
+                            <footer  class="n-f">
+                                    <ul class="list-inline list-unstyled">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                <a href="{{link}}" class="more">{{read_more}}</a>
+                            </footer>
+                           
+                        </div>
+                 </div>
+
+
+                    
+             </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12 ">
+              {{>sidebar}}
+          </div>
+    </div>
+</div>
+</section>
+     {{!-- {{>footer }}  --}}
+    <script src="assets/js/script.min.js"></script>
+</body>
+</html>

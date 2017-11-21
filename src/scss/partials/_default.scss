@@ -221,3 +221,8 @@ body{
   h1,h2,h3,h4,h5,h6{
       text-transform: capitalize;
   }
+
+  .gray-line{
+    margin: 10px 0;
+    border-bottom: 1px dotted #d9d9d9;
+  }
