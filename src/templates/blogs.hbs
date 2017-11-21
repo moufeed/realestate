@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    {{!-- {{>header }} --}}
+      {{>header }}  
    <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/news-bg.jpg">
          <div class="container"> 
              <div class="row">
@@ -35,23 +35,22 @@
     <div class="row">
           <div class="col-md-9 col-sm-8 col-xs-12 ">
              <div class="news-list">   
-
-                 <div class="news-item row">
+                {{#each blogs_list}}
+                 <div class="news-item row animate fadeInUp" data-wow-duration="600ms" data-wow-delay="{{delay @index 70}}ms">
                         <div class="col-sm-6  col-xs-12 news-image">
                             <a href="{{link}}">
-                                <img src="assets/img/news/1.jpg" alt="">
+                                <img src="assets/img/news/{{img}}" alt="">
                             </a>
                         </div> 
                          <div class="col-sm-6  col-xs-12 news-info">
                              <div class="news-meta">
-                                 <span class="date"><i class="fa fa-calendar-o"></i> JULY-24-2017</span>
-                                 <span class="user"><i class="fa fa-user-o"></i> Admin </span>
-                                 <span class="type"><i class="fa fa-tag"></i> news </span>
+                                 <span class="date"><i class="fa fa-calendar-o"></i> {{date}}</span>
+                                 <span class="user"><i class="fa fa-user-o"></i>{{author}}</span>
+                                 <span class="type"><i class="fa fa-tag"></i> {{type}} </span>
                              </div>
-                            <h4 class="ns-t"><a href="{{link}}">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h4>
+                            <h4 class="ns-t"><a href="{{link}}">{{name}}</a></h4>
                             <p class="ns-d">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quod. Quo recusandae illo sint praesentium quod? Sequi tempore amet veritatis soluta repellat laborum distinctio qui est, dicta quidem aliquam similique?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perferendis minus cupiditate illum quod aliquid sit saepe excepturi optio. Consectetur cum, blanditiis odio voluptatibus, neque distinctio eos, veritatis odit quod doloremque ab.
+                                {{description}}
                             </p>
                             <hr class="gray-line">
                             <footer  class="n-f">
@@ -61,12 +60,11 @@
                                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     </ul>
-                                <a href="{{link}}" class="more">{{read_more}}</a>
+                                <a href="{{link}}" class="more">{{../read_more}}</a>
                             </footer>
-                           
                         </div>
                  </div>
-
+        {{/each}}
 
                     
              </div>
@@ -77,7 +75,7 @@
     </div>
 </div>
 </section>
-     {{!-- {{>footer }}  --}}
+     {{>footer }}   
     <script src="assets/js/script.min.js"></script>
 </body>
 </html>

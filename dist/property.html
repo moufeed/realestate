@@ -299,6 +299,10 @@
                                <li role="presentation">
                                    <a href="#map" aria-controls="map" role="tab" data-toggle="tab">map</a>
                                </li>
+                               <li>
+                                 <a href="#" class="showShareModal"><i class="fa fa-share-alt"></i></a>
+                               </li>
+                          
                            </ul>
                    
                            <!-- Tab panes -->
@@ -306,7 +310,12 @@
                                <div role="tabpanel" class="tab-pane fade in active desc" id="desc">
                                    <p>Istanbul Apartments is centrally located in the city&#x27;s most lively and has become an important attraction because of its strategic location. It is well known as the business center of Istanbul and has good connection with the city center and two lines of advanced transport lines including the subway. Buying an apartment in Istanbul is one of the biggest investment opportunities.</p>
                                    <p>Istanbul Apartments is centrally located in the city&#x27;s most lively and has become an important attraction because of its strategic location. It is well known as the business center of Istanbul and has good connection with the city center and two lines of advanced transport lines including the subway. Buying an apartment in Istanbul is one of the biggest investment opportunities.</p>
-                                   <p>Istanbul Apartments is centrally located in the city&#x27;s most lively and has become an important attraction because of its strategic location. It is well known as the business center of Istanbul and has good connection with the city center and two lines of advanced transport lines including the subway. Buying an apartment in Istanbul is one of the biggest investment opportunities.</p>
+                                   <div class="property-video">
+                                   <div class="embed-responsive embed-responsive-16by9 ">
+                                       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Lu5CTIupy0U?rel=0" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                   </div>
+                                   </div>
+                               <p>Istanbul Apartments is centrally located in the city&#x27;s most lively and has become an important attraction because of its strategic location. It is well known as the business center of Istanbul and has good connection with the city center and two lines of advanced transport lines including the subway. Buying an apartment in Istanbul is one of the biggest investment opportunities.</p>
                                </div>
                                <div role="tabpanel" class="tab-pane fade details" id="details">
                                    <ul class="list-unstyled details-list row">
@@ -393,14 +402,138 @@
                                            </span>
                                        </li>
                                    </ul>
-                   
+                                   
+                               <h4 class="property-title"><strong>Floor Plans</strong></h4>
+                               <div class="plans row">
+                                   <a href="assets/img/property/plan.jpg"   data-fancybox class="col-sm-6">
+                                       <img src="assets/img/property/plan.jpg" alt="floor plan" class="img-responsive" />
+                                   </a>
+                                   <a href="assets/img/property/plan-1.jpg" data-fancybox class="col-sm-6">
+                                       <img src="assets/img/property/plan-1.jpg" alt="floor plan" class="img-responsive" />
+                                   </a>
+                                  </div>
                                </div>
                                <div role="tabpanel" class="tab-pane fade map" id="map">
                                    <div class="property-map" id="mapbox"></div> 
                                </div>
                            </div>
                        </div>
-                   </div>                   
+                   </div> 
+                   
+                   
+                    
+                   
+                   <!-- Modal -->
+                   <div class="modal  zoomIn animated" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="sharelabel">
+                     <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                         <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           <h4 class="modal-title" id="sharelabel">Share on</h4>
+                         </div>
+                         <div class="modal-body">
+                           
+                             <ul class="list-unstyled share-list" data-window-title="Share on">
+                                       <li>
+                                        <a href="https://twitter.com/share?url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-twitter"></i>
+                                            Twitter
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u&#x3D;" class="sharebtn">
+                                            <i class="fa fa-facebook"></i>
+                                            facebook
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="https://plus.google.com/share?url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-google-plus"></i>
+                                            google plus
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="http://www.reddit.com/submit?url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-reddit"></i>
+                                            reddit
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="https://www.tumblr.com/share/link?url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-tumblr"></i>
+                                            tumblr
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="https://www.linkedin.com/shareArticle?mini&#x3D;true&amp;url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-linkedin"></i>
+                                            linkedin
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="https://www.pinterest.com/pin/create/button/?url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-pinterest-p"></i>
+                                            pinterest
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="http://www.stumbleupon.com/submit?url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-stumbleupon"></i>
+                                            stumbleupon
+                                        </a>
+                                       </li>
+                                       <li>
+                                        <a href="https://delicious.com/save?v&#x3D;5&amp;noui&amp;jump&#x3D;close&amp;url&#x3D;" class="sharebtn">
+                                            <i class="fa fa-delicious"></i>
+                                            delicious
+                                        </a>
+                                       </li>
+                             </ul>
+                          
+                   
+                         </div>
+                         
+                       </div>
+                     </div>
+                   </div>
+                                       
+                   
+                <div class="properties_list">
+                        <h3 class="property-title mb-15"><strong>Similar Properties</strong></h3>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                                <article class="similar_property">
+                                    <a href="property.html" class="image">
+                                        <img src="assets/img/properties/1.jpg" alt="Istanbul Central Property">
+                                    </a>
+                                    <h4><a href="property.html">Istanbul Central Property</a></h4>
+                                    <span class="line"></span>
+                                    <span class="price"> 740.000 </span>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <article class="similar_property">
+                                    <a href="property.html" class="image">
+                                        <img src="assets/img/properties/2.jpg" alt="Spacious apartment overlooking the sea">
+                                    </a>
+                                    <h4><a href="property.html">Spacious apartment overlooking the sea</a></h4>
+                                    <span class="line"></span>
+                                    <span class="price"> 740.000 </span>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <article class="similar_property">
+                                    <a href="property.html" class="image">
+                                        <img src="assets/img/properties/3.jpg" alt="Morjan Project">
+                                    </a>
+                                    <h4><a href="property.html">Morjan Project</a></h4>
+                                    <span class="line"></span>
+                                    <span class="price"> 740.000 </span>
+                                </article>
+                            </div>
+                        </div>
+                </div>
+
                 </div>
 
 

@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; 
 
@@ -10,12 +10,11 @@
 
 @import 'lib/jquery-ui-1.12.1.custom',
         'lib/animate',
-        'lib/fonts';
+        'lib/fonts', 
+        'lib/jquery.fancybox';
 
 @import 
-        'lib/animate',
-        'lib/fonts',
-        'partials/default',
+        'partials/default',  
         'partials/header',
         'partials/footer',
         'partials/navigation',

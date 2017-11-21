@@ -13,6 +13,10 @@
             <li role="presentation">
                 <a href="#map" aria-controls="map" role="tab" data-toggle="tab">{{map}}</a>
             </li>
+            <li>
+              <a href="#" class="showShareModal"><i class="fa fa-share-alt"></i></a>
+            </li>
+       
         </ul>
 
         <!-- Tab panes -->
@@ -20,7 +24,12 @@
             <div role="tabpanel" class="tab-pane fade in active desc" id="desc">
                 <p>{{property_detail.description}}</p>
                 <p>{{property_detail.description}}</p>
-                <p>{{property_detail.description}}</p>
+                <div class="property-video">
+                <div class="embed-responsive embed-responsive-16by9 ">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Lu5CTIupy0U?rel=0" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                </div>
+                </div>
+            <p>{{property_detail.description}}</p>
             </div>
             <div role="tabpanel" class="tab-pane fade details" id="details">
                 <ul class="list-unstyled details-list row">
@@ -107,11 +116,52 @@
                         </span>
                     </li>
                 </ul>
-
+                
+            <h4 class="property-title"><strong>{{floor_plans}}</strong></h4>
+            <div class="plans row">
+                <a href="assets/img/property/plan.jpg"   data-fancybox class="col-sm-6">
+                    <img src="assets/img/property/plan.jpg" alt="floor plan" class="img-responsive" />
+                </a>
+                <a href="assets/img/property/plan-1.jpg" data-fancybox class="col-sm-6">
+                    <img src="assets/img/property/plan-1.jpg" alt="floor plan" class="img-responsive" />
+                </a>
+               </div>
             </div>
             <div role="tabpanel" class="tab-pane fade map" id="map">
                 <div class="property-map" id="mapbox"></div> 
             </div>
         </div>
     </div>
+</div> 
+
+
+ 
+
+<!-- Modal -->
+<div class="modal  zoomIn animated" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="sharelabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="sharelabel">{{share_on}}</h4>
+      </div>
+      <div class="modal-body">
+        
+          <ul class="list-unstyled share-list" data-window-title="{{share_on}}">
+              {{#each share_list}}
+                    <li>
+                     <a href="{{link}}" class="sharebtn">
+                         <i class="fa {{icon}}"></i>
+                         {{name}}
+                     </a>
+                    </li>
+              {{/each}}
+          </ul>
+       
+
+      </div>
+      
+    </div>
+  </div>
 </div>
+ 

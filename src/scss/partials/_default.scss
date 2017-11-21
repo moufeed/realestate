@@ -30,7 +30,12 @@ body{
         padding-#{$right} : 15px !important;
     }
 } 
-
+.p-15{
+    padding: 15px !important;
+}
+.mb-15{
+    margin-bottom: 15px !important;
+}
 @include selection {
     color: $white;
     background: $gold;
@@ -38,7 +43,7 @@ body{
 
 
 .back-to-top {
-    @include fixed(bottom $left,15px 15px);
+    @include fixed(bottom $right,15px 15px);
     @include square(40px);
     background: rgba($gold, .7);
     color: $darkgray;

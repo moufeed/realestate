@@ -2,7 +2,7 @@
 .results-page{
     padding: 50px 0;
     position: relative;
-    background : url('#{$img}rings.png') 0 0 no-repeat;
+    background :$white url('#{$img}rings.png') 0 0 no-repeat;
 }
 .srch-results-lbl{
     border: 1px solid #eee;

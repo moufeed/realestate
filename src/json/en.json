@@ -17,7 +17,7 @@
     "name" :"Name",
     "email":"Email",
     "full_name" :"Full Name",
-    "phone_number" :"Phone Number",
+    "phone_number" :"Phone Number", 
     "message" :"Message",
     "mobile_number":"Mobile Number",
     "send":"Send",
@@ -33,7 +33,9 @@
     "city":"city",
     "property":"Property",
     "properties":"properties",
+    "similar_properties" :"Similar Properties",
     "type_label":"Property Type",
+    "floor_plans" :"Floor Plans",
     "rooms":"Rooms",
     "rooms_count":"Number of rooms",
     "bathrooms":" Bathrooms",
@@ -99,6 +101,7 @@
     "map" :"map",
     "type":"type", 
     "location":"location",
+    "share_on":"Share on",
     "back_to_home" :"Back to Home",
     "contact_us_paragraph":  "Hossam Orfali Consulting is ready to answer any proposal, interpretation or request for support. You can contact us via the website or one of the available means of communication, and you can leave a message to us through the form below:",
     "about_section_heading":"Why Hossam Orfali ?",
@@ -449,6 +452,111 @@
         "type" :"tourism",
         "date":"Dec 21, 2013",
         "footer":false
+    }
+],
+
+"blogs_list" :[
+    {
+        "name" :"More than 9 million foreign tourists visit Istanbul in 10 months",
+        "link" :"blog.html",
+        "img" :"1.jpg",
+        "date":"15 November 2017",
+        "author":"admin",
+        "type":"tourism",
+        "description" :"The number of foreign tourists who visited the Turkish city of Istanbul in the first ten months of this year 9 million, 120 thousand and 248 tourists. According to the Tourism Statistics report published by the Turkish Ministry of Culture and Tourism on Wednesday. According to the report, the number of foreign tourists who visited Istanbul during the year has increased by 16 percent compared to the same period last year. The report said that the Germans topped the list of foreign tourists who visited Istanbul this year, followed by Iranians, Saudis, Iraqis and Russians. The number of visitors to Istanbul from Russia rose by 64.6 percent, while the number of visitors from Arab countries increased by 35 percent, compared with the same period last year. He noted that the number of foreign tourists who visited Istanbul during the first ten months of last year amounted to 7 million 866 866 433 tourists. The first ten of last year amounted to 7 million and 866 thousand and 433 tourists."
+    },
+    {
+        "name" :"The Turkish lira falls to a record low",
+        "link" :"blog.html",
+        "img" :"2.jpg",
+        "date":"21 November 2017",
+        "author":"admin",
+        "type":"economie",
+        "description" :"The Turkish lira fell to a record low of 3.9519 lira to the dollar on Tuesday on concerns about Ankara's tense relations with Washington. The Turkish currency was at 3.6737 dollars by 0637 GMT, after falling from the previous low of 3.9417 in January. The lira closed at 3.9290 on Monday, according to the agency \"Reuters\". Concerns over US relations are focused on the trial of Turkish gold dealer Reza Darrab, accused of violating US sanctions with Iran, a case described by a Turkish government spokesman as \"a clear conspiracy against Turkey\" that lacks any legal basis."
+    },
+    {
+        "name" :"Hammer blows bring life to a Turkish business alley",
+       "link" :"blog.html",
+        "img" :"3.jpg",
+        "date":"12 October 2017",
+        "author":"admin",
+        "type":"Mix",
+        "description" :"In the city of Gorom, north of Anatolia, the alley of Dikigilar, in the strikes of shoe repairers, resists the factors of time to survive as one of the narrowest commercial alleys in the world. The alley has a history of about a century and is 30 meters long, only 1.5 meters wide, with more than 30 small shops on its sides. It now houses only 5 shops and a tea corner, while the rest are used as stores. At the same time, the alleys attract both Turkish and foreign visitors to the city and offer them a wonderful opportunity to capture many outstanding images. A shopkeeper in the alley, Kamal Jehan, 53, told Anatolia that he had been working for 40 years in the shoe repairing profession he inherited from his father."
+    },{
+        "name" :"The volume of trade between Turkey and Russia increased by 31.4% in 8 months",
+       "link" :"blog.html",
+        "img" :"4.jpg",
+        "date":"22 October 2017",
+        "author":"admin",
+        "type":"economie",
+        "description" :"The volume of trade between Turkey and Turkey during the first eight months of this year increased by 31.4% compared to the same period of the same period last year, Russian Energy Minister Alexander Novak said after the 15th session of the Joint Economic Committee of Russia and Turkey in Kazan, capital of the Republic of Tatarstan of the Russian Federation. last year. Novak pointed out that his country has accelerated the process of lifting the ban on the import of tomatoes from Turkey, expected to start Moscow to import the first shipment in early November. \"We agreed to lift all restrictions and we will continue to work,\" he said. Novak also expressed his country's readiness to export meat to Turkey. \"A report has been prepared and is being studied in order to obtain the relevant licenses,\" Novak said. \"The export of meat, poultry and turkeys is linked to the speed of obtaining the necessary permits,\" he said. In another context, Novak said that the meeting today discussed in detail the project of the \"Turkish Torrent\" natural gas, and thanked Turkey for its ratification of the report on the environmental impact of the project. He added: \"We have agreed to sign the protocols of the land section of the second line of the project before the end of this year.\" He stressed that the Turkish authorities have so far approved all initial licenses, and that the project will be started after obtaining the final license."
+    },{
+        "name" :"An earthquake measuring 3.9 on the Richter scale shook the Turkish city of Shinykoy",
+       "link" :"blog.html",
+        "img" :"5.jpg",
+        "date":"3 November 2017",
+        "author":"admin",
+        "type":"news",
+        "description" :"A small earthquake measuring 3.9 hit the center of the Yidsu area of Shinykwe. According to data from the Observatory of Earthquake Observations in Kandilli, the earthquake occurred at 23:50 in the center of Yedisu Şenköy district. The observatory said the quake was at a depth of 5 km and was felt by residents of the city and surrounding villages, while no deaths were reported. "
+    },{
+        "name" :"Istanbul City",
+       "link" :"blog.html",
+        "img" :"6.jpg",
+        "date":"JULY-24-2017",
+        "author":"admin",
+        "type":"tourism",
+        "description" :"The city of Istanbul has historically been known by many names from Byzantium, Constantinople, Astana and Istanbul. The largest city in the Turkish Republic and ranks fifth in the world with a population of more than 13 million. Although not the capital, it is the cultural, economic and financial center, and since 1985 it has been on the UNESCO World Heritage List. Istanbul is a beautiful and ancient city: from the western side of its Bosphorus Strait, with its natural harbor, Haliç or Altın Boynuz, Europe and East Asia or Anatolia begin, and it is the only city in the world to span two continents. Many empires and peoples ruled Istanbul and its ancient history is rich, ancient and rich. It was the capital of the Roman Empire then Byzantine and then Latin and then Ottoman, but it was never fraught with some kind of sanctity with a prominent religious status. It gained religious importance for Christians after the Byzantine Empire embraced this religion and then became the capital of the Islamic Caliphate until 1924. After the establishment of the Turkish Republic and the transfer of the capital to Ankara, the status of Istanbul was slightly weakened, but it changed in the 1940s. The city underwent radical changes in the creation of squares, roads and roads, such as Taksim Square. From foreign communities to labor districts. Istanbul has a generally mild climate, although it is located between areas of the surrounding climate and the Mediterranean. The summers are hot and humid and their winters are cold and wet and often snow falls. Istanbul's mornings are foggy almost every year, continuing until noon."
+    }
+],
+
+"share_list":[
+    {
+        "name" :"Twitter",
+        "link" :"https://twitter.com/share?url=",
+        "class" :"twitter",
+        "icon" :"fa-twitter"
+    },
+    {
+        "name" :"facebook",
+        "link" :"https://www.facebook.com/sharer/sharer.php?u=",
+        "class" :"facebook",
+        "icon" :"fa-facebook"
+    },
+    {
+        "name" :"google plus",
+        "link" :"https://plus.google.com/share?url=",
+        "class" :"google",
+        "icon" :"fa-google-plus"
+    },{
+        "name" :"reddit",
+        "link" :"http://www.reddit.com/submit?url=",
+        "class" :"reddit",
+        "icon" :"fa-reddit"
+    },{
+        "name" :"tumblr",
+        "link" :"https://www.tumblr.com/share/link?url=",
+        "class" :"tumblr",
+        "icon" :"fa-tumblr"
+    },{
+        "name" :"linkedin",
+        "link" :"https://www.linkedin.com/shareArticle?mini=true&url=",
+        "class" :"linkedin",
+        "icon" :"fa-linkedin"
+    },{
+        "name" :"pinterest",
+        "link" :"https://www.pinterest.com/pin/create/button/?url=",
+        "class" :"pinterest",
+        "icon" :"fa-pinterest-p"
+    },{
+        "name" :"stumbleupon",
+        "link" :"http://www.stumbleupon.com/submit?url=",
+        "class" :"stumbleupon",
+        "icon" :"fa-stumbleupon"
+    },{
+        "name" :"delicious",
+        "link" :"https://delicious.com/save?v=5&noui&jump=close&url=",
+        "class" :"delicious",
+        "icon" :"fa-delicious"
     }
 ]
 } 

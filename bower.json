@@ -22,6 +22,7 @@
     "wow": "wowjs#^1.1.2",
     "jquery.nicescroll": "nicescroll#^3.7.6",
     "bootstrap-select": "^1.12.4",
-    "parallax.js": "^1.5.0"
+    "parallax.js": "^1.5.0",
+    "fancybox": "^3.2.5"
   }
 }
