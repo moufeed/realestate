@@ -231,7 +231,10 @@
         padding: 10px;
         border: 1px solid #e6e6e6;
         text-align: center;
-        min-height: 300px;
+        min-height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .image{
             width: 100%;
             height: 200px;
@@ -262,6 +265,7 @@
         }
         h4{
             font-size: 14px;
+            line-height: 24px;
             a{
                 color: $black;
                 &:hover{
@@ -273,7 +277,7 @@
             display: block;
             margin: 10px 0;
             background: url('#{$img}dotted-horizontal.png') center center no-repeat;
-            height: 1px;
+            height: 2px;
         }
         .price{
             font-size: 16px;

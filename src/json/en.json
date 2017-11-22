@@ -110,27 +110,27 @@
     "navigation": [{
         "name": "Home",  
         "link": "index.html",   
-        "active": true  
+        "active": "index"  
     },
     {
         "name": "About us",
         "link": "aboutus.html",
-        "active": false
+        "active": "about"
     },  
     { 
         "name": "Properties",
         "link": "properties.html",
-        "active": false
+        "active": "properties"
     },
     { 
-        "name": "our services", 
-        "link": "services.html",
-        "active": false
+        "name": "News", 
+        "link": "blogs.html",
+        "active": "news"
     }, 
     {
         "name": "Contact Us",
         "link": "contactus.html",
-        "active": false
+        "active": "contact"
     }
 ],
     "contatlist" :[

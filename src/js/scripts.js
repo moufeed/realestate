@@ -123,7 +123,7 @@ $(document).ready(function () {
     var duration = 300;
     
     $(window).scroll(function () {
-          if( window.pageYOffset > 100){
+          if( window.pageYOffset > 350){
               $('.main_header').addClass('fixed-top');
             $('body').css('padding-top',$('.main_header').height()+'px');
         }else{

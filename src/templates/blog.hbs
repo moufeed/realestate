@@ -9,12 +9,12 @@
     
 </head>
 <body>
-    {{!-- {{>header }} --}}
-   <section class="page_header">
+    {{>header page_active='news' }}
+   <section class="page_header" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/blog-bg.jpg">
          <div class="container"> 
              <div class="row">
                  <div class="col-sm-5 ">
-                      <h1>{{title}}</h1>
+                      <h1>{{blog_content.name}}</h1>
                  </div>
                  <div class="col-sm-7 ">
                      <ol class="breadcrumb page-breadcrumb">
@@ -23,7 +23,7 @@
                     {{else}}
                         <li><a href="index-ltr.html">{{home}}</a></li>
                     {{/isequal}}
-                    <li class="active">{{title}}</li>
+                    <li class="active">{{blog_content.name}}</li>
                     </ol>
                  </div>
              </div> 
@@ -78,6 +78,7 @@
                                 <img src="assets/img/news/{{img}}" alt="{{name}}">
                             </a>
                             <h4><a href="{{link}}">{{name}}</a></h4>
+                             <span class="line"></span> 
                             <span> 
                                 <i class="fa fa-calender-o"></i>
                                 {{date}}
@@ -94,16 +95,8 @@
     </div>
 </div>
 </section>
-     {{!-- {{>footer }}  --}}
+     {{>footer }} 
     <script src="assets/js/script.min.js"></script>
 </body>
 </html>
-{{!-- 
-        "name" :"أكثر من 9 ملايين سائح أجنبي يزورون إسطنبول في عشرة أشهر",
-        "link" :"blog-rtl.html",
-        "img" :"1.jpg",
-        "date":"15 نوفمبر 2017",
-        "author":"admin",
-        "type":"سياحة",
-        "description" :
- --}}
+ 

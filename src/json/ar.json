@@ -110,27 +110,27 @@
     "navigation": [{
             "name": "الرئيسية",
             "link": "index-rtl.html",
-            "active": true
+            "active": "index"
         },
         {
             "name": "حول الشركة",
             "link": "aboutus-rtl.html",
-            "active": false
+            "active": "about"
         },
         {
             "name": "العقارات",
             "link": "properties-rtl.html",
-            "active": false
+            "active": "properties"
         },
         {
-            "name": "خدماتنا",
-            "link": "services-rtl.html",
-            "active": false
+            "name": "الاخبار",
+            "link": "blogs-rtl.html",
+            "active": "news"
         },
         {
             "name": "إتصل بنا",
             "link": "contactus-rtl.html",
-            "active": false
+            "active": "contact"
         }
     ],
 

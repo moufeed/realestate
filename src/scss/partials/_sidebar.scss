@@ -194,7 +194,7 @@
                 box-shadow: 0 0 0 2px $white, 0 0 0 3px lighten($gray,45%);
                 transition: all .3s;
                 a{
-                    display: block;
+                    display: inline-block;
                 }
                 img{
                     height: 100%;
