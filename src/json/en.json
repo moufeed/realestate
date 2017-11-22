@@ -133,6 +133,66 @@
         "active": "contact"
     }
 ],
+    "slider":[
+        {
+            "name":"Apartment with Bosphorus View",
+             "image":"1.jpg",
+            "price":"1235.53",
+            "type":"for sale",
+            "properties":[
+                {
+                    "icon":"fa-arrows-alt", 
+                    "title":"size", 
+                    "val":"155 M2" 
+                },{
+                    "icon":"fa-bath", 
+                    "title":"bathrooms", 
+                    "val":"3" 
+                },{
+                    "icon":"fa-car", 
+                    "title":"parking", 
+                    "val":"1" 
+                },{
+                    "icon":"fa-bed", 
+                    "title":"bedrooms", 
+                    "val":"5" 
+                },{
+                    "icon":"fa-list-ol", 
+                    "title":"floor", 
+                    "val":"21" 
+                }
+                ]
+        },
+        {
+            "name":"Apartments within the Royal Complex",
+            "image":"2.jpg",
+            "price":"25367",
+            "type":"for sale",
+            "properties":[
+                {
+                    "icon":"fa-arrows-alt", 
+                    "title":"size", 
+                    "val":"120 M2" 
+                },{
+                    "icon":"fa-bath", 
+                    "title":"bathrooms", 
+                    "val":"1" 
+                },{
+                    "icon":"fa-car", 
+                    "title":"parking", 
+                    "val":"0"  
+                },{
+                    "icon":"fa-bed", 
+                    "title":"bedrooms", 
+                    "val":"2" 
+                },{
+                    "icon":"fa-list-ol", 
+                    "title":"floor", 
+                    "val":"15" 
+                }
+                ]
+        }
+    ],
     "contatlist" :[
         {
             "icon" :"fa-building-o",

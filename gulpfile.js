@@ -42,6 +42,16 @@ var config = {
         watch: './src/js/*.js',
         dist: "./dist/assets/js",
         file: "script.js"
+    },slider:{
+        src: [
+            
+            './src/js/jquery.themepunch.tools.min.js',
+            './src/js/jquery.themepunch.revolution.min.js',
+            './src/js/slider.js'
+        ],
+        
+        dist: "./dist/assets/js",
+        file: "slider.js"
     },
 
     html: {
@@ -132,7 +142,23 @@ gulp.task('script', function () {
         .pipe(gulp.dest(config.js.dist));
 })
 
- 
+gulp.task('slider', function () {
+    return gulp.src(config.slider.src)
+        .pipe(concat(config.slider.file))
+        .pipe(uglify({
+            mangle: false
+        }))
+        .on('error', function (err) {
+            gutil.log(gutil.colors.red('[Error]'), err.toString());
+        })
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(header(config.header, {
+            pkg: pkg
+        }))
+        .pipe(gulp.dest(config.slider.dist));
+})
 
 // ----------------------------------------------------
 // -----------------   watch/files  -----------------

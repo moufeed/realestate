@@ -133,7 +133,66 @@
             "active": "contact"
         }
     ],
-
+    "slider":[
+        {
+            "name":"شقة مطلة على البوسفور",
+            "image":"1.jpg",
+            "price":"1235.53",
+            "type":"للبيع",
+            "properties":[
+                {
+                    "icon":"fa-arrows-alt", 
+                    "title":"المساحة", 
+                    "val":"155 M2" 
+                },{
+                    "icon":"fa-bath", 
+                    "title":"الحمامات", 
+                    "val":"3" 
+                },{
+                    "icon":"fa-car", 
+                    "title":"موقف سيارات", 
+                    "val":"1" 
+                },{
+                    "icon":"fa-bed", 
+                    "title":"غرف نوم", 
+                    "val":"5" 
+                },{
+                    "icon":"fa-list-ol", 
+                    "title":"الطابق", 
+                    "val":"21" 
+                }
+                ]
+        },
+        {
+            "name":"شقق ضمن مجمع الملكي",
+            "image":"2.jpg",
+            "price":"25367",
+            "type":"للبيع",
+            "properties":[
+                {
+                    "icon":"fa-arrows-alt", 
+                    "title":"المساحة", 
+                    "val":"120 M2" 
+                },{
+                    "icon":"fa-bath", 
+                    "title":"الحمامات", 
+                    "val":"1" 
+                },{
+                    "icon":"fa-car", 
+                    "title":"موقف سيارات", 
+                    "val":"0" 
+                },{
+                    "icon":"fa-bed", 
+                    "title":"غرف نوم", 
+                    "val":"2" 
+                },{
+                    "icon":"fa-list-ol", 
+                    "title":"الطابق", 
+                    "val":"15" 
+                }
+                ]
+        }
+    ],
     "contatlist" :[
         {
             "icon" :"fa-building-o", 

@@ -1,9 +1,8 @@
 
 .section-search{
     padding: 50px 0;
-//    background:url('#{$img}search-bg.jpg') center  /cover no-repeat;
-    // background-attachment: fixed;
-    background: transparent;
+     background:url('#{$img}search-bg.jpg') center  / cover no-repeat;
+     background-attachment: fixed;
     position: relative;
     &:after{
         @include absolute(top $left ,0 0);

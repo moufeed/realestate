@@ -1,0 +1,80 @@
+.slider-section{
+    min-height: 150px;
+    .hesperiden.tparrows{
+        border-radius: 0;
+        height: 60px;
+        &:before{
+            line-height: 60px;
+        }
+    }
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    .tp-caption.main-des{
+            background: rgba(#202227,.8);
+            border-top: 2px solid $gold;
+            max-width: none;
+            padding: 5px 0;
+            min-width: 295px;
+            
+    } 
+    .prop-info{
+        header{
+            text-align: center;
+            padding: 20px 10px ;
+            border-bottom: 1px solid lighten($black , 15%);
+            h3{
+                margin: 0;
+                color: $white;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            span{
+                display: inline-block;
+                margin: 0 5px;
+            }
+            .price{
+                color: #ffdb6e;
+                font-size: 18px;
+                font-weight: bolder;
+            }
+            .tag{
+                background:$white;
+                color: $black;
+                font-weight: 200;
+                padding: 0 5px;
+            }
+        }
+        .list_info{
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 48%;
+                margin: 10px 1%;
+                div{
+                    @include clearfix;
+                    i{
+                        font-size:25px;
+                        color: $gold;
+                        float:$left;
+                        @include square(40px);
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                    small { color: lighten($gray,40%);}
+                    strong{ color: $white;}
+                    span{
+                        float: $left; 
+                        width: calc(100% - 45px);
+                        padding: 0 5px;
+                        small,strong{
+                            display: block;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }  
+}  
