@@ -1,0 +1,91 @@
+.blog-page{
+    padding: 50px 0;
+    position: relative;
+    background :$white url('#{$img}rings.png') 0 0 no-repeat;
+}
+
+.blog-body{
+    .b-image{
+        padding: 15px;
+        background: $white;
+        border: 1px solid darken($white, 10%);
+        margin-bottom: 15px;
+        img{
+            max-height: 500px;
+            background:  darken($white, 30%)
+        } 
+    }
+    .b-h{
+        margin-bottom: 25px;
+        h2{
+            color: $black;
+            font-size: 20px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom:1px dashed darken($white ,15%) ; 
+        }
+        div{
+            color: lighten($gray,10%);
+            padding-bottom: 10px;
+            border-bottom:1px dashed darken($white ,15%) ; 
+            span{
+                margin-#{$right}:5px; 
+            }
+            i{
+                margin-#{$right}:5px; 
+                color: lighten($gray,5%);
+            }
+        }
+    }
+    .b-content{
+        color: $gray;
+        line-height: 24px;
+        font-size: 14px;
+        @include  if-ltr{
+            letter-spacing: 1px;
+        }
+        h1,h2,h3,h4,h5,h6{
+            color: $black;
+        }
+        img{
+            margin: 15px 0;
+        }
+        ul,ol{
+            color: $gold; 
+            &.list-unstyled{
+
+            }          
+            li{
+                color: darken($gray ,10%);
+                position: relative;
+                &:before{
+                    content: '⬤';
+                    margin:0 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*
+ 
+            
+            <div class="">
+                    <p>
+                        {{blog_content.body.a}}
+                    </p>
+                    <h3>{{blog_content.body.h3}}</h3>
+                    <p>
+                        {{blog_content.body.b}}
+                    </p>
+                    <img src="assets/img/blog/{{blog_content.body.img}}" class="img-responsive" alt="">
+                    <h4>{{blog_content.body.h4}}</h4>
+                    {{#each blog_content.body.list}}
+                            <li>
+                                {{this}}
+                            </li>
+                    {{/each}}
+            </div>
+*/

@@ -131,6 +131,7 @@
             text-decoration: none !important;
             text-transform: capitalize;
             position: relative;
+            z-index: 1;
             &:before {
                 content: "";
                 @include absolute(bottom left,
@@ -230,6 +231,7 @@
         padding: 10px;
         border: 1px solid #e6e6e6;
         text-align: center;
+        min-height: 300px;
         .image{
             width: 100%;
             height: 200px;
@@ -259,7 +261,7 @@
             }
         }
         h4{
-            font-size: 16px;
+            font-size: 14px;
             a{
                 color: $black;
                 &:hover{
@@ -293,6 +295,9 @@
     .modal-content{
         border-radius: 3px;
     }
+    .modal-header{
+        border-bottom-color:$gold;
+    }
     &.in{
         display: flex !important;
         justify-content: center;
@@ -300,3 +305,44 @@
     }    
 }
 
+.share-list{
+
+    li{
+        float: $left;
+        margin: 5px;
+        a{
+            display: block;
+            padding:5px;
+            border: 1px dotted darken($white,15%);
+            text-align: center;
+            min-width: 100px;
+            color:$gray;
+            position: relative;
+            text-transform: capitalize;
+            transition: all .33s;
+            overflow :hidden;
+            text-decoration: none !important;
+            .fa{
+                display: block;
+                font-size: 18px;
+                line-height: 50px;  
+                transition: transform .33s ,opacity .3s;
+            }
+            &:hover{
+               
+                color: $white;
+                @each $i in $social-colors{
+                    &[class*="#{nth($i,1)}"]{
+                        background: nth($i,2); 
+                        border-color :  nth($i,2);
+                    }
+                }
+                .fa{
+                    opacity : .5;
+                    transform: scale(6) rotate(5deg);
+                }
+            }
+        }
+    }
+}
+ 

@@ -406,7 +406,7 @@
 "search_results_list":[
     {
         "name":"Turkish construction companies ranked second in the world",
-        "link":"#",
+        "link":"blog.html",
         "img":"1.jpg",
         "description":"Turkish Construction Companies For the 9th time in a row, Turkey ranked second in the world in terms of the number of contracting and construction companies operating outside Turkish territory.",
         "type" :"news",
@@ -414,7 +414,7 @@
         "footer":false
     }, {
         "name":"Apartments For Sale in Alanya Avslar area" ,
-        "link":"property-rtl.html",
+        "link":"property.html",
         "img":"2.jpg",
         "description":"We offer you the latest projects of our company Apartments for sale in Turkey in the city of Alanya Afslar area and close to the center of Avslar city 900 meters from the famous sandy beach Incekum",
         "type" :"property",
@@ -422,7 +422,7 @@
         "footer":"<span class='price'> <small>price</small> <b dir='ltr'> 20000  </b></span><span class='size'><small>size</small> 150 M<sup>2</sup></span><span class='rooms'><small>rooms</small> 6</span>"
     }, {
         "name":"Taksim Square",
-        "link":"#",
+        "link":"blog.html",
         "img":"3.jpg",
         "description":"It is very difficult to be in Istanbul and not pass through the division even once, but this is impossible. This is not only the main Istanbul metro station but also the center of its daily, cultural and ethnic life, which reaches the outskirts of the city",
         "type" :"tourism",
@@ -430,7 +430,7 @@
         "footer":false
     }, {
         "name":"New Disneyland in Turkey",
-        "link":"#",
+        "link":"blog.html",
         "img":"4.jpg",
         "description":"Like the Land Land, which opened in 2013 in Istanbul, a Turkish version of the Disneyland entertainment city, Turkey plans to open another city in the form of a theme park known as the Land of Mythology in the Turkish city of Antalya, overlooking the Mediterranean in July.",
         "type" :"news",
@@ -438,7 +438,7 @@
         "footer":false
     }, {
         "name":"Apartments for sale in Turkey Alanya city",
-        "link":"property-rtl.html",
+        "link":"property.html",
         "img":"5.jpg",
         "description":"Through the experience of our company in the field of construction and construction for 40 years you can now benefit and buy high quality apartment and close to the sea at reasonable prices and suitable for cash and installment for 24 months and without interest.",
         "type" :"property",
@@ -446,7 +446,7 @@
         "footer":"<span class='price'> <small>price</small> <b dir='ltr'> 20000  </b></span><span class='size'><small>size</small> 150 M<sup>2</sup></span><span class='rooms'><small>rooms</small> 6</span>"
     }, {
         "name":"Egyptian Market",
-        "link":"#",
+        "link":"blog.html",
         "img":"6.jpg",
         "description":"The Egyptian market is an important part of the ancient Ottoman civilization and attracts the attention of Arab and foreign tourists. Getting around this market is a real pleasure for the visitor as the many attractive goods and the voices of the sellers are calling from every direction",
         "type" :"tourism",
@@ -525,7 +525,7 @@
     {
         "name" :"google plus",
         "link" :"https://plus.google.com/share?url=",
-        "class" :"google",
+        "class" :"google-plus",
         "icon" :"fa-google-plus"
     },{
         "name" :"reddit",
@@ -558,5 +558,24 @@
         "class" :"delicious",
         "icon" :"fa-delicious"
     }
-]
-} 
+], 
+
+"blog_content" :{
+    "name" :"Why do some brands live for decades?",
+    "img" :"1.jpg",
+    "author" :"admin",
+    "date" :"21 November 2017",
+    "body" :{
+        "a":"Some commercial logos disappear, others live for centuries. So what makes us love or offer a slogan? Sometime in 1855, an unknown genius sat down to design a motto. It was a simple crimson triangle, but it continued and spread throughout the world. The logo was pasted on bottles of the famous 'Bass Bell' beer, a beer that tastes like barley. In the following decades, this logo found its way into the paintings of Edward Manet, and at least 40 paintings by Picasso, and appeared in Ulysses' novel and a children's book. By 1871, the emblem was found even in the most arched corners of the British Empire, from the frozen Falkland coasts to the tropical shores of Mauritius. It is the oldest registered trademark in the UK. But the recognition of this slogan these days is not done as quickly as before. The Bass Bell logo joins other famous brands, such as Tea Twings, Levi Strauss, Peugeot, Johnson & Johnson, Heinz and Shell Oil, over 100 years of age.",
+        "h3":"Creative design tricks that stimulate creativity",
+        "b":"The design of these mythological logos differs from other designs that emerged later and were widely criticized, as when Gap added a new square to its old logo. The company's most recent customer was a fuss that ended with the unveiling of the logo just one week after its appearance, or when the Royal Mail Service abandoned its 350-year heritage and took on a new logo and a new brand called 'Consignia'. The new logo and name, however, caused a great deal of confusion among the public, costing £ 2 million, and the rapidly designed company retreated. 'It's wonderful that people are passionate about certain brands,' says Allison Shields, assistant marketing professor at Ithaca College in New York. What makes a certain logo a mindset, as a kind of image that permeates the public consciousness, and enjoys respect and quality, or a sense of nostalgia? What makes other slogans disappear?",
+        "img":"2.jpg",
+        "h4":"Innovative way to use chicken feathers in home heating",
+        "list":[
+            "Medical clinics designed to 'heal'",
+            "Why do international companies evaluate their employees for huge and expensive buildings?",
+            "Beirut also gives an example of Enron's logo, which was also designed by RAND."
+        ]
+    }
+}
+}  

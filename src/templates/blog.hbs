@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    {{>header }}
+    {{!-- {{>header }} --}}
    <section class="page_header">
          <div class="container"> 
              <div class="row">
@@ -30,12 +30,80 @@
          </div>
      </section>
 
-<section class="">
+<section class="blog-page">
 <div class="container">
-    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-9 col-sm-8 col-xs-12 ">
+            <div class="blog-body">
+            <div class="b-image">
+                <img src="assets/img/blog/{{blog_content.img}}"  class="img-responsive" alt="">
+            </div>
+            <header class="b-h">
+                <h2>
+                    <strong>{{blog_content.name}}</strong>
+                </h2>
+                <div>
+                    <span> <i class="fa fa-user-o"></i>{{blog_content.author}}</span>
+                    <span><i class="fa fa-calendar-o"></i>{{blog_content.date}}</span>
+                </div>
+            </header>
+            <div class="b-content">
+                    <p>
+                        {{blog_content.body.a}}
+                    </p>
+                    <h3>{{blog_content.body.h3}}</h3>
+                    <p>
+                        {{blog_content.body.b}}
+                    </p>
+                    <img src="assets/img/blog/{{blog_content.body.img}}" class="img-responsive" alt="">
+                    <h4>{{blog_content.body.h4}}</h4>
+                    <ul class="list-unstyled">
+                        {{#each blog_content.body.list}}
+                                <li>
+                                    {{this}}
+                                </li> 
+                        {{/each}}
+                    </ul>
+            </div>
+         </div>
+         <div class="related_news">
+             <h3 class="property-title mb-15">
+                 <strong>{{related_posts}}</strong>
+             </h3>
+            <div class="row">
+                {{#each_upto blogs_list 3}}
+                    <div class="col-sm-4 ">
+                        <article class="similar_property">
+                            <a href="{{link}}" class="image">
+                                <img src="assets/img/news/{{img}}" alt="{{name}}">
+                            </a>
+                            <h4><a href="{{link}}">{{name}}</a></h4>
+                            <span> 
+                                <i class="fa fa-calender-o"></i>
+                                {{date}}
+                            </span>
+                        </article>
+                    </div>
+                {{/each_upto}}
+            </div>
+         </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12 ">
+              {{>sidebar}}
+        </div>
+    </div>
 </div>
 </section>
-     {{>footer }} 
+     {{!-- {{>footer }}  --}}
     <script src="assets/js/script.min.js"></script>
 </body>
 </html>
+{{!-- 
+        "name" :"أكثر من 9 ملايين سائح أجنبي يزورون إسطنبول في عشرة أشهر",
+        "link" :"blog-rtl.html",
+        "img" :"1.jpg",
+        "date":"15 نوفمبر 2017",
+        "author":"admin",
+        "type":"سياحة",
+        "description" :
+ --}}

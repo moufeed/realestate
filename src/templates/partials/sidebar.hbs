@@ -1,6 +1,6 @@
 <aside class="sidebar">
     
-    <form action="" class="sidebar-search">
+    <form action="{{#isequal dir 'rtl'}}results-rtl.html{{else}}results.html{{/isequal}}" class="sidebar-search">
         <h4 class="side-title"><strong>{{advanced_search}}</strong></h4> 
         <div class="form-group">
             <input type="text" name="" class="form-control" placeholder="{{keyword}}">
