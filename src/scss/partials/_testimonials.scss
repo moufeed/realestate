@@ -13,8 +13,25 @@
     @media (min-width :768px) {
       width: 50%;
     }
-   
+  .owl-dots{
+      margin-top: 20px;
+    display: inline-block;
+    .owl-dot{
+        border-radius: 50%;
+        float: $left;
+        margin: 5px 4px;
+        box-shadow: 0 0 0 2px rgba($gold, 0.7);
+        background: transparent;
+        transition: all .3s;
+        @include square(12px);
+            &.active{
+                background-color: rgba($gold, 0.7);
+                transform: scale(0.7);
+            } 
+    }
+  } 
 }
+ 
 .testimonail-item{
     i.ico{
         font-size: 55px;
