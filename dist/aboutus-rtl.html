@@ -6,8 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="assets/css/style-rtl.min.css">
-    
-</head>
+    <script src="assets/js/queryloader2.min.js" ></script>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function() {
+            QueryLoader2(document.querySelector("body"), {
+                barColor: "#ccac2c",
+                backgroundColor: "#fff",
+                percentage: true,
+                barHeight: 2,
+                minimumTime: 200,
+                fadeOutTime: 1000
+            });
+        });
+    </script></head>
 <body>
      <div class="search-view">
          <div class="global-search ">
@@ -137,10 +148,72 @@
          </div>
      </section>
 
-<section class="">
+<section class="about-orfali">
 <div class="container">
-    <div class="row"></div>
+    <div class="row row-flex">
+        
+        <div class="col-md-8 col-sm-7">
+           <div class="about_contetn">
+               <h3><strong>حول الشركة</strong></h3>
+               <p>هي شركة خدمية تجارية تتمتع بشخصية اعتبارية ذات استقلال مالي وإداري تام في ممارسة أنشطتها ومهامها ومسجلة بموجب قانون الدولة التركية ومتخصصة في تقديم الخدمات الاستشارية, تأسست الشركة في بداية عام 2014 واتخذت من مدينة اسطنبول / تركيا مقراً </p>
+           </div>
+        </div>
+        <div class="col-md-4 col-sm-5 orfalilogo">
+            <img src="assets/img/about-logo.png" class="img-responsive" alt="">
+        </div>
+    </div>
 </div>
+</section>
+
+<section  class="testimonials" >
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-12">
+                    <div class="owl-carousel feedback_slider" id="testimonialsSlider" data-rtl="true" data-navleft="&amp;#xf105;" data-navright="&amp;#xf104;">
+                        <div class="testimonail-item">
+                            <i class="fa fa-quote-left ico" aria-hidden="true"></i>
+                                 <p>لا ادري ماذا اقول سوى ان الثقة والتعامل المثالي والصراحة والوضوح التام واهتمامكم بكل عميل اهتمام خاص يجعلني احترمكم  </p>
+                            <div class="feed">
+                                <strong>احمد حسن</strong>
+                                <small>مهندس</small>
+                            </div>
+                        </div>  
+                        <div class="testimonail-item">
+                            <i class="fa fa-quote-left ico" aria-hidden="true"></i>
+                                 <p>تعجز الكلمات عن شكركم وعن وصف مدى امكانيتكم الرائعة في ارضاء العملاء والعمل على كل ماهو يساهم في ارتقائكم بخدماتكم الاكثر من مميزة </p>
+                            <div class="feed">
+                                <strong>حسن عبد</strong>
+                                <small>متقاعد</small>
+                            </div>
+                        </div>  
+                        <div class="testimonail-item">
+                            <i class="fa fa-quote-left ico" aria-hidden="true"></i>
+                                 <p>في البداية هذا أول تعامل لي معكم ولن يكون الأخير بإذن الله صراحة قمة في الذوق وقمة في الإحترام والأهم النتيجة النهائية</p>
+                            <div class="feed">
+                                <strong>مصطفى حميد</strong>
+                                <small>معلم</small>
+                            </div>
+                        </div>  
+                        <div class="testimonail-item">
+                            <i class="fa fa-quote-left ico" aria-hidden="true"></i>
+                                 <p>شكرا جزيلا  على كل الوقت الذي كنتم في خدمتي وإسمحلي كتير تعبتكم معي أقف لكم شاكرا على كل المجهودات التي قمتم بها</p>
+                            <div class="feed">
+                                <strong>فادي فخري</strong>
+                                <small>تاجر</small>
+                            </div>
+                        </div>  
+                        <div class="testimonail-item">
+                            <i class="fa fa-quote-left ico" aria-hidden="true"></i>
+                                 <p>في الحقيقه من افضل الشركات التي تعاملت معها دقه في العمل باكمل وجهه والسرعه كذلك الاسعار ممتازه نتمى الاستمرار على هذه الخدمه</p>
+                            <div class="feed">
+                                <strong>احمد مسعود</strong>
+                                <small>مهني</small>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+        </div>
+    </div>
 </section>
       <footer class="main-footer">
           <div class="container footer-content">
@@ -230,5 +303,6 @@
           </div>
       </footer>
       <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i></a>     <script src="assets/js/script.min.js"></script>
+
 </body>
 </html>

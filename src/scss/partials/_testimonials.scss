@@ -1,0 +1,55 @@
+
+.testimonials{
+    padding: 50px 0;
+    background: darken($darkgray ,10%) url('#{$img}feedpattern.svg');
+    @media (min-width :768px) {
+        padding: 150px 0;
+    }
+}
+.feedback_slider{
+    margin:auto;
+    color: $white;
+    text-align: center;
+    @media (min-width :768px) {
+      width: 50%;
+    }
+   
+}
+.testimonail-item{
+    i.ico{
+        font-size: 55px;
+        color: $gold;
+        border:1px solid $gold;
+        border-radius: 50%;
+        @include square(100px);
+        text-align: center;
+        line-height: 100px;
+        margin-bottom: 25px;
+    }
+    
+        > p{
+            font-size: 16px;
+            color: darken($white,20%);
+            line-height: 30px;
+            font-weight: lighter;
+        }
+     .feed{
+         display: inline-block;
+         text-align: $left;
+        strong,small{
+            position: relative;
+            display: block;
+            color: darken($white,30%);
+        }
+        strong{
+            &:before{
+                content :"";
+                @include absolute(top $left , 50%  -25px);
+                @include size(20px,2px);
+                background:  $gold;
+            }
+        }
+
+    }
+}
+ 

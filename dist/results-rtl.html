@@ -6,8 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="assets/css/style-rtl.min.css">
-    
-</head>
+    <script src="assets/js/queryloader2.min.js" ></script>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function() {
+            QueryLoader2(document.querySelector("body"), {
+                barColor: "#ccac2c",
+                backgroundColor: "#fff",
+                percentage: true,
+                barHeight: 2,
+                minimumTime: 200,
+                fadeOutTime: 1000
+            });
+        });
+    </script></head>
 <body>
      <div class="search-view">
          <div class="global-search ">

@@ -146,5 +146,19 @@ $(document).ready(function () {
     })
 
 
+    var navText = [];
+    navText[0] = $('#testimonialsSlider').data('navleft') || 'left';
+    navText[1] = $('#testimonialsSlider').data('navright') || 'right';
+    $('#testimonialsSlider').owlCarousel({
+        items: 1,
+        margin: 15,
+        loop: true,
+        nav: false,
+        dots: true, 
+        autoplay: true,
+        animateIn: true,
+        rtl: $('#testimonialsSlider').data('rtl'),
+        navText: navText
+    });
 
 });

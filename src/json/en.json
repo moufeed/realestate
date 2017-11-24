@@ -62,6 +62,8 @@
     "properties_section_title":"latest Properties",
     "services_section_subtitle":"we're proud to help you",
     "services_section_title":"Our Services",
+    "testimonial" :"Testimonial",
+    "testimonial_sub" :"Clients we proud in their Testimonials",
     "word":"word",
     "categories" :"Categories",
     "about_us" :"About Us",
@@ -637,5 +639,38 @@
             "Beirut also gives an example of Enron's logo, which was also designed by RAND."
         ]
     }
-}
+},
+"carousel" :{
+    "rtl": false,  
+    "left":"&#xf104;",
+    "right":"&#xf105;"
+},
+"testimonialList" :[
+    {
+        "img" :"1.jpg",
+        "name":"Usama Khouri",
+        "occupation":"teacher",
+        "testimonial":" It’s like you read my mind with the new Session feature. Thank you!"
+    }, {
+        "img" :"2.jpg",
+        "name":"Muneer Ghaith",
+        "occupation":"Actor",
+        "testimonial":"Many thanks for getting our P11D’s done despite my best efforts to leave you with no time !!"
+    }, {
+        "img" :"3.jpg",
+        "name":"Ma'mun Najjar",
+        "occupation":"Author",
+        "testimonial":"We are hugely grateful to you for what you have done Paul and can’t begin to thank you enough for all your patience, wise council, good humour and support."
+    },{
+        "img" :"4.jpg",
+        "name":"Fadl Fakhiri",
+        "occupation":"engineer",
+        "testimonial":" Thank you was dreading the business consultation but you made it painless and fun - got my brain switched on!"
+    },{
+        "img" :"5.jpg",
+        "name":"Masrur Raghib",
+        "occupation":"Architect",
+        "testimonial":"Alisha Raesz of Fourlane has been a tremendous asset to our company.Thanks!!!"
+    }
+]
 }  

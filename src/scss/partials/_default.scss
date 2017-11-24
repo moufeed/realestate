@@ -231,3 +231,14 @@ body{
     margin: 10px 0;
     border-bottom: 1px dotted #d9d9d9;
   }
+  .row-flex{
+    @media (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+  .nicescroll-rails.nicescroll-rails-hr{
+      display: none !important;
+  }
