@@ -1,7 +1,10 @@
 
 .testimonials{
     padding: 50px 0;
-    background: darken($darkgray ,10%) url('#{$img}feedpattern.svg');
+    background-color: darken($darkgray ,10%);
+    background-image: url('#{$img}feed-left-bg.png'),url('#{$img}feed-right-bg.png');
+    background-position:-2% -22% , 103% 130%;
+    background-repeat: no-repeat;
     @media (min-width :768px) {
         padding: 150px 0;
     }

@@ -51,11 +51,11 @@
     <div class="container">
         <div class="row"> 
             <div class="col-md-12">
-                    <div class="owl-carousel feedback_slider" id="testimonialsSlider" data-rtl="{{carousel.rtl}}" data-navleft="{{carousel.left}}" data-navright="{{carousel.right}}">
+                    <div class="owl-carousel feedback_slider" id="testimonialsSlider" data-rtl="false" data-navleft="{{carousel.left}}" data-navright="{{carousel.right}}">
                         {{#each testimonial_List}}
-                        <div class="testimonail-item">
+                        <div class="testimonail-item"> 
                             <i class="fa fa-quote-left ico" aria-hidden="true"></i>
-                                 <p>{{testimonial}}</p>
+                                 <p>{{testimonial}}</p> 
                             <div class="feed">
                                 <strong>{{name}}</strong>
                                 <small>{{occupation}}</small>

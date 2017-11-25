@@ -156,8 +156,7 @@ $(document).ready(function () {
         nav: false,
         dots: true, 
         autoplay: true,
-        animateIn: true,
-        rtl: $('#testimonialsSlider').data('rtl'),
+        rtl: $('#testimonialsSlider').data('rtl') || false,
         navText: navText
     });
 
