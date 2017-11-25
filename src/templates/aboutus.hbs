@@ -46,34 +46,35 @@
     </div>
 </div>
 </section>
-
-<section  class="testimonials" >
+<section class="omvv">
     <div class="container">
-        <div class="row"> 
-            <div class="col-md-12">
-                    <div class="owl-carousel feedback_slider" id="testimonialsSlider" data-rtl="false" data-navleft="{{carousel.left}}" data-navright="{{carousel.right}}">
-                        {{#each testimonial_List}}
-                        <div class="testimonail-item"> 
-                            <i class="fa fa-quote-left ico" aria-hidden="true"></i>
-                                 <p>{{testimonial}}</p> 
-                            <div class="feed">
-                                <strong>{{name}}</strong>
-                                <small>{{occupation}}</small>
-                            </div>
-                        </div>  
-                        {{/each}} 
-                    </div>
+        <div class="row flex-row">
+            <div class="col-sm-6"> 
+               <article class="mission">
+                   <h3><strong>{{our_mission}}</strong></h3>
+                   <P>{{mission_content}}</P>
+               </article>
             </div>
+            <div class="col-sm-6"> 
+                <article class="vision">
+                   <h3><strong>{{our_vision}}</strong></h3>
+                     <P>{{vision_content}}</P>
+                </article>
+                <article class="values">
+                   <h3><strong>{{our_values}}</strong></h3>
+                    <P>{{values_content}}</P>
+                </article>
+            </div>
+            
         </div>
     </div>
-</section>
-
-
+</section> 
+{{>testimonials}}
 {{>statistics}}
-
-
-     {{>footer }} 
+{{>footer }} 
     <script src="assets/js/script.min.js"></script>
 
 </body>
 </html>
+
+
