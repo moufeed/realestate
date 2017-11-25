@@ -105,6 +105,7 @@
     "location":"location",
     "share_on":"Share on",
     "back_to_home" :"Back to Home",
+    "statistics":"statistics",
     "contact_us_paragraph":  "Hossam Orfali Consulting is ready to answer any proposal, interpretation or request for support. You can contact us via the website or one of the available means of communication, and you can leave a message to us through the form below:",
     "about_section_heading":"Why Hossam Orfali ?",
     "about_section_body":"Is a commercial service company with a legal personality with full financial and administrative independence in carrying out its activities and functions and registered under the law of the Turkish State and specialized in providing consultancy services. The company was established in early 2014 and was based in Istanbul,",
@@ -672,5 +673,22 @@
         "occupation":"Architect",
         "testimonial":"Alisha Raesz of Fourlane has been a tremendous asset to our company.Thanks!!!"
     }
-]
+],
+"statistics_list":[
+    {
+        "icon":"customers-icon.png",
+        "title":"happy customers",
+        "val":520
+    },
+    {
+        "icon":"properties-icon.png",
+        "title":"properties",
+        "val":350
+    },
+    {
+        "icon":"calendar-icon.png",
+        "title":"YEARS",
+        "val":4
+    }
+    ]
 }  

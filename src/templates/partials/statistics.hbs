@@ -1,0 +1,19 @@
+<section class="statistics">
+    <div  class="container">
+            
+        <div class="row">
+            {{#each statistics_list}} 
+            <div class="col-sm-4">
+                <div class="statistic   animate fadeIn" data-wow-duration="500ms" data-wow-delay="{{@index }}00ms">
+                    <img src="assets/img/{{icon}}" class="ico" alt="">
+                   <div class="content">
+                        <strong>{{val}}</strong>
+                        <span>{{title}}</span>
+                   </div>
+                </div>
+            </div>  
+            {{/each}}
+        </div>
+    </div>   
+</section> 
+ 
