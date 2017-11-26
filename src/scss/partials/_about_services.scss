@@ -1,0 +1,83 @@
+
+.about_services{
+    padding: 50px 0;
+    background: darken($white , 3%);
+    position: relative;
+    &:before{
+        content: '';
+        @include absolute(top left , 0 5% );
+        border-top: 50px solid darken($darkgray ,10%); 
+        border-left: 50px solid transparent; 
+        border-right: 50px solid transparent; 
+    }
+    .ser_title{
+        margin-bottom: 75px;
+        border-bottom: 1px dashed lighten($gray ,40%);
+        color:$black;
+        font-size: 28px;
+         strong{
+             display: inline-block;
+             position: relative;
+             padding-bottom: 10px;
+             &:before{
+                 content: '';
+                 @include absolute(bottom $left ,-1px 0);
+                 @include size(125% ,1px);
+                 background: $gold;
+             }
+         }
+    }
+}
+.art_ser{
+    margin-bottom: 45px;
+    h4{
+        color: $black;
+        margin: side-values(0 0 15px 35px);
+        text-transform: capitalize;
+        position: relative;
+        font-size: 21px; 
+        &:before{
+            content: attr(data-count);
+            @include absolute(top $left , -40px -37px);
+            color: $gold;
+            font-size: 3.5em; 
+            font-weight: bolder;
+            z-index: 0;
+            font-family: roboto-bold;
+        }
+        strong{
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            background :darken($white , 3%);
+            padding: 5px 0;
+            border-radius : 5px;
+        }
+    }
+    p{
+        color: $gray;
+        line-height: 24px;
+        min-height: 150px;
+    }
+}
+/* 
+ 
+     
+
+<section class="about_services">
+    <div class="container">
+        <h3>{{our_services}}</h3>
+        <div class="row">
+            {{#each services_list}}
+            <div class="col-sm-4">
+                <article class="art_ser">
+                    <h4><strong data-num="0{{plus @index 1}}">{{name}}</strong></h4>
+                    <p>{{content}}</p> 
+                </article>
+            </div>
+            {{/each}}
+        </div>
+    </div> 
+</section>
+
+*/

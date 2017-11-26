@@ -1,0 +1,15 @@
+<section class="about_services">
+    <div class="container">
+        <h3 class="ser_title"><strong>{{our_services}}</strong></h3>
+        <div class="row">
+            {{#each services_list}}
+            <div class="col-sm-4">
+                <article class="art_ser animate fadeInUp" data-wow-duration="600ms" data-wow-delay="{{delay @index 30}}ms" >
+                    <h4 data-count="0{{plus @index 1}}"><strong>{{name}}</strong></h4>
+                    <p>{{content}}</p> 
+                </article>
+            </div>
+            {{/each}}
+        </div>
+    </div> 
+</section>

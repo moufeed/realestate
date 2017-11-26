@@ -694,5 +694,29 @@
         "title":"YEARS",
         "val":4
     }
-    ]
+    ],
+    
+"services_list" : [
+    {
+        "name" :"During the purchase process",
+        "content" :"Our consultants can guide you through the process of buying property from beginning to end, taking care of all necessary steps and papers, including transfer of title deed (TAPU), opening bank account, obtaining tax number, and coordinating with your lawyer. Our hands will be in your hands to answer all your questions and reassure you of any concerns"
+    },
+     {
+        "name" :"After sales service",
+        "content" :"We ensure the smooth transition of the new property to your possession and your own property with our partners in the after-sales service, which includes supervision of any additions you need in the property from building and other, coordination with utilities to connect water, electricity, internet, telephone and other things."
+    },
+     {
+        "name" :"Real Estate Management",
+        "content" :"If you want to rent your property, we will find you reliable tenants, with all the guarantees and checks related to the property to ensure that your property will be in the hands of honest. We will act as the contact point for the tenant and you, as well as arrange maintenance, care and supervision of the rental payments, while keeping abreast of any developments in the property or market."
+    }, {
+        "name" :"Moving to Turkey",
+        "content" :"We have a number of experienced consultants who assist you in shipping your tools, goods, all your needs and even the pets you raise, with residence permits for you and your family, and finding the right schools for your children. Once you are in Turkey, we will help you with everything you need: finding furniture, buying a car, discovering the local amenities and facilities at your place of residence."
+    }, {
+        "name" :"Investment Management",
+        "content" :"We make sure that your investment property works and reap the benefits of your investment. As experienced managers we will have to show you the economic trends of the market, manage your rents, and alert you to the promising opportunities that will earn you the right strategy and time if you want to sell your property."
+    }, {
+        "name" :"Our fee for services",
+        "content" :"We are structuring our services fee according to your specific needs. You are kindly requested to contact us with your needs and demands identified in our services so we can determine our own fees"
+    }
+]
 }  

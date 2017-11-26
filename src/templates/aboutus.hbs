@@ -50,26 +50,27 @@
     <div class="container">
         <div class="row flex-row">
             <div class="col-sm-6"> 
-               <article class="mission">
+               <article class="mission animate fadeInUp" data-wow-duration="600ms" data-wow-delay="100ms">
                    <h3><strong>{{our_mission}}</strong></h3>
                    <P>{{mission_content}}</P>
                </article>
             </div>
             <div class="col-sm-6"> 
-                <article class="vision">
+                <article class="vision animate fadeInUp" data-wow-duration="600ms" data-wow-delay="150ms">
                    <h3><strong>{{our_vision}}</strong></h3>
                      <P>{{vision_content}}</P>
                 </article>
-                <article class="values">
+                <article class="values animate fadeInUp" data-wow-duration="600ms" data-wow-delay="200ms">
                    <h3><strong>{{our_values}}</strong></h3>
                     <P>{{values_content}}</P>
-                </article>
+                </article> 
             </div>
             
         </div>
     </div>
 </section> 
 {{>testimonials}}
+{{> about_services }}
 {{>statistics}}
 {{>footer }} 
     <script src="assets/js/script.min.js"></script>

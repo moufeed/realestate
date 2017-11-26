@@ -71,8 +71,11 @@ var config = {
                 },
                 delay : function(num,del){
                     return  num / 2 * del;
+                },
+                plus :function(num,inc){
+                        return num + inc;6
                 }
-            }
+            } 
         }
     } 
 }
